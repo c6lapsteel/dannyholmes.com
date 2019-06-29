@@ -14,9 +14,9 @@ theme = "hugo-minimalist-theme"
     site_description = "The awesome blog of John Doe."
     location = "Earth"
     # Link custom assets relative to /static
-    avatar = "img/profile-image.png"
-    header_background = "img/desk.jpg"
-    header_title = "Customizable header title"
+    avatar = "img/NAM_Logo.png"
+    header_background = "img/northumbria_advanced_motorcyclists_event1_1140x760.jpg"
+    header_title = "Danny Holmes"
     copyright = "Powered by [Hugo](http://gohugo.io)."
     custom_css = []
     custom_js  = []
