@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <section class="container py-3">
+    {{ if .Site.Params.debug }}
+      {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/_default/single.html") }}
+    {{ end }}
+      <div class="row">
+        <div class="col-12 col-lg-8 offset-lg-2">
+    
+          <article class="layout-article mt-5">
+            <h1>
+              {{ partial "insert-heading.html" . }}
+            </h1>
+            {{ .Content }}
+          </article>
+    
+      </div>
+      <div class="d-none d-lg-block col-lg-2">
+        {{ partial "toc.html" . }}
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+
+
+

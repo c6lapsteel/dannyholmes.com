@@ -1,0 +1,21 @@
+name: Social
+objective: "The Social Team make the arrangements for the club events and trips."
+roles:
+- title: "Social Team Lead"
+  email: social
+  responsibilities:
+  - entry: "booking rooms for club nights"
+  - entry: "booking rooms for Committee & Training Team meetings"
+  - entry: "arranging hotels for club weekend trips, negotiating discounts and cut-price deals"
+  incumbent:
+    name: "Louise Potts"
+    image: /img/team/team-Louise.jpg
+- title: "Social Team Lead"
+  email: social
+  responsibilities:
+  - entry: "booking rooms for club nights"
+  - entry: "booking rooms for Committee & Training Team meetings"
+  - entry: "arranging hotels for club weekend trips, negotiating discounts and cut-price deals"
+  incumbent:
+    name: "Louise Potts"
+    image: /img/team/team-Louise.jpg

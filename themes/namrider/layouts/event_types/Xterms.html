@@ -1,0 +1,91 @@
+{{ define "main" }}
+{{ $dateFormat := default "Jan 2" (index .Site.Params "date_format") }}
+{{ $now := now.Format "2006-01-02" }} 
+{{ $.Scratch.Set "lastYear" ""}}
+
+{{ $venueBundle := .Site.GetPage "/venues" }}
+
+{{ $firstEvent := .Title }}
+
+
+
+<article class="layout-events container mb-3">
+  {{ if .Site.Params.debug }}
+    {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/event_types/terms.html") }}
+  {{ end }}
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class="layout-page-title">{{ .Type | humanize}}</h1>
+      <div class="layout-page-intro lead">
+          {{ .Content }}
+      </div>
+      <div class="card">
+        <div class="card-body">
+          
+          <table id="events-table" class="layout-events-table table table-filter">
+            <thead>
+              <tr class="d-flex justify-content-end">
+                  <div class="d-flex justify-content-end">
+                      <div class="btn-group">
+                          <button type="button" class="btn btn-success btn-filter" data-target="category1_ride">Category 1 Ride</button>
+                          <button type="button" class="btn btn-warning btn-filter" data-target="category2_ride">Category 2 Ride</button>
+                          <button type="button" class="btn btn-primary btn-filter" data-target="ladies_ride">Ladies Ride</button>
+                          <button type="button" class="btn btn-danger btn-filter" data-target="training_event">Training</button>
+                          <button type="button" class="btn btn-info btn-filter" data-target="social_event">Social</button>
+                          <button type="button" class="btn btn-light btn-filter" data-target="all">All</button>
+                      </div>
+                  </div>
+              </tr>
+            </thead>
+            
+            {{ range .Pages.ByDate }}
+
+            {{ $dataStatus := print $firstEvent "_event" }}
+
+            {{ $startDate := dateFormat "2006-01-02" .Date }}
+            {{ if ge $startDate $now }}
+              {{ $year := dateFormat "2006" .Date }}
+              {{ $lastYear := $.Scratch.Get "lastYear"}}
+              <tbody>
+                {{ if ne $year $lastYear }}
+                  <tr><div class="d-flex justify-content-center"><h2>{{ $year }}</h2></div></tr>
+                  {{ $.Scratch.Set "lastYear" $year }}
+                {{ end }}
+                <tr data-status="{{ $dataStatus }}">
+                      <td>
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="title">
+                              <a class="text-body" href="{{ .Permalink | relURL }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</a>
+                              <span class="float-right text-capitalize {{ $dataStatus }}">({{ $firstEvent }})</span>
+                            </h4>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        {{ .Count }}
+                      </td>
+                </tr>
+
+
+              </tbody>
+              
+
+
+              {{ end }}
+
+
+            {{ end }}
+
+
+          </table>
+ 
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+  </article>
+
+{{ end }}

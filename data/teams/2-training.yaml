@@ -1,0 +1,42 @@
+name: Training Team
+objective: "To ensure that the riding and training provided by Northumbria Advanced Motorcyclists is of the highest standard and exceeds the requirements of the Institute of Advanced Motorists (IAM).
+<p>The team is led by our Chief Observer who oversees riding and training standards. Each member is an experienced National Observer who has undergone continuous development since qualifying as an advanced rider. Training Team members offer support and guidance to our Local and National Observers. We seek to identify and meet the training needs of all NAM members and Associates.</p>"
+roles:
+- title: "Chief Observer"
+  email: chief-observer
+  roleDescription: "The Chief Observer co-ordinates the Training Team which organises the training that our Associates follow. "
+  incumbent:
+    name: "Jack Stewart"
+    image: /img/team/team-Jack.jpg
+- title: "Training Team Administrator"
+  email: training
+  incumbent:
+    name: "Graham Mundy"
+    image: /img/team/team-NoPicture.jpg
+- title: "Training Team Administrator"
+  email: training
+  incumbent:
+    name: "Eric FitzPatrick"
+    image: /img/team/team-NoPicture.jpg
+- title: "Training Team Member"
+  email: training
+  incumbent:
+    name: "David Steedman"
+    image: /img/team/team-Dave.jpg
+- title: "Training Team Member"
+  email: training
+  incumbent:
+    name: "Michael Sutherland"
+    image: /img/team/team-MichaelS.jpg
+- title: "Training Team Member"
+  email: training
+  incumbent:
+    name: "Michael Wilkinson"
+    image: /img/team/team-MichaelW.jpg
+
+
+
+
+
+
+

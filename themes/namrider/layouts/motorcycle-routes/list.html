@@ -1,0 +1,153 @@
+{{ define "main" }}
+{{ $dateFormat := default "Jan 2" (index .Site.Params "date_format") }}
+{{ $.Scratch.Set "lastYear" ""}}
+
+<article id="route-list" class="container">
+  {{ if .Site.Params.debug }}
+    {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/motorcycle-routes/list.html") }}
+  {{ end }}
+  <div class="col-12">
+    <h1 class="layout-page-title">
+        {{ .Params.heading | humanize }}
+      </h1>
+      <div class="layout-page-intro layout-article">
+        {{ .Content }}
+      </div>
+  </div>
+  <div class="container">
+    <div class="col-12">
+      <div class="row">
+          <section id="accordion" class="layout-accordion col-xs-12 col-md-8 offset-md-2 py-3">
+              <div class="card">
+                <div class="card-header" id="routesDirection">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Motorcycle Routes by Direction
+                    </button>
+                  </h3>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="routesDirection" data-parent="#accordion">
+                  <div class="card-body">
+                      <table id="routes-direction-table" class="layout-routes-table table table-hover ">
+                          <caption>List of motorcycle routes by direction from Northumberland</caption>
+                          <thead>
+                            <tr class="">
+                              <th scope="col">Direction</th>
+                              <th scope="col" class="text-center">Route Count</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              {{ range .Site.Taxonomies.route_directions }}
+                                <tr>
+                                  <td><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></td>
+                                  <td class="text-center"> {{ .Count }}</td>
+                                </tr>
+                              {{ end }}
+                            </tbody>
+                        </table>
+                      </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="routesTown">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Motorcycle Routes by Town
+                    </button>
+                  </h3>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="routesTown" data-parent="#accordion">
+                  <div class="card-body">
+                      <table id="routes-town-table" class="layout-routes-table table table-hover ">
+                          <caption>List of motorcycle routes by town</caption>
+                          <thead>
+                            <tr class="">
+                              <th scope="col">Town</th>
+                              <th scope="col" class="text-center">Route Count</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              {{ range .Site.Taxonomies.route_towns }}
+                                <tr>
+                                  <td><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></td>
+                                  <td class="text-center" class="text-center"> {{ .Count }}</td>
+                                </tr>
+                              {{ end }}
+                            </tbody>
+                        </table>
+                      </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="routesRoads">
+                  <h3 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Motorcycle Routes by Road
+                    </button>
+                  </h3>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                      <table id="routes-road-table" class="layout-routes-table table table-hover ">
+                          <caption>List of motorcycle routes by road</caption>
+                          <thead>
+                            <tr class="">
+                              <th scope="col">Road</th>
+                              <th scope="col" class="text-center">Route Count</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              {{ range .Site.Taxonomies.route_roads }}
+                                <tr>
+                                  <td><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></td>
+                                  <td class="text-center"> {{ .Count }}</td>
+                                </tr>
+                              {{ end }}
+                            </tbody>
+                        </table>
+                      </div>
+                </div>
+              </div>
+              <div class="card">
+                  <div class="card-header" id="routesCafes">
+                    <h3 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        Motorcycle Routes by Caf&eacute;
+                      </button>
+                    </h3>
+                  </div>
+              
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <table id="routes-cafe-table" class="layout-routes-table table table-hover ">
+                            <caption>List of motorcycle routes by caf&eacute;</caption>
+                            <thead>
+                              <tr class="">
+                                <th scope="col">Caf&eacute;</th>
+                                <th scope="col" class="text-center">Route Count</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                {{ range .Site.Taxonomies.route_cafes }}
+                                  <tr>
+                                    <td><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></td>
+                                    <td class="text-center"> {{ .Count }}</td>
+                                  </tr>
+                                {{ end }}
+                              </tbody>
+                          </table>
+                        </div>
+                  </div>
+                </div>
+            </section>
+      </div>
+    </div>
+  </div>
+
+
+  </article>
+
+
+
+{{ end }}

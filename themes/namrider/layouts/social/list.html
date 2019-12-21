@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+  {{ if .Site.Params.debug }}
+    {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/social/list.html") }}
+  {{ end }}
+
+  {{ partial "list" (dict "myID" "social" "myContext" . "mySlice" "social-overview") }}
+
+
+
+  <a id="back-to-top" href="#" class="btn btn-secondary btn back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+{{ end }}

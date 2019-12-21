@@ -1,0 +1,43 @@
+
+
+{{ $indexValue := newScratch }}
+{{ $sort := newScratch }}
+{{ $acc := newScratch }}
+{{ $indexValue = -1}}
+{{ if .IsNamedParams }}
+    {{ if .Get "account"}}
+        {{ $acc := ( .Get "account") }}
+        {{ range $i, $e := .Site.Params.Accounts.Names}}
+            {{ if eq ( upper $e ) ( upper $acc ) }}
+                {{ $indexValue =  $i }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+{{ end }}
+{{ if gt $indexValue -1 }}
+    {{ range $i, $e := .Site.Params.Accounts.sortCodes}}
+        {{ if eq $i $indexValue }}
+            {{ $sort =  $e }}
+        {{ end }}
+    {{ end }}
+    {{ range $i, $e := .Site.Params.Accounts.accountNumbers}}
+        {{ if eq $i $indexValue }}
+            {{ $acc =  $e }}
+        {{ end }}
+    {{ end }}
+    <div class="layout-account-details alert alert-primary">
+        <p>Bank tranfers should be sent to the {{ .Get "account"}} account:</p>
+        <dl class="row">
+            <dt class="col-5">Sort Code </dt>
+            <dd class="col-5">{{ $sort }}</dd>
+            <dt class="col-5 justify-">Account Number</dt>
+            <dd class="col-5">{{ $acc }}</dd>
+        </dl>
+        <p>Please use your full name or IAM number together with ‘{{ .Get "ref" }}’ as a reference.</p>
+    </div>
+{{ else}}
+    <p class="layout-account-details">
+        Account details not found.
+    </p>
+{{ end }}

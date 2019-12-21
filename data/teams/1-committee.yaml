@@ -1,0 +1,83 @@
+name: Committee
+objective: "To promote Motorcycle Road Safety in the Northumbria area."
+roles:
+- title: "Chair"
+  email: chair
+  roleDescription: "The Chair holds the tiller for NAM, controlling the direction we take and getting the best out of the other committee members.
+    <p>The Chair is in charge of committee meetings and has a big say on the strategic direction of NAM.</p>"
+  incumbent:
+    name: "Mel Leitch"
+    image: /img/team/team-Mel.jpg
+- title: "Vice-Chair"
+  email: vice-chair
+  roleDescription: "<p>The Vice Chair takes an active role in the strategic direction of Northumbria Advanced Motorcyclists and deputises for the Chair as necessary.</p>
+    <p>In order to ensure continuity, the Vice Chair prepares for taking on the future role of Chair.</p>"
+  responsibilities:
+  incumbent:
+    name: "Keith Miller"
+    image: /img/team/team-Keith.jpg
+- title: "Secretary"
+  email: secretary
+  roleDescription: "The club Secretary records the committee meetings and looks after communication with other organisations."
+  responsibilities:
+  - entry: "note taking"
+  - entry: "letter writing"
+  - entry: "answering questions"
+  - entry: "organising meetings"
+  incumbent:
+    name: "John Atkinson"
+    image: /img/team/team-NoPicture.jpg
+- title: "Treasurer"
+  email: treasurer
+  roleDescription: "One of the elected trustee positions of the club, the treasurer attends all committee meetings and participates in the strategic planning and development of club activities. "
+  responsibilities:
+  - entry: "managing the club's finances"
+  - entry: "keeping the committee informed of the club's financial position"
+  - entry: "keeping accounting records and preparing annual accounts for presentation to members at the AGM"
+  - entry: "collecting members' subscriptions and payments for trips and other events"
+  - entry: "banking any cash receipts"
+  - entry: "managing and paying expense claims and other payables"
+  - entry: "submitting the club's annual Gift Aid claim"
+  incumbent:
+    name: "Colin Irvine"
+    image: /img/team/team-Colin.jpg
+- title: "Membership Secretary"
+  email: membership
+  roleDescription: "The Membership Secretary keeps track of NAM membership including new referrals, Associates and Full Members."
+  responsibilities:
+  - entry: "dealing with membership enquires"
+  - entry: "managing referrals from IAM"
+  - entry: "contacting new Associates"
+  - entry: "informing Training Team about new Associates"
+  - entry: "keeping Member contact details up-to-date"
+  - entry: "keeping track of annual subs payments"
+  incumbent:
+    name: "Mary Holmes"
+    image: /img/team/team-NoPicture.jpg
+- title: "Chief Observer"
+  email: chief-observer
+  roleDescription: "The Chief Observer co-ordinates the Training Team which organises the training that our Associates and Observers follow."
+  incumbent:
+    name: "Jack Stewart"
+    image: /img/team/team-Jack.jpg
+- title: "Marketing Team Lead"
+  email: marketing
+  roleDescription: "The Marketing Team Lead co-ordinates the Marketing Team which promotes the charitable aims of Northumbria Advanced Motorcyclists."
+  responsibilities:
+  - entry: "overseeing our compliance with GDPR regulations"
+  incumbent:
+    name: "Keith Miller (ad interim)"
+    image: /img/team/team-PositionVacant.jpg
+- title: "Social Team Lead"
+  email: social
+  roleDescription: "The Social Team Lead co-ordinates the Social Team which provides a full program of rideouts and social events for the benefit of club members."
+  incumbent:
+    name: "Louise Potts"
+    image: /img/team/team-Louise.jpg
+
+
+
+
+
+
+

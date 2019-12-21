@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+<section class="container py-3">
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+          <article class="layout-route-direction container mb-3">
+              {{ if .Site.Params.debug }}
+                {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/route_directions/list.html") }}
+              {{ end }}
+              <div class="row">
+                <div class="col-xs-12">
+                  <h1 class="layout-page-title">{{ .Title | humanize}}</h1>
+                  <div class="layout-page-intro lead">
+                      {{ .Content }}
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                          <table id="route-table" class="layout-routes-table table table-filter">
+                              <thead>
+                                <th scope="col" class="text-center">Mileage</th>
+                                <th scope="col">Route</th>
+                                <th scope="col" class="text-center">Rideout Date</th>
+                              </thead>
+                              <tbody>
+                                {{ range sort .Pages "Params.mileage" "desc"}}
+                                  <tr>
+                                    <td class="text-center">
+                                          {{ .Params.mileage }}
+                                    </td>
+                                    <td>
+                                      <a class="text-body" href="{{ .Permalink | relURL }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+                                    </td>
+                                  </tr>
+                                {{ end }}
+                              </tbody>
+                  
+                            </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+      </div>
+    </div>
+  </section>
+
+{{ end }}

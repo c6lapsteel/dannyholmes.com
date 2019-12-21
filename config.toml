@@ -1,18 +1,24 @@
 baseurl = "https://example.org/"
-languageCode = "en-us"
-title = "Danny Holmes - Static Site"
+languageCode = "en-gb"
+title = "Northumbria Advanced Motorcyclists"
 # Define how many pages appear per site
 paginate = 10
 # Enable comments powered by Disqus by entering your disqus shortname
-# disqusShortname = "spf13"
+disqusShortname = "northumbria-advanced-motorcyclists"
 # Enable gogle analytics by entering your tracking code
 googleAnalytics = ""
-theme = "hugo-minimalist-theme"
+theme = "namrider"
+assetDir = "themes/namrider/assets"
+relativeURLs = true
+buildFuture = true
+# Add code highlighting
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [params]
-    site_author = "John Doe"
-    site_description = "The awesome blog of John Doe."
-    location = "Earth"
+    site_author = "Danny Holmes"
+    site_description = "The awesome blog of Danny Holmes."
+    location = "Newcastle, England"
     # Link custom assets relative to /static
     avatar = "img/NAM_Logo.png"
     header_background = "img/northumbria_advanced_motorcyclists_event1_1140x760.jpg"
@@ -22,7 +28,73 @@ theme = "hugo-minimalist-theme"
     custom_js  = []
 
     # Enable gogle analytics by entering your tracking code
-    google_analytics = ""
+    google_analytics = "UA-xxxxx-1"
+
+    debug = true
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 100
+
+  [[menu.main]]
+    identifier = "training"
+    name = "Training"
+    url = "/training/"
+    weight = 110
+
+  [[menu.main]]
+    identifier = "social"
+    name = "Social"
+    url = "/social/"
+    weight = 120
+
+  [[menu.main]]
+    identifier = "events"
+    name = "Events"
+    url = "/events/"
+    weight = 130
+
+  [[menu.main]]
+    identifier = "news"
+    name = "News"
+    url = "/news/"
+    weight = 140
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Articles"
+    url = "/posts/"
+    weight = 150
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 160
+
+[[menu.main]]
+    identifier = "photos"
+    name = "Gallery"
+    url = "/photos/"
+    weight = 170  
+
+   [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 180   
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  event_type = "event_types"
+  route_direction = "route_directions"
+  route_town = "route_towns"
+  route_road = "route_roads"
+  route_cafe = "route_cafes"
 
 [social]
     # Add your social network accounts to the profile section on the left
@@ -36,3 +108,33 @@ theme = "hugo-minimalist-theme"
     instagram = ""
     github    = ""
     gplus     = ""
+
+[imaging]
+  # Default resample filter used for resizing. Default is Box,
+  # a simple and fast averaging filter appropriate for downscaling.
+  # See https://github.com/disintegration/imaging
+  resampleFilter = "lanczos"
+  # Default JPEG quality setting. Default is 75.
+  quality = 85
+  # Anchor used when cropping pictures.
+  # Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
+  # Smart Cropping is content aware and tries to find the best crop for each image.
+  # Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+  anchor = "smart"
+
+[params.imaging]
+  # xl, lg, md, sm and below
+  sizes = ["1200","700","340"]
+
+[params.accounts]
+    # Bank account details
+    names = ["events","training","social"]
+    sortCodes = ["20-58-17", "XX-XX-XX", "YY-YY-YY"]
+    accountNumbers = ["93220117","12345678","12345678"]
+
+[params.private]
+    # Exclude from sitemaps
+    privateDirs = ["overview","timeline","faq","events","social","news","motorcycle-routes"]
+
+ [frontmatter]
+date = ["eventStartDate", "lastRideDate", ":default"] 

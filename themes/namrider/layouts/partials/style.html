@@ -1,0 +1,18 @@
+{{ $options := (dict "targetPath" "css/theme.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+{{ $style := resources.Get "sass/theme.scss" | toCSS $options | postCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-588ddf0c24b32ae3"></script>
+
+{{ $fontawesome := resources.Get "js/all.js" }}
+{{ $update_el := resources.Get "js/update_el.js" }}
+{{ $back2top := resources.Get "js/back_to_top.js" }}
+{{ $defaultJS := slice $fontawesome $update_el $back2top | resources.Concat "js/global.js" }}
+{{ $script := $defaultJS }}
+{{ $globalJS := $script | resources.Minify | resources.Fingerprint }}
+<script src="{{ $globalJS.Permalink }}"></script>

@@ -1,0 +1,68 @@
+<footer class="layout-site-footer">
+  
+  <div class="bg-alternative">
+     <section id="site-footer-main" class="layout-footer-main container">
+      {{if .Site.Params.debug}}
+        {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/partials/footer.html") }}
+        <table class="table table-sm">
+            <caption>Hugo Variables for current page</caption>
+            <tr><th>Name</th><td>{{ .Name }}</td></tr>
+            <tr><th>Kind</th><td>{{ .Kind }}</td></tr>
+            <tr><th>Type</th><td>{{ .Type }}</td></tr>
+            <tr><th>List Page</th><td>.Pages</td></tr>
+            <tr><th>IsPage</th><td>{{ .IsPage }}</td></tr>
+            <tr><th>IsHome</th><td>{{ .IsPage }}</td></tr>
+            <tr><th>Next</th><td>{{ .Next }}</td></tr>
+            <tr><th>Prev</th><td>{{ .Prev }}</td></tr>
+            <tr><th>Section</th><td>{{ .CurrentSection }}</td></tr>
+        </table>
+      {{ end }}
+
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Monthly meetings</h4>
+          <p>Join us every second Tuesday of the month 7.30 pm (August to April) at:</p>
+          <p>        
+            <ul class="layout-contact">
+              <li><i class="fa fa-map-marker"></i> <strong>Address:</strong> West Moor Social Club, 49 Great Lime Road, Newcastle upon Tyne, NE12 7NL </li>
+            </ul>
+          </p>
+          <p>We regularly have guest speakers covering a wide range of topics.</p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Contact</h4>
+          <p>        
+          <ul class="layout-contact">
+            <li><i class="fa fa-phone-alt"></i> <strong>Phone:</strong> 0191 364 3264</li>
+            <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a class="e-l" href="#" data-ep1="info" data-ep2="namrider" data-ep3="com"> Email me</a></li>
+          </ul>
+          </p>
+        </div>      
+        <div class="col-lg-4">
+          <h4>Motorcycle Route Archive</h4>
+          <a href="{{ .Site.BaseURL }}/motorcycle-routes/" title="Go to Motorcycle Route Archive"><img src="{{ .Site.BaseURL }}/img/signs/Motorcycle Routes-8.png" class="img-fluid" alt="Road sign showing summary of motorcycle routes."></a>
+          <h4>Sitemap</h4>
+          <p><a href="{{ .Site.BaseURL }}/sitemap.html" title="NAM Sitemap">Sitemap</a></p>
+          <h4>Privacy policy</h4>
+          <p><a href="{{ .Site.BaseURL }}/about/privacy-policy.html" title="NAM privacy policy">Privacy policy</a></p>
+        </div>
+      </div>
+
+     </section> 
+      
+  </div>
+
+  <div class="bg-dark">
+    <section id="footer-copyright" class="layout-footer-copyright container pt-3 pb-3 d-flex align-items-start justify-content-between">
+        <p class="text-white font-size-sm">All Rights Reserved Northumbria Advanced Motorcyclists. Registered charity 1099238.</p>
+        <section class="layout-social">
+            <ul class="social-icons">
+              <li><a class="btn btn-light btn-sm px-1 mb-1 mt-0" target="_blank" rel="noopener" href="https://www.facebook.com/NorthumbriaAdvancedMotorcyclists/" title="Go to NAM Facebook page"><i class="layout-icon fab fa-facebook fa-2x"></i></a></li>
+              <li><a class="btn btn-light btn-sm px-1 mb-1 mt-0" target="_blank" rel="noopener" href="https://twitter.com/nam_rider" title="Go to NAM Twitter feed"><i class="layout-icon fab fa-twitter fa-2x"></i></a></li>
+            </ul>
+        </section>
+    </section>
+
+        
+  </div>
+</footer>

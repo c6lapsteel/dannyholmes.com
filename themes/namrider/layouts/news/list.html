@@ -1,0 +1,70 @@
+{{ define "main" }}
+<section id="news" class="container">
+  {{ if .Site.Params.debug }}
+    {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/news/list.html") }}
+  {{ end }}
+  <section class="layout-page-header row">
+    <div class="col-12">
+        <h1 class="layout-page-title">
+            {{ .Type | humanize }}
+          </h1>
+          <div class="layout-page-intro lead">
+            {{ .Content }}
+          </div>
+    </div>
+  </section>
+
+  <div class="row layout-page-section mt-2 container">
+      <div class="col-xs-12 col-lg-9">
+          <article id="news-cards" class="layout-multicolumn">
+
+            <section class="layout-news-card card-deck ">
+
+                  <div class="row">
+                      {{ range $index, $value := .Pages }}
+                        <section class="layout-small-block card mb-3">
+                          {{ if isset .Params "news_ribbon" }}
+                            <div class="layout-card-ribbon"><span>{{.Params.news_ribbon}}</span></div>
+                          {{ end }}
+                          <div layout-news-image>
+                              <img class="layout-image card-img-top img-fluid" src="/img/twisty_road6_700x350.jpg" alt="Aerial photograph of road with hairpins">
+                              <div class="layout-news-date"> <span class="date">{{ .Date.Format "2" }}</span> <span class="month">{{ .Date.Format "Jan" }}</span></div>    
+                          </div>
+                         <div class="card-body">
+                            <h2 class="layout-title card-title">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</h4>
+                            <div class="layout-text card-text">
+                              {{ .Content }}
+                            </div>
+                          </div>
+                        </section>
+                        {{ if eq (mod (add $index 1) 2 ) 0 }}
+                          <div class="w-100 .d-md-none"></div>
+                        {{ end }}
+                      {{ end }}
+          
+
+          
+                    </div>    
+                    
+          
+            </section>
+
+          </article>
+      </div>
+
+      <div class="col-xs-12 col-lg-3">
+        <article id="twitter-card" class="layout-twitter-card card mb-3">
+          <div class="card-header d-flex justify-content-center">
+            <h2 class="card-title d-flex align-items-center"><em class="fab fa-twitter-square fa-2x mr-2" aria-hidden="true"></em> @nam_rider </h2>
+          </div>
+          <div class="card-body"> <a class="twitter-timeline" data-width="100%" href="https://twitter.com/nam_rider" data-tweet-limit="4" data-chrome="noheader nofooter">Tweets by namrider</a></div>
+        </article>
+      </div>
+  </div>
+ 
+
+  
+
+
+  </section>
+{{ end }}

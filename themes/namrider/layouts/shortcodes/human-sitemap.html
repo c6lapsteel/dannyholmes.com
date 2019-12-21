@@ -1,0 +1,83 @@
+{{/*
+    Generates a site map for humans where pages and posts are listed in
+    alphabetical order.
+*/}}
+
+<h2>Pages</h2>
+<ul>
+    {{ range (where .Site.Pages.ByTitle ".Type" "page") }}
+        {{- if ne .Params.noIndex true -}}
+            <li>
+                <article itemscope itemtype="http://schema.org/Blog">
+                    <a href="{{ .Permalink }}">
+                        {{ if .LinkTitle }}
+                            {{ .LinkTitle }}
+                        {{ else }}
+                            {{ .Title }}
+                        {{ end }}
+                    </a>
+                </article>
+            </li>
+        {{- end -}}
+    {{ end }}
+</ul>
+
+<h2>Sections</h2>
+<ul>
+    {{ range .Site.Sections }}
+       
+        {{- if ne .Params.noIndex true -}}
+            <li>
+                <a href="{{ .Permalink }}">
+                    {{ if .LinkTitle }}
+                        {{ .LinkTitle }}
+                    {{ else }}
+                        {{ .Title }}
+                    {{ end }}
+                </a>
+                <ul>
+                    {{ range .Pages }}
+                        <!-- If file path contains one of the directories listed in privateDirs, exclude from the sitemap. -->
+                        {{ $exclude := false }}
+                        {{ $myDir := .File.Dir }}
+                        
+                        {{ range $key, $value := .Site.Params.private.privateDirs }}
+                            {{ if (in $myDir (printf "%s" ( $value ) ) )}}
+                                {{ $exclude = true }}
+                            {{ end }}
+                            
+                        {{ end }}
+                        {{ if not $exclude }}
+                             <li>
+                                 <a href="{{ .Permalink}}">
+                                    {{if .Params.linkTitle}}
+                                        {{ .Params.linkTitle}}
+                                    {{ else }}
+                                     {{ .Title }}
+                                    {{ end }}
+                                 </a>
+                             </li>
+                        {{ end }}
+                             
+                         
+                     {{ end }}
+                </ul>
+                
+            </li>
+        {{- end -}}
+      {{ end }}
+</ul>
+
+<h2>Blog posts</h2>
+<ul>
+{{ range (where .Site.Pages.ByTitle ".Type" "news") }}
+    <li><article itemscope itemtype="http://schema.org/Blog">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </article></li>
+{{ end }}
+</ul>
+
+
+
+
+

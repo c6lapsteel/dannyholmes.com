@@ -1,0 +1,50 @@
+
+
+<div class="layout-team">
+    {{ range .Site.Data.teams }}
+    <h2>{{ .name }}</h2>
+    <h3>Objectives</h3>
+    <p>{{ .objective | safeHTML }}</p>
+    <h3>Members</h3>
+    <div class="row row-cols-1 row-cols-md-2">
+      {{ range .roles }}
+      <div class="col mb-4">
+        <div class="layout-team-card card h-100">
+          <div class="card-body layout-small-block">
+            <div class="row mb-2">
+              <div class="col-8">
+                <h4 class="card-title mb-0">{{ .title }}</h4>
+                <p><span class="text-muted">{{ .incumbent.name }}</span></p>
+                <p class="card-text"><span class="text-muted"><i class="fa fa-envelope"></i> <strong>Email:</strong> <a class="e-l" href="#" data-ep1="{{ .email }}" data-ep2="namrider" data-ep3="com"> Email me</a></span></p>
+              </div>
+              <div class="col-4">
+                <img src="{{ .incumbent.image }}" class="card-img-top" alt="...">
+              </div>
+            </div>
+            
+            <p class="card-text">{{ .roleDescription | safeHTML }}</p>
+            <p class="card-text">
+              {{ if .responsibilities }}
+              <p>Responsibilities include:
+                <ul>
+                  {{ range .responsibilities }}
+                    <li>{{ .entry}}</li>
+                  {{ end }}
+                </ul>
+              </p>
+              {{ end }}
+
+            </p>
+
+            
+          </div>
+        </div>
+      </div>
+
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
+
+
+

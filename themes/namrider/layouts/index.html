@@ -1,0 +1,203 @@
+{{ define "main" }}
+
+{{if .Site.Params.debug}}
+  <p>*** themes/namrider/layouts/index.html</p>
+{{ end }}
+
+{{ $section_colours := slice "bg-light" "section-alt-colour1" "section-alt-colour2" }}
+{{ $.Scratch.Set "counter" 0 }}
+
+<section class="layout-site-title d-flex align-items-center text-center {{ index $section_colours ($.Scratch.Get "counter")}}">
+  <div class="container lead">
+    <div class="row justify-content-center">
+      <div class="col-11 col-sm-10 col-md-8">
+          <p class="font-weight-light"><small>Welcome to</small></p>
+          <h1 class="animated lightSpeedIn">{{ .Site.Title}}</h1>
+          <p>{{ .Site.Params.Description }}</p>
+          <p>{{- .Content -}}</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{ $headless := .Site.GetPage "/services" }}
+{{ $reusablePages := $headless.Resources.Match "*" }}
+<article id="page-services" class="page-section container justify-content-center">
+  <section class="layout-multicolumn container mt-5">
+    <div class="row">
+      {{ range $index, $value := $reusablePages}}
+        <section class="service col-md-4">
+          <div class="service-icon">
+            {{ .Params.fa_icon | markdownify}}
+          </div>
+          <h3>{{ .Title | markdownify }}</h3>
+          {{ .Content }}
+
+        </section>
+        {{ if eq (mod (add $index 1) 3 ) 0 }}
+          <div class="w-100 .d-md-none"></div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+</article>
+
+<article id = "page-photogrid" class="page-section container">
+    <section class="layout-photogrid container">
+        <div class="row justify-content-center">
+            
+              <div class="col-12">
+                  {{ range (  where .Site.RegularPages "Type" "in" (slice "about-gallery") )}}
+                    {{ .Content }}
+                  {{ end }}
+
+              </div>
+           
+          </div>
+    </section>
+</article>
+
+{{ range (where $.Site.RegularPages "Params.homepage_include" true) | intersect (where .Site.RegularPages "Type" "in" (slice "about")) }}
+  {{ if lt ($.Scratch.Get "counter") ( sub (len $section_colours) 1 ) }}
+    {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+  {{ else }}
+    {{ $.Scratch.Set "counter" 0 }}
+  {{ end }}
+  
+  <article id = '{{ .Params.page_id }}' class='layout-page-section {{ index $section_colours ($.Scratch.Get "counter")}}'>
+    <header class="page-section-header container pt-1">
+      <h2>{{ .Title | markdownify}}</h2>
+    </header>
+    <section class="layout-singlecolumn container">
+      {{- .Content -}}
+      {{ if .Site.Params.debug}}
+        I am the number {{$.Scratch.Get "counter"}} in loop!
+        {{ index $section_colours ($.Scratch.Get "counter")}}
+        {{ .Type }}
+      {{ end }}
+    </section>
+  </article>
+   
+{{ end }}
+
+{{ if lt ($.Scratch.Get "counter") ( sub (len $section_colours) 1 ) }}
+  {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+{{ else }}
+  {{ $.Scratch.Set "counter" 0 }}
+{{ end }}
+
+<article id="page-testimonial" class="page-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <header class="page-section-header">
+          <h2>Why we do what we do</h2>
+        </header>
+        <div class="col-12">
+            <section id="layout-carousel-testimonial" class="layout-carousel carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner mt-5">
+                  {{ $headless := .Site.GetPage "/testimonials" }}
+                  {{ $reusablePages := $headless.Resources.Match "*" }}
+
+                  <ol class="carousel-indicators">
+                    {{ range $index, $value := $reusablePages}}
+                      <li data-target="#layout-carousel-testimonial" data-slide-to="{{ $index }}" class="{{ if (eq $index 0) }}active{{ end }}"></li>
+                    {{ end }}
+                  </ol>
+
+                    {{ range $index, $value := $reusablePages}}
+                      <section class="carousel-item {{ if (eq $index 0) }}active{{ end }}">
+                        <div class="container">
+
+                       
+                          <blockquote class="layout-blockquote-testimonial blockquote col-10 offset-1">
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3">
+                                    <img class="layout-testimonial-image img-fluid rounded-circle center-block" src="{{ .Params.pass_image_link }}" alt="">
+                                </div>
+                                <div class="layout-testimonial-text layout-small-block col-md-8">
+                                    <p class="layout-testimonial-summary"> <em class="fa fa-quote-left"></em> {{ .Params.summary}}</p>
+                                    {{- .Content -}}
+                                    <p class="blockquote-cite">{{ .Title | markdownify}}, {{ .Params.pass_year }} ({{ .Params.pass_motorcycle }})</p>
+                                </div>
+                            </div>
+
+                          </blockquote>
+                          
+                        </div> 
+                          
+                      </section>
+                    {{ end }}
+
+                  <a class="carousel-control-prev" href="#layout-carousel-testimonial" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon">
+                      <span class="sr-only">Previous</span>
+                    </span>
+                  </a>
+                  <a class="carousel-control-next" href="#layout-carousel-testimonial" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon">
+                      <span class="sr-only">Next</span>
+                    </span>
+                  </a>
+                </div>
+          
+              </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</article>
+
+{{ if lt ($.Scratch.Get "counter") ( sub (len $section_colours) 1 ) }}
+  {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+{{ else }}
+  {{ $.Scratch.Set "counter" 0 }}
+{{ end }}
+
+<article class="layout-small-block page-section {{ index $section_colours ($.Scratch.Get "counter")}}">
+  <div class="container">
+    {{ $recentposts := 3 }}
+    {{ if .Params.recentposts }}
+      {{ $recentposts = .Params.recentposts }}
+    {{ end }}
+    <div class="row">
+      <div class="container">
+        
+        <h2 class="text-center">Recent articles</h2>
+        
+        <div class="row">
+          {{ range first $recentposts (where .Site.RegularPages "Type" "posts" ) }}
+          <section class="col-lg-4">
+
+              <h3 class="mt-5"><a class="text-body" href="{{ .Permalink | relURL}}">{{ .Title | markdownify}}</a></h3>
+              {{ if .Params.Subtitle }}
+                <h4 class="font-weight-light font-italic mb-3">{{ .Params.Subtitle | markdownify }}</h4>
+              {{ end }}
+
+              <p class="text-muted mt-3">
+                <a class="text-muted" href="{{ .Permalink }}">Published {{ .Date.Format "January 2, 2006"  }}</a>
+
+                {{ range .Params.tags }}
+                  <a class="text-muted" href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a>
+                {{ end }}
+              </p>
+
+              <article class="article">
+                <p>{{ .Summary }}</p>
+              </article>
+
+              <p class="text-muted">Reading time: about {{ .ReadingTime }} minutes</p>
+              <p><a class="btn btn-danger" href="{{ .Permalink | relURL }}">Read more...</a></p>
+
+          </section>
+        {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}

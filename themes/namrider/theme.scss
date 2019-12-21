@@ -1,0 +1,28 @@
+$body-bg: #fefefe;
+$body-color: #111;
+
+$theme-colors: (
+  "primary": #6f42c1,
+  "danger": #ff4136
+);
+
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-gradients: true;
+
+@import url("https://use.typekit.net/wzw2mmy.css");
+
+@import "bootstrap/scss/bootstrap";
+@import "animate.css/animate";
+
+body {
+	background-color: #EDDFD2;
+	font-family: source-sans-pro, "Helvetica Neue", sans-serif;
+	font-display: fallback;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.063rem;
+	line-height: 1.625rem;
+	padding-top: 0px;
+}
+

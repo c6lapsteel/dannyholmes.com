@@ -1,0 +1,39 @@
+<header id="page-hero" class="site-header" >
+  <nav class="site-nav text-uppercase navbar navbar-expand-md navbar-light namrider-bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="{{ "/" | relURL}}"><img src="/img/NAM_Logo.png" alt="Northumbria Advanced Motorcyclists - Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <section class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+              {{ if not (eq .Identifier "tags") }}
+                <li class="navbar-item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
+                  <a class="nav-link" href="{{ .URL | relURL }}" title="{{ .Title }}">{{ .Name }}</a>
+                </li>
+              {{ else }}
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="{{ .URL | relURL }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ .Name }}
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    {{ range $name, $taxonomy := $currentPage.Site.Taxonomies.tags }}
+                      {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                        <a class="dropdown-item" href="{{ .Permalink | relURL }}">{{ $name }}</a>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </section>
+    </div>
+    </nav>
+    {{if .Site.Params.debug}}
+      <p>*** themes/namrider/layouts/partials/header.html</p>
+    {{ end }}
+  </header>

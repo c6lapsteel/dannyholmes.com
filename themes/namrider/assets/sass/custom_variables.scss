@@ -1,0 +1,67 @@
+$instrument-panel1: #C08B1B;
+$instrument-panel2: #747579;
+$instrument-panel3: #9E7432;
+$instrument-panel4: #E2F6ED;
+$instrument-panel5: #4E4B43;
+$triple-black1: #BCB9B6;
+$triple-black2: #F3D47A;
+$triple-black3: #EDDFD2;
+$triple-black4: #383937;
+$triple-black5: #040404;
+
+// $white: $instrument-panel4;
+$black: $triple-black5;
+
+$namrider-danger: #6E500C;
+
+$body-bg: $triple-black3;
+$body-color: $black;
+
+$alt-colour1: #fcf6e4;
+$alt-colour2: #f1f1f0;
+
+//$navbar-light-color: $triple-black4;
+
+$theme-colors: (
+  "primary": $instrument-panel3,
+  "secondary": $instrument-panel2,
+  "success": $instrument-panel5,
+  "info": $instrument-panel1,
+  "warning": $triple-black2,
+  "danger": $namrider-danger,
+  "light": $triple-black3,
+  "dark": $triple-black4,
+  "alternative": $triple-black1
+);
+
+
+/*	--------------------------------------------------
+	:: Typography Bootstrap Overrides
+	-------------------------------------------------- */
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$line-height-base:            1.625;
+
+$h1-font-size:                $font-size-base * 2.75;
+$h2-font-size:                $font-size-base * 2.125;
+$h3-font-size:                $font-size-base * 1.5;
+$h4-font-size:                $font-size-base * 1.188; 
+$h5-font-size:                $font-size-base;
+$h6-font-size:                $font-size-base * 0.813; 
+
+$headings-font-weight:        600;
+
+$lead-font-size:              $font-size-base * 1.375;
+
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-gradients: true;
+
+/*	--------------------------------------------------
+	:: Colour Bootstrap Overrides
+	-------------------------------------------------- */
+
+$carousel-control-color:      $namrider-danger;
+$carousel-indicator-active-bg:  $namrider-danger;
+
+$card-bg: #ffffff;
+$card-border-color: $triple-black1;

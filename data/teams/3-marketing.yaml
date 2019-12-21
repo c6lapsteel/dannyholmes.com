@@ -1,0 +1,32 @@
+name: Marketing Team
+objective: "To market Northumbria Advanced Motorcyclists' prime charitable purpose: to promote motorcycle road safety in the Northumbria area."
+roles:
+- title: "Marketing Team Lead"
+  email: marketing
+  responsibilities:
+  - entry: "managing communication with external groups through our website and social media"
+  - entry: "establishing a physical presence at dealerships"
+  - entry: "designing and printing promotional literature and merchandise"
+  incumbent:
+    name: "Keith Miller (ad interim)"
+    image: /img/team/team-Keith.jpg
+- title: "Marketing Team Member"
+  incumbent:
+    name: "Rick Henderson"
+    image: /img/team/team-Rick.jpg
+- title: "Marketing Team Member"
+  incumbent:
+    name: "Phil McGonigle"
+    image: /img/team/team-Phil.jpg
+- title: "Marketing Team Member"
+  incumbent:
+    name: "Steve Allport"
+    image: /img/team/team-NoPicture.jpg
+- title: "Marketing Team Member"
+  incumbent:
+    name: "Steve Allport"
+    image: /img/team/team-NoPicture.jpg
+- title: "Web Developer"
+  incumbent:
+    name: "Danny Holmes"
+    image: /img/team/team-Danny.jpg

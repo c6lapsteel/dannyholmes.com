@@ -1,0 +1,6 @@
+<!-- Replace title with heading parameter from markdown if maintained. -->
+{{ if .Params.heading }}
+  {{ .Params.heading | markdownify }}
+{{ else }}
+  {{ .Title | markdownify}}
+{{ end }}

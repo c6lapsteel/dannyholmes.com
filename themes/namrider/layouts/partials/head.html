@@ -1,0 +1,16 @@
+<head>
+    <title>{{ .Title }}</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    {{ template "_internal/google_analytics_async.html" . }}
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+  
+  </head>
