@@ -4,6 +4,7 @@ heading: "Meet our team"
 linkTitle: "Team"
 type: "team"
 layout: "team"
+weight: 20
 draft: false
 ---
 

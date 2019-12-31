@@ -10,12 +10,25 @@ roles:
   incumbent:
     name: "Louise Potts"
     image: /img/team/team-Louise.jpg
-- title: "Social Team Lead"
-  email: social
+- title: "Rideout Co-ordinator"
+  email: ride
+  roleDescription: "The Rideout Co-ordinator organises bi-monthly rides. These may be in excess of 30 bikes."
   responsibilities:
-  - entry: "booking rooms for club nights"
-  - entry: "booking rooms for Committee & Training Team meetings"
-  - entry: "arranging hotels for club weekend trips, negotiating discounts and cut-price deals"
+  - entry: "ensuring that rides are carried out in accordance with NAM and IAM guidelines"
+  - entry: "arranging rideout dates and identifying rideout leaders"
+  - entry: "providing training and support to rideout leaders and back-markers"
   incumbent:
-    name: "Louise Potts"
-    image: /img/team/team-Louise.jpg
+    name: "Neil Potts"
+    image: /img/team/team-NoPicture.jpg
+- title: "Social Team Member"
+  incumbent:
+    name: "April Goodwin"
+    image: /img/team/team-April.jpg
+- title: "Social Team Member"
+  incumbent:
+    name: "Ruth Atkinson"
+    image: /img/team/team-NoPicture.jpg
+- title: "Social Team Member"
+  incumbent:
+    name: "Dave Thornton"
+    image: /img/team/team-NoPicture.jpg

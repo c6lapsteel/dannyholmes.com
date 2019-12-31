@@ -1,0 +1,8 @@
+
+<ul class="layout-downloads">
+    {{ range .Page.Resources.Match "**" }}
+	<li>
+		<a href="{{ .Permalink }}" download="{{ .Name }}" class="btn btn-success btn-lg"><i class="fas fa-file-{{ .Params.icon }}"></i> {{ .Title }}</a>
+	</li>
+	{{ end }}
+</ul>

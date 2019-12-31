@@ -129,8 +129,8 @@ pygmentsUseClasses = true
 [params.accounts]
     # Bank account details
     names = ["events","training","social"]
-    sortCodes = ["20-58-17", "XX-XX-XX", "YY-YY-YY"]
-    accountNumbers = ["93220117","12345678","12345678"]
+    sortCodes = ["20-58-17", "XX-XX-XX", "20-58-17"]
+    accountNumbers = ["93220117","12345678","80931403"]
 
 [params.private]
     # Exclude from sitemaps
