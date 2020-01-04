@@ -19,9 +19,17 @@
           <p>{{ . }} Miles</p>
           {{ end }}
         
-          <p class="text-muted mt-3">
-            <a class="text-muted" href="{{ .Permalink }}">Published {{ .Date.Format "January 2, 2006"  }}</a>
+          <p>
+            {{ $publishDate := .PublishDate }}
+            Route Published: {{ .PublishDate.Format "January 2, 2006"  }}
           </p>
+
+          {{ with .Params.eventStartDate }}
+            {{ $lastRideDate := . }}
+            {{ if gt $lastRideDate $publishDate }}
+              <p>Last Rideout: {{ .Format "January 2, 2006" }}</p>
+            {{ end }}
+          {{ end }}
 
           <p class="text-muted mt-3">
             {{ range .Params.route_towns }}

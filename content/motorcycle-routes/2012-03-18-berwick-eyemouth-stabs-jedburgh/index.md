@@ -8,7 +8,7 @@ summary:
 mileage: 190
 googleMaps_URL: "https://www.google.com/maps/d/u/1/embed?mid=1J1Ah4NkxEPd104zw4EkuzWZJrvQ6h7LG" 
 route_directions: [ "north"]
-route_towns: ["Wooler","Milfield","Ford","Etal","Berwick Upon Tweed","Eyemouth","St.Abbs","Ayton","Duns","Westruther","Kelso","Jebdburgh","Ponteland"]
+route_towns: ["Wooler","Milfield","Ford","Etal","Berwick Upon Tweed","Eyemouth","St.Abbs","Ayton","Duns","Westruther","Kelso","Jedburgh","Ponteland"]
 route_roads: ["A1","A697","B6354","B6461","A1107","B6438","B6355","A6105","B6456","A6089","A698","A68","A696"]
 route_cafes: ["Café Maelmin, Milfield", "Ebbcarrs Café, St. Abbs", "Jedburgh Woolen Mill", "Dobbies Garden Centre, Ponteland"]
 resources:

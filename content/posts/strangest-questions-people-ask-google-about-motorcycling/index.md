@@ -29,7 +29,9 @@ For a bit of extra fun, and in order to visualize common themes amongst the ques
 
 The remaining words are scaled according to the frequency with which they appeared amongst the 4522 search questions. The resulting word cloud was exported to Adobe Illustrator and rearranged and recoloured to produce the following image.
 
-{{< img src="Motorcycle_Question_Art_1140_1207.png" caption="Motorcycle Question Art. © Danny Holmes." >}}
+{{< img src="Motorcycle_Question_Art_1140_1207.png" caption="Motorcycle Question Art. © Danny Holmes." alt="Motorcycle question art" >}}
+
+[Download Motorcycle Question Art](images/Motorcycle_Question_Art_1140_1207.png)
 
 ## The Strangest Questions
 So, what were the strangest questions that people asked?

@@ -8,11 +8,11 @@ summary: "In my early days of learning to ride a motorbike it took all my focus 
 tags: [ "cornering", "courses"] 
 keywords: ["cornering", "courses"]
 aliases:
-    - 
+    - /articles/going-round-the-bend-fear-to-enjoyment.html
 draft: false
 ---
 
-{{< img src="Motorcyclist_Cornering_In_The_Wet.jpg" caption="Mary practicing cornering techniques in the wet" >}}
+{{< img src="Motorcyclist_Cornering_In_The_Wet.jpg" caption="Mary practicing cornering techniques in the wet" alt="Mary cornering in the wet" >}}
 
 In my early days of learning to ride a motorbike it took all my focus just to stay upright and operate the various levers and pegs at approximately the right time. Straight roads were a chance to relax, breathe and for a brief moment think ‘ this is nice – a bit like flying’. Corners were something to be negotiated gingerly at slow speed. They weren’t really a ‘thing’ at all any more than braking, stopping or starting. Indeed to begin with stopping and starting were far more terrifying, especially at junctions where I had not only to start moving but to turn at the same time. 
 
@@ -42,14 +42,14 @@ A significant AHA moment occurred that led to a step change in my cornering conf
 ## Taking courses such as I2I and California Superbike School
 
 I have invested in courses because I started riding late in life and wanted to improve as quickly as possible. I might have got where I am now without the extra help, but probably not at the same rate.
-Both I2I https://www.i2imca.com/About.asp and California Superbike School https://www.superbikeschool.co.uk provide excellent training aimed at improving cornering skills. I’ve tried and enjoyed both. If you have the time and money then these sort of courses will certainly improve your riding.
+Both [i2i](https://www.i2imca.com/About.asp "Go to i2i website") and California Superbike School [California Superbike School](https://www.superbikeschool.co.uk "Go to California Superbike School website") provide excellent training aimed at improving cornering skills. I’ve tried and enjoyed both. If you have the time and money then these sort of courses will certainly improve your riding.
 
 Other books include ‘Fast But Not Too Furious’ by Neil Scarlett and Ride Hard Ride Smart by Pat Hahn.
 
 
 ## Additional personal training with riding experts
 
-There are a number of individuals/organisations who will take you out and critique your riding, helping you to achieve your own goals. I have enjoyed a couple of exciting and satisfying days with Ridewell, based just south of Newcastle http://ridewellteesvalley.co.uk. Again, it takes time and money but the value is in having the feedback and suggestions from an expert tailored to your own personal goals.  
+There are a number of individuals/organisations who will take you out and critique your riding, helping you to achieve your own goals. I have enjoyed a couple of exciting and satisfying days with [Ridewell](http://ridewellteesvalley.co.uk "Go to Ridewell Tees Valley website"), based just south of Newcastle. Again, it takes time and money but the value is in having the feedback and suggestions from an expert tailored to your own personal goals.  
 
 
 ## Hours and hours and hours of deliberate practice
@@ -59,3 +59,5 @@ Cornering used to make me feel ‘oh s**t that was awful!’ more often than it 
 ## Final thoughts
 
 I’ve listed some of the things that I believe have helped me become a better and more confident rider. Some may resonate with you, some may not. This has been my own journey so far; I wish you the joy of the open road and happy cornering! 
+
+{{< comments callToAction = "How did you gain your cornering confidence? We’d love to hear your story." >}}

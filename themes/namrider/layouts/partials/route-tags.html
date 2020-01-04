@@ -1,0 +1,5 @@
+{{ range .Site.Taxonomies.route_directions }}
+<ul>
+  <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+</ul>
+{{ end }}

@@ -1,0 +1,30 @@
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="table-responsive">
+              <table id="route-table" class="layout-routes-table table table-filter">
+                  <thead>
+                    <th scope="col" class="text-center">Mileage</th>
+                    <th scope="col">Route</th>
+                    <th scope="col" class="text-center">Last Rideout Date</th>
+                  </thead>
+                  <tbody>
+                    {{ range sort .myContext.Pages "Params.mileage" "desc"}}
+                      <tr>
+                        <td class="text-center">
+                              {{ .Params.mileage }}
+                        </td>
+                        <td>
+                          <a class="text-body" href="{{ .Permalink | relURL }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</a>
+                        </td>
+                        <td class="text-center">
+                            <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+                        </td>
+                      </tr>
+                    {{ end }}
+                  </tbody>
+      
+                </table>
+          </div>
+        </div>
+      </div>

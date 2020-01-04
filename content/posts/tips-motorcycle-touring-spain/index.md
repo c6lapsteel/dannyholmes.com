@@ -14,10 +14,10 @@ resources:
 draft: false
 ---
 
-Following his recent presentation at one of our [club nights](/social "Read more about our group meetings."), Geoff Toscano suggests more tips to ensure a stress-free Spanish road-trip."
+Following his recent presentation at one of our [club nights](/social "Read more about our group meetings"), Geoff Toscano suggests more tips to ensure a stress-free Spanish road-trip."
 summary: "Thinking about that Spanish motorcycle road-trip? Read these tips to ensure a stress-free adventure.
 
-{{< img src="Neon_Sign_Spain_Road_Trip.jpg" caption="Northumbria Advanced Motorcyclists Open Day" >}}
+{{< img src="Neon_Sign_Spain_Road_Trip.jpg" caption="Spanish Neon Road Sign" alt="Neon road sign" >}}
 
 1. The Pecos Europa Mountains are a good suggestion for your first trip to Spain. The little town of Potes is easily reached from either the ferry port of Santander or Bilbao and is a good base for three or four days before moving on.
 2. Like Potes, many of the towns and small cities in inland Spain are world Heritage sites!
