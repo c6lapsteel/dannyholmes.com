@@ -1,6 +1,6 @@
 ---
 title: "Category2 Ride Out"
-contact: TBC
+contact: Michael Wilkinson
 eventStartDate: 2020-10-18 10:00:00 +0000 UTC
 eventEndDate:
 publishDate: 2019-12-31T09:03:09Z

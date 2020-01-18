@@ -3,6 +3,7 @@ title: "Sharing motorcycle skills"
 date: 2019-06-29T16:59:53+01:00
 homepage_include: true
 page_id: "page-skills"
+type: "single-page-section"
 ---
 
 

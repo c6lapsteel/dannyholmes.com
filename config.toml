@@ -36,7 +36,7 @@ pygmentsUseClasses = true
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/about/"
+    url = ""
     weight = 100
 
   [[menu.main]]
@@ -126,6 +126,9 @@ pygmentsUseClasses = true
   # xl, lg, md, sm and below
   sizes = ["1200","700","340"]
 
+[params.contact]
+  phone = "0191 364 3264"
+
 [params.accounts]
     # Bank account details
     names = ["events","training","social"]
@@ -134,7 +137,7 @@ pygmentsUseClasses = true
 
 [params.private]
     # Exclude from sitemaps
-    privateDirs = ["overview","timeline","faq","events","social","news","motorcycle-routes"]
+    privateDirs = ["overview","timeline","events","faq","social","news","motorcycle-routes"]
 
- [frontmatter]
+[frontmatter]
 date = ["eventStartDate", "lastRideDate", ":default"] 

@@ -1,52 +1,52 @@
 {{ define "main" }}
-{{ $dateFormat := default "Jan 2" (index .Site.Params "date_format") }}
-{{ $.Scratch.Set "lastYear" ""}}
+  {{ $currentPage := . }}
+  {{ $dateFormat := default "Jan 2" (index .Site.Params "date_format") }}
+  {{ $.Scratch.Set "lastYear" ""}}
 
-<section id="article-list" class="container">
   {{ if .Site.Params.debug }}
     {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/posts/list.html") }}
   {{ end }}
-  <div class="col-12">
-    <h1 class="layout-page-title">
-        {{ .Params.heading | humanize }}
-      </h1>
-      <div class="layout-page-intro lead">
-        {{ .Content }}
-      </div>
-  </div>
-  <div class="row page-section mt-2 container">
-      <div class="col-xs-12 col-lg-9">
-          <article id="article-listing" class="layout-multicolumn">
-            {{ range .Pages }}
-              {{ $articleLink := .Permalink | relURL }}
-              {{ $articleTitle := .Title | markdownify}}
-              <div class="row py-3">
-                <div class="col-md-3">
-                    {{ $img := (.Resources.ByType "image").GetMatch "images/*" }}
-                    {{ with $img }}
-                      {{ $thumbnail := $img.Resize "200x" }}
-                      <a href="{{ $articleLink }}" title="{{ $articleTitle }}"><img class="rounded img-fluid" src="{{ $thumbnail.RelPermalink }}" alt="{{ $.Title }}"></a>
-                    {{ end }}
-                </div>
-                <div class="col-md-9">
-                    <h2 class="mt-0"><a href="{{ .Permalink | relURL }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</a></h2>
-                    <div>
-                      {{ range .Params.tags }}
-                        <a class="text-muted" href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a>
-                      {{ end }}
-                    </div>
-                    <div>
-                        {{ .Params.summary | markdownify }}
-                    </div>
-                    <p class="text-muted">Reading time: about {{ .ReadingTime }} minutes</p>
-                    <p><a class="btn btn-danger" href="{{ .Permalink | relURL }}">Continue reading</a></p>
 
-                </div>
-              </div>
-            {{ end }}
-          </article>
+  <section id="article-list" class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-lg-10">
+        <article class="layout-article mt-5">
+          <h1>
+            {{ partial "insert-heading.html" . }}
+          </h1>
+          {{ .Content }}
+        </article>
+
+        {{ partial "article-list.html" . }}
+
+  
       </div>
-  </div>
-</section>
+          
+      <div class="d-none d-lg-block col-lg-2">
+        <aside class="layout-side-nav sticky-top mt-5">
+          <nav id="sidebar-nav" aria-label="Secondary navigation">
+            <ul class="sidebar-nav-section">
+              <li class="sidebar-nav-entry sidebar-nav-h2">
+                <a href="#articleTags">Article tags</a>
+                <ul>
+                  {{ range $name, $taxonomy := $currentPage.Site.Taxonomies.tags }}
+                    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                      <li>
+                        <a class="dropdown-item" href="{{ .Permalink | relURL }}" title="List articles tagged '{{ $name}}'" >{{ $name }}</a>
+                      </li>
+                    {{ end }}
+                  {{ end }}
+                </ul>
+              </li>
+            </ul>
+
+          </nav>
+        </aside>
+        </div>
+  
+    </div>
+  
+  </section>
 
 {{ end }}

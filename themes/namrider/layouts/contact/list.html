@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+  {{ if .Site.Params.debug }}
+    {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/contact/list.html") }}
+  {{ end }}
+
+  {{ partial "list" (dict "myID" "contact" "myContext" . "mySlice" "contact-overview") }}
+
+{{ end }}

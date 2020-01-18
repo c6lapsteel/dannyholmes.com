@@ -1,6 +1,6 @@
 ---
 title: "Category1 Ride Out"
-contact: TBC
+contact: Michael Sutherland
 eventStartDate: 2020-07-05 10:00:00 +0000 UTC
 eventEndDate:
 publishDate: 2019-12-31T08:51:03Z

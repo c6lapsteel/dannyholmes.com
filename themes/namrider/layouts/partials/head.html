@@ -9,6 +9,10 @@
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
 
+    {{ if eq .Type "contact" }}
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    {{ end }}
+
     {{ range .AlternativeOutputFormats -}}
       {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
     {{ end -}}

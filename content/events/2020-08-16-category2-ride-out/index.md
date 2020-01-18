@@ -1,6 +1,6 @@
 ---
 title: "Category2 Ride Out"
-contact: TBC
+contact: Ian Warbrick
 eventStartDate: 2020-08-16 10:00:00 +0000 UTC
 eventEndDate:
 publishDate: 2019-12-31T09:01:38Z

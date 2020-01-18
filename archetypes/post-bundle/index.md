@@ -4,7 +4,7 @@ author:
 date: {{ .Date }}
 publishDate: {{ .Date }}
 expiryDate:
-description:
+summary:
 tags: [ "one", "two"] 
 keywords: cornering, courses
 aliases:

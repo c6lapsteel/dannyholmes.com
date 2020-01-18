@@ -1,0 +1,33 @@
+<div class="row page-section mt-2 container">
+    <div class="col-xs-12 col-lg-9">
+        <article id="article-listing" class="layout-multicolumn layout-article-list">
+          {{ range .Pages }}
+            {{ $articleLink := .Permalink | relURL }}
+            {{ $articleTitle := .Title | markdownify}}
+            <div class="row py-3">
+              <div class="col-md-3">
+                  {{ $img := (.Resources.ByType "image").GetMatch "images/*" }}
+                  {{ with $img }}
+                    {{ $thumbnail := $img.Resize "200x" }}
+                    <a href="{{ $articleLink }}" title="{{ $articleTitle }}"><img class="rounded img-fluid" src="{{ $thumbnail.RelPermalink }}" alt="{{ $.Title }}"></a>
+                  {{ end }}
+              </div>
+              <div class="col-md-9">
+                  <h2 class="mt-0"><a href="{{ .Permalink | relURL }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</a></h2>
+                  <div>
+                    {{ range .Params.tags }}
+                      <a class="text-muted" href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a>
+                    {{ end }}
+                  </div>
+                  <div>
+                      {{ .Params.summary | markdownify }}
+                  </div>
+                  <p class="text-muted">Reading time: about {{ .ReadingTime }} minutes</p>
+                  <p><a class="btn btn-danger" href="{{ .Permalink | relURL }}">Continue reading</a></p>
+
+              </div>
+            </div>
+          {{ end }}
+        </article>
+    </div>
+</div>

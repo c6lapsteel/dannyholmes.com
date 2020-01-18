@@ -1,6 +1,6 @@
 ---
 title: "Category1 Ride Out"
-contact: TBC
+contact: Danny holmes
 eventStartDate: 2020-06-07 10:00:00 +0000 UTC
 eventEndDate:
 publishDate: 2019-12-31T08:50:22Z

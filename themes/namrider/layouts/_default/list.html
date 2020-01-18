@@ -6,7 +6,7 @@
   <h1 class="text-center">
     {{ .Type | humanize }}
   </h1>
-  {{ range .Pages }}
+  {{ range (where .Pages "Type" "not in" (slice "single-page-section")) }}
     <div class="row mt-2">
       <div class="d-none d-sm-block col-sm-2 mt-auto offset-sm-2 text-right">
         <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "Jan 2, 2006" }}</time>

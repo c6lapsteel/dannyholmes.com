@@ -12,7 +12,15 @@
 {{ $fontawesome := resources.Get "js/all.js" }}
 {{ $update_el := resources.Get "js/update_el.js" }}
 {{ $back2top := resources.Get "js/back_to_top.js" }}
+{{ $validate := resources.Get "js/validator.js" }}
+{{ $contact := resources.Get "js/contact.js" }}
 {{ $defaultJS := slice $fontawesome $update_el $back2top | resources.Concat "js/global.js" }}
+{{ $contactJS := slice $validate $contact | resources.Concat "js/page_contact.js" }}
 {{ $script := $defaultJS }}
+{{ $script_contact := $contactJS }}
 {{ $globalJS := $script | resources.Minify | resources.Fingerprint }}
+{{ $page_contactJS := $script_contact | resources.Minify | resources.Fingerprint }}
 <script src="{{ $globalJS.Permalink }}"></script>
+{{ if eq .Type "contact" }}
+    <script src="{{ $page_contactJS.Permalink }}"></script>
+{{ end }}

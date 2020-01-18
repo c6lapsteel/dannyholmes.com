@@ -1,6 +1,6 @@
 ---
 title: "Category2 Ride Out"
-contact: TBC
+contact: Dave Glennie
 eventStartDate: 2020-04-19 10:00:00 +0000 UTC
 eventEndDate:
 publishDate: 2019-12-31T08:58:13Z

@@ -1,6 +1,6 @@
 ---
 title: "Category1 Ride Out"
-contact: TBC
+contact: Hylton
 eventStartDate: 2020-09-06 10:00:00 +0000 UTC
 eventEndDate:
 publishDate: 2019-12-31T08:53:07Z

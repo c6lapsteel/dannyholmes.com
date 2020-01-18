@@ -9,6 +9,7 @@ googleMaps_URL: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2287.24297
 telephone: 0191 500 7787
 email:
 website: quorumbusinesspark.co.uk
+what3words: clap.seat.loss
 draft: false
 ---
 

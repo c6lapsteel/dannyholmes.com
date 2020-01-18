@@ -58,7 +58,7 @@
     </section>
 </article>
 
-{{ range (where $.Site.RegularPages "Params.homepage_include" true) | intersect (where .Site.RegularPages "Type" "in" (slice "about")) }}
+{{ range (where $.Site.RegularPages "Params.homepage_include" true) | intersect (where .Site.RegularPages "Type" "in" (slice "single-page-section")) }}
   {{ if lt ($.Scratch.Get "counter") ( sub (len $section_colours) 1 ) }}
     {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
   {{ else }}

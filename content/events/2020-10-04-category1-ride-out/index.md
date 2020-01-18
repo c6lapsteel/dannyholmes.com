@@ -1,6 +1,6 @@
 ---
 title: "Category1 Ride Out"
-contact: TBC
+contact: Peter Derry
 eventStartDate: 2020-10-04 10:00:00 +0000 UTC
 eventEndDate:
 publishDate: 2019-12-31T08:54:16Z

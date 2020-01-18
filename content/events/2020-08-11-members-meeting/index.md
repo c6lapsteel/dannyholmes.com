@@ -1,6 +1,6 @@
 ---
 title: "Members Meeting"
-contact: TBC
+contact: Colin Irvine
 eventStartDate: 2020-08-11 18:45:00 +0000 UTC
 eventEndDate:
 publishDate: 2019-12-31T08:31:13Z
