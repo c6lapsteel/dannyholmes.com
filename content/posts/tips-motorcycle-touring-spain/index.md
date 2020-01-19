@@ -1,5 +1,6 @@
 ---
 title: "Tips for Touring Spain by Motorcycle"
+description: "Thinking about that Spanish motorcycle road-trip? Read these tips to ensure a stress-free adventure."
 author: Geoff Toscano
 date: 2019-06-23T18:45:45+01:00
 publishDate: 2019-06-23T18:45:45+01:00

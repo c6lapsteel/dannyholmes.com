@@ -1,0 +1,10 @@
+<blockquote class="blockquote layout-blockquote">
+    {{ if .Get "quote" }}
+        <p class="mb-0 mt-0"><em class="fa fa-quote-left"></em> {{ .Get "quote" }}</p>
+        {{ if .Get "name" }}
+            <footer class="blockquote-footer">
+                {{ .Get "name"}}{{if .Get "link"}} in <a href="{{.Get "link"}}">source</a>{{ end }}
+            </footer>
+        {{ end }}
+    {{ end }}
+</blockquote>

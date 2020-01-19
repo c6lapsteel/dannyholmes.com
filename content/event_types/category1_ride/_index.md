@@ -1,5 +1,5 @@
 ---
-title: "Category 1 Ride | Northumbria Advanced Motorcyclists"
+title: "Category 1 Ride"
 heading: "Category 1 Rides"
 buttonClass: "btn-success"
 buttonName: "Category 1 Ride"

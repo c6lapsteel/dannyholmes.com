@@ -1,5 +1,5 @@
 ---
-title: "Ladies Ride | Northumbria Advanced Motorcyclists"
+title: "Ladies Ride"
 heading: "Ladies Rides"
 buttonClass: "btn-primary"
 buttonName: "Ladies Ride"

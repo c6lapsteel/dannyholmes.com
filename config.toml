@@ -1,8 +1,8 @@
-baseurl = "https://example.org/"
+baseurl = "https://namrider.com/"
 languageCode = "en-gb"
 title = "Northumbria Advanced Motorcyclists"
 # Define how many pages appear per site
-paginate = 10
+paginate = 12
 # Enable comments powered by Disqus by entering your disqus shortname
 disqusShortname = "northumbria-advanced-motorcyclists"
 # Enable gogle analytics by entering your tracking code
@@ -14,11 +14,17 @@ buildFuture = true
 # Add code highlighting
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+# Miscellaneous
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+canonifyURLs = false
 
 [params]
     site_author = "Danny Holmes"
-    site_description = "The awesome blog of Danny Holmes."
-    location = "Newcastle, England"
+    short_title = "namrider"
+    site_description = "Promoting motorcycle road safety across Northumberland, Newcastle and the North East since 2002. Find out how we coach riders to pass their advanced motorcycle road test."
+    location = "Northumberland, England"
     # Link custom assets relative to /static
     avatar = "img/NAM_Logo.png"
     header_background = "img/northumbria_advanced_motorcyclists_event1_1140x760.jpg"
@@ -31,6 +37,9 @@ pygmentsUseClasses = true
     google_analytics = "UA-xxxxx-1"
 
     debug = true
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 [menu]
   [[menu.main]]
@@ -138,6 +147,10 @@ pygmentsUseClasses = true
 [params.private]
     # Exclude from sitemaps
     privateDirs = ["overview","timeline","events","faq","social","news","motorcycle-routes"]
+
+[params.robots]
+    # Set no-follow in robots meta tag
+    nofollowTypes = ["events","news","posts"]
 
 [frontmatter]
 date = ["eventStartDate", "lastRideDate", ":default"] 

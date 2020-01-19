@@ -155,7 +155,7 @@ h6 {
 	line-height: 2.063rem;
 }
 
-.layout-article p:first-of-type, .layout-comments p:first-of-type {
+.layout-article-content p:first-of-type, .layout-list-content p:first-of-type, .layout-comments p:first-of-type {
     font-weight: 300;
     font-size: 1.375rem;
     line-height: 2.063rem;
@@ -201,6 +201,32 @@ h6 {
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 	text-decoration: none;
+}
+
+.layout-blockquote {
+	border-left: 2px solid $instrument-panel4;
+	padding: 10px 20px;
+}
+
+.layout-blockquote .blockquote-footer {
+	display: block;
+  	
+  	text-align: right;
+  	font-size: 80%;
+  	font-style: italic;
+  	color: #6e500c;
+	
+}
+
+.layout-blockquote .fa-quote-left{
+	color:#6e500c;
+	padding-right:8px;
+}
+
+.layout-blockquote footer {
+    border-top: none;
+    font-size: 1rem;
+    line-height: 100%;
 }
 
 /*	--------------------------------------------------

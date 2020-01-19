@@ -1,5 +1,6 @@
 ---
 title: "How Easyfundraising Could Keep More Motorcyclists Safe"
+description: "Don’t miss out on free donations to your favourite charity when you shop online. Find out how you could help us to keep more motorcyclists safe with EasyFundraising."
 author: Michael Wilkinson
 date: 2017-12-31T06:51:11Z
 publishDate: 2017-12-31T06:51:11Z

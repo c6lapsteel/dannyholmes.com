@@ -1,9 +1,11 @@
 <head>
-    <title>{{ .Title }}</title>
+  <title>{{ .Title | default .Site.Title }}{{ if not .IsHome }} | {{ .Site.Params.short_title }}{{ end }}</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
+    {{- partial "meta" . -}}
 
     {{ template "_internal/google_analytics_async.html" . }}
     {{ template "_internal/opengraph.html" . }}

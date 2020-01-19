@@ -1,5 +1,5 @@
 ---
-title: "Sitemap | Northumbria Advanced Motorcyclists"
+title: "Sitemap"
 heading: Sitemap
 type: admin
 layout: human-sitemap

@@ -1,5 +1,6 @@
 ---
 title: "Motorcycle touring in Europe – Preparation and Packing Tips"
+description: "Thinking about your first motorcycle adventure abroad? Read these packing and preparation tips: documents to take, ferries, hotels and more."
 author: Colin Irvine
 date: 2018-01-14T06:33:49+01:00
 publishDate: 2018-01-14T06:33:49+01:00

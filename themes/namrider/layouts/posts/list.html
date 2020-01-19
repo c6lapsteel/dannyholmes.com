@@ -15,7 +15,9 @@
           <h1>
             {{ partial "insert-heading.html" . }}
           </h1>
-          {{ .Content }}
+          <div class="layout-list-content">
+            {{ .Content }}
+          </div>
         </article>
 
         {{ partial "article-list.html" . }}

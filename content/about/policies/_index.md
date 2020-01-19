@@ -1,5 +1,5 @@
 ---
-title: "Policies | Northumbria Advanced Motorcyclists"
+title: "Policies"
 heading: "Policies"
 linktitle: "Policies"
 date: 2019-01-01T08:49:29+01:00

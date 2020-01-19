@@ -1,10 +1,13 @@
 ---
-title: "Contact | Northumbria Advanced Motorcyclists"
+title: "Contact"
 heading: "Contact"
+description: "Contact Northumbria Advanced Motorcyclists. Call us on 0191 364 3264, email us or fill out our contact form. All the details are here. We’re here to help."
 linkTitle: "Contact"
 date: 2019-06-29T16:59:53+01:00
 weight: 70
 draft: false
+aliases:
+    - /contact/contact.html
 ---
 
 We're here to help you increase your enjoyment of motorcycling.

@@ -1,5 +1,6 @@
 ---
 title: "Going Round the Bend: From Fear To Enjoyment"
+description: "Follow one motorcyclist's journey to cornering confidence ..."
 author: Mary Holmes
 date: 2019-09-12T06:33:49+01:00
 publishDate: 2019-09-12T06:33:49+01:00
@@ -12,9 +13,11 @@ aliases:
 draft: false
 ---
 
-{{< img src="Motorcyclist_Cornering_In_The_Wet.jpg" caption="Mary practicing cornering techniques in the wet" alt="Mary cornering in the wet" >}}
+In my early days of learning to ride a motorbike it took all my focus just to stay upright and operate the various levers and pegs at approximately the right time. Straight roads were a chance to relax, breathe and for a brief moment think ‘ this is nice – a bit like flying’. 
 
-In my early days of learning to ride a motorbike it took all my focus just to stay upright and operate the various levers and pegs at approximately the right time. Straight roads were a chance to relax, breathe and for a brief moment think ‘ this is nice – a bit like flying’. Corners were something to be negotiated gingerly at slow speed. They weren’t really a ‘thing’ at all any more than braking, stopping or starting. Indeed to begin with stopping and starting were far more terrifying, especially at junctions where I had not only to start moving but to turn at the same time. 
+Corners were something to be negotiated gingerly at slow speed. They weren’t really a ‘thing’ at all any more than braking, stopping or starting. Indeed to begin with stopping and starting were far more terrifying, especially at junctions where I had not only to start moving but to turn at the same time. 
+
+{{< img src="Motorcyclist_Cornering_In_The_Wet.jpg" caption="Mary practicing cornering techniques in the wet" alt="Mary cornering in the wet" >}}
 
 Gradually, of course, I mastered the various controls and became sufficiently competent to pass my test. I had proof that I could now actually ride a motorbike. Not only that, I could buy a nice powerful machine and go out all on my own with nobody behind telling me to check my mirrors or move away from the parked cars. Enter the Suzuki 650 V-Strom.
 

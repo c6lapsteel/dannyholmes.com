@@ -1,5 +1,5 @@
 ---
-title: "Training Events | Northumbria Advanced Motorcyclists"
+title: "Training Events"
 heading: "Training Events"
 buttonClass: "btn-danger"
 buttonName: "Training"

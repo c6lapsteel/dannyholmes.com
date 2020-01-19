@@ -5,4 +5,4 @@ weight: 10
 draft: false
 ---
 
-Read our briefing for new Associates.
+Read our [briefing for new Associates](/training/documents/associates-briefing/ "Read new Associates briefing").

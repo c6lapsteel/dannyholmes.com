@@ -1,5 +1,6 @@
 ---
 title: "From Born Again Biker to Observer"
+description: "Returning to biking, anxious and lacking in confidence in bends or breaking? Find out how this born-again biker conquered these fears and became and IAM Observer."
 author: Keith Miller
 date: 2017-09-20T20:34:17Z
 publishDate: 2017-09-20T20:34:17Z

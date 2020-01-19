@@ -1,5 +1,6 @@
 ---
 title: "Strangest Questions People Ask Google About Motorcycling"
+description: "We reveal the strangest questions people have asked Google about motorcycling."
 author: Danny Holmes
 date: 2019-08-21T13:13:11+01:00
 publishDate: 2019-08-21T13:13:11+01:00

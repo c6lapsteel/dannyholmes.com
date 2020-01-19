@@ -1,0 +1,17 @@
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.site_description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+<!-- Robots -->
+{{ if (eq .Kind "taxonomy") }}
+    <meta name="robots" content="noindex, follow"/>
+{{ else if and (eq .Kind "section") (in .Site.Params.robots.nofollowTypes .Type) }}
+    <meta name="robots" content="noindex, follow"/>
+{{ else }}
+    <meta name="robots" content="index, follow"/>
+{{ end }}
+<!-- Canonical -->
+{{ if ne .Kind "taxonomy" }}
+    {{ if isset .Params "canonical" }}
+        <link rel="canonical" href="{{ .Params.Canonical}}" />
+    {{ else }}
+        <link rel="canonical" href="{{ .Permalink}}" />
+    {{ end }}
+{{ end }}

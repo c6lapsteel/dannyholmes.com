@@ -1,5 +1,5 @@
 ---
-title: "Social Events | Northumbria Advanced Motorcyclists"
+title: "Social Events"
 heading: "Social Events"
 buttonClass: "btn-info"
 buttonName: "Social"
