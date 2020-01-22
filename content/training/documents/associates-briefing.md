@@ -5,7 +5,7 @@ author: The Training Team
 description: "From enrolment to pre-test, our guide for new Associates explains the process that will lead you to passing the IAM Roadsmart advanced rider test."
 linktitle: "Briefing for new Associates"
 date: 2019-06-29T16:59:53+01:00
-weight: 10
+weight: 20
 addThis: true
 draft: false
 aliases:

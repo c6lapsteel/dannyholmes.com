@@ -5,7 +5,7 @@ author: The Training Team
 description: "Want to keep your riding skills at a high standard whilst helping others to enhance their motorcycle safety and enjoyment? Read how to become an IAM Observer."
 linktitle: "Becoming an IAM Observer"
 date: 2019-06-29T16:59:53+01:00
-weight: 70
+weight: 40
 addThis: true
 draft: false
 aliases:
@@ -47,7 +47,7 @@ It’s a simple and straightforward process but there are one or two requirement
 
 Above all potential Observers need to be prepared to make a time commitment to ensure that they are able to offer the training and support to an associate who may be allocated to them and also, all Observers are expected to attend periodic training sessions designed to keep their skill and knowledge at a high level. Full details of the requirements and the application procedure can be found here.
 
-### You’ve been accepted as a Trainee Local Observer, what happens next?
+## You’ve been accepted as a Trainee Local Observer, what happens next?
 You will be allocated to one of the Observer Teams and a team member, who will also be a Local observer assessor, will be identified as your mentor. Your mentor will oversee your training and do everything he or she can to ensure that you enjoy the process and have a rewarding experience. Local Observer training is conducted by the group and once the trainee has reached the required standard stipulated by the IAM and IMI, the qualification is awarded locally after a final endorsement by the Chief Observer.
 
 In practice, the Observer Team Leader, in conjunction with your mentor, will ensure that you receive a combination of role play, hands on observing, classroom training and mentoring so that you can acquire and practice the skills. In addition, there will be an assessment of your own riding.
