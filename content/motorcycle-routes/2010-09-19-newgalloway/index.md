@@ -1,6 +1,7 @@
 ---
 title: "New Galloway"
 leader: Bill Davison
+description: "Follow our suggested motorycycle ride to New Galloway."
 eventStartDate: 2011-05-15 00:00:00 +0000 UTC
 publishDate: 2010-09-19T07:23:05+01:00
 expiryDate:

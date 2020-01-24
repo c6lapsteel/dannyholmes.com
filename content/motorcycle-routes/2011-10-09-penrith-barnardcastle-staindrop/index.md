@@ -1,6 +1,7 @@
 ---
 title: "Penrith, Barnard Castle and Staindrop"
 leader: Ron Patrick
+description: "Follow our suggested motorycycle ride to Penrith, Barnard Castle and Staindrop."
 eventStartDate: 2011-10-09 00:00:00 +0000 UTC
 publishDate: 2011-10-09T22:41:45+01:00
 expiryDate:

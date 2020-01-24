@@ -1,6 +1,7 @@
 ---
 title: "A Border Jaunt"
 leader: Paddy Jarvis
+description: "Follow our suggested motorycycle border jaunt."
 eventStartDate: 2011-08-21 00:00:00 +0000 UTC
 publishDate: 2011-08-21T23:27:57+01:00
 expiryDate:

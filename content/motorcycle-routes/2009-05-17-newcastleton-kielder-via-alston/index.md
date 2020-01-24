@@ -1,6 +1,7 @@
 ---
 title: "Newcastleton and Kielder via Alston"
 leader: Don Frazer
+description: "Follow our suggested motorycycle ride to Newcastleton and Kielder via Alston."
 eventStartDate: 2009-05-17 00:00:00 +0000 UTC
 publishDate: 2009-05-17T06:21:11+01:00
 expiryDate:

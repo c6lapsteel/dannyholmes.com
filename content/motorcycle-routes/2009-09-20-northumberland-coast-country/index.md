@@ -1,6 +1,7 @@
 ---
 title: "Northumberland Coast and Country"
 leader: Ray Charlton, Dave Thornton
+description: "Follow our suggested motorycycle ride to along the Northumberland Coast and Country."
 eventStartDate: 2019-06-02 00:00:00 +0000 UTC
 publishDate: 2009-09-20T22:42:51+01:00
 expiryDate:

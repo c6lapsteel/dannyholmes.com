@@ -1,13 +1,14 @@
 ---
 title: "{{ slicestr .Name 11 | humanize | title }}"
 leader: A Leader
+description: "Follow our suggested motorycycle ride to {{ slicestr .Name 11 | humanize | title }}."
 eventStartDate: {{ time (substr .Name 0 10) }}
 publishDate: {{ .Date }}
 expiryDate:
 summary:
 mileage: 
 googleMaps_URL: 
-route_directions: [ "northumberland"]
+route_directions: ["northumberland"]
 route_towns:
 route_roads: 
 route_cafes:

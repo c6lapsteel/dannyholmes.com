@@ -1,6 +1,7 @@
 ---
 title: "Hartside, Ullswater and Devil's Bridge"
 leader: Bill Davison
+description: "Follow our suggested motorycycle ride to Hartside, Ullswater and Devil's Bridge."
 eventStartDate: 2012-08-12 00:00:00 +0000 UTC
 publishDate: 2012-08-12T17:28:58+01:00
 expiryDate:

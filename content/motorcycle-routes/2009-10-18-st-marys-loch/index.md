@@ -1,6 +1,7 @@
 ---
 title: "St. Marys Loch"
 leader: Robert Attwell and David Henderson
+description: "Follow our suggested motorycycle ride to St. Marys Loch."
 eventStartDate: 2012-05-20 00:00:00 +0000 UTC
 publishDate: 2009-10-18T06:41:38+01:00
 expiryDate:

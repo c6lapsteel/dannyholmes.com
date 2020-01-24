@@ -1,6 +1,7 @@
 ---
 title: "Eden Camp"
 leader: David Henderson
+description: "Follow our suggested motorycycle ride to Eden Camp."
 eventStartDate: 2011-04-17 00:00:00 +0000 UTC
 publishDate: 2011-04-17T06:36:05Z
 expiryDate:

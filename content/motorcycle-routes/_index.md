@@ -1,5 +1,6 @@
 ---
 title: "Best Bike Routes"
+description: "Ride some of the best motorcycle roads in the country! Check out these routes: tight hairpins to deserted lanes and roads with stunning views of Northumberland."
 heading: "Best Motorcycle Routes in Northumberland and North East England"
 linktitle: "Routes"
 date: 2019-01-01T08:49:29+01:00

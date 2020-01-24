@@ -1,6 +1,7 @@
 ---
 title: "Ettrick Water"
 leader: Danny Holmes
+description: "Follow our suggested motorycycle ride to Ettrick Water."
 eventStartDate: 2018-09-16 00:00:00 +0000 UTC
 publishDate: 2018-09-16T07:09:38+01:00
 expiryDate:

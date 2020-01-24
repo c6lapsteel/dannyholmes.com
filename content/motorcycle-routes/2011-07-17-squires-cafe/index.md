@@ -1,6 +1,7 @@
 ---
-title: "Squires Cafe"
+title: "Squires Café"
 leader: Paddy Jarvis
+description: "Follow our suggested motorycycle ride to Squires Café."
 eventStartDate: 2011-07-17 00:00:00 +0000 UTC
 publishDate: 2011-07-17T21:46:54Z
 expiryDate:

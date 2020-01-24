@@ -1,6 +1,7 @@
 ---
 title: "Berwick, Eyemouth and St. Abs"
 leader: Roland McLeod
+description: "Follow our suggested motorycycle ride to Berwick, Eyemouth and St. Abs."
 eventStartDate: 2012-03-18 00:00:00 +0000 UTC
 publishDate: 2012-03-18T21:15:30+01:00
 expiryDate:

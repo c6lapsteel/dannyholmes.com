@@ -1,6 +1,7 @@
 ---
 title: "Maryport and Siloth via Alston"
 leader: Ron Patrick
+description: "Follow our suggested motorycycle ride to Maryport and Siloth via Alston."
 eventStartDate: 2009-03-15 00:00:00 +0000 UTC
 publishDate: 2009-03-15T12:36:51+01:00
 expiryDate:
