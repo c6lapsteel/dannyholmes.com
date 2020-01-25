@@ -11,7 +11,7 @@ googleMaps_URL: "https://www.google.com/maps/d/embed?mid=1DGqv2yLaND4OXvmTsqGrLq
 route_directions: [ "west"]
 route_towns: ["Ponteland","Belsay","Otterburn","Greenhaugh","Kielder","Saughtree","Newcastleton","Langholm","Lockerbie","Lochmaben","Dumfries","Crockerford","New Galloway","St John’s Town of Dalry","Clarence Field","Annan","Gretna","Longtown","Brampton","Greenhead"]
 route_roads: ["A696","B6320","B6357","A7","B7068","A709","A75","A712","A713","A702","B729","A76","B724","B721","A6071","A69","B6318"]
-route_cafes: ["The Smithy Team Rooms, New Galloway","Errington Coffee House, Corbridge"]
+route_cafes: ["The Smithy Tearooms, New Galloway","Errington Coffee House, Corbridge"]
 resources:
 - src: 'documents/NAM_MotorcycleRoute_Northumberland_Kielder_Newcastleton_Dumfries_NewGalloway.pdf'
   name: Route Description (PDF)
