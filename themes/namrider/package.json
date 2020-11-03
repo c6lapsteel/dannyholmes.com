@@ -13,7 +13,7 @@
     "animate.css": "^3.7.2",
     "autoprefixer": "^9.7.3",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "node-sass": "^4.13.0",
     "parcel-bundler": "^1.12.4",
     "popper.js": "^1.16.0",
