@@ -1,0 +1,8 @@
+#!/bin/sh
+USER=cestlavi
+HOST=cest-la-vie.co.uk             
+DIR=public_html/dannyholmes.com  # the directory where your web site files should go
+
+hugo --minify && rsync -avz -e "ssh -p 2233" --delete public/ ${USER}@${HOST}:~/${DIR}
+
+exit 0
