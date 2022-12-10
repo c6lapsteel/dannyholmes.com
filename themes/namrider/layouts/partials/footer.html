@@ -1,0 +1,102 @@
+<footer class="layout-site-footer">
+  
+  <div class="layout-footer-top bg-alternative">
+     <section id="site-footer-main" class="layout-footer-main container">
+      {{if .Site.Params.debug}}
+        {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/partials/footer.html") }}
+        <table class="table table-sm">
+            <caption>Hugo Variables for current page</caption>
+            <tr><th>Name</th><td>{{ .Name }}</td></tr>
+            <tr><th>Kind</th><td>{{ .Kind }}</td></tr>
+            <tr><th>Type</th><td>{{ .Type }}</td></tr>
+            <tr><th>List Page</th><td>.Pages</td></tr>
+            <tr><th>IsPage</th><td>{{ .IsPage }}</td></tr>
+            <tr><th>IsHome</th><td>{{ .IsPage }}</td></tr>
+            <tr><th>Next</th><td>{{ .Next }}</td></tr>
+            <tr><th>Prev</th><td>{{ .Prev }}</td></tr>
+            <tr><th>Section</th><td>{{ .CurrentSection }}</td></tr>
+        </table>
+      {{ end }}
+
+      <!-- {{ partial "breadcrumbs.html" . }} -->
+
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Monthly meetings</h4>
+          <p>Join us every second Monday of the month 7.30 pm (August to April) at:</p>
+          <p>        
+            <ul class="layout-contact list-group">
+              <li class="list-group-item"><span class="contact-icon fa-map-marker-x"></span> <strong>Address:</strong> Jesmond Royal British Legion Club, Newcastle upon Tyne, NE2 3EX </li>
+            </ul>
+          </p>
+          <h4>Contact</h4>
+          <p>        
+          <ul class="layout-contact list-group">
+            <li class="list-group-item"><span class="contact-icon fa-phone-alt-x"></span> <strong>Phone:</strong> {{ $.Site.Params.contact.phone }}</li>
+            <li class="list-group-item"><span class="contact-icon fa-envelope-x"></span> <strong>Email:</strong> <a class="e-l" href="#" data-ep1="info" data-ep2="namrider" data-ep3="com"> Email me</a></li>
+          </ul>
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Membership</h4>
+          <ul class="layout-contact list-group">
+            <li class="list-group-item"><span class="contact-icon fa-signature-solid-x"></span> <a  href="{{ .Site.BaseURL }}about/join/" title="Find out how to join NAM">Join</a></li>
+            <li class="list-group-item"><span class="contact-icon fa-signature-solid-x"></span> <a href="{{ .Site.BaseURL }}about/membership-resources/#10---membership-renewal" title="Find out how to renew your membership">Renewals</a></li>
+            <li class="list-group-item"><span class="contact-icon fa-percentage-solid-x"> </span><a href="{{ .Site.BaseURL }}about/join/#40---discounts" title="Check out exclusive discounts available to all NAM members">Discounts</a></li>
+            <li class="list-group-item"><span class="contact-icon fa-question-circle-regular-x"></span> <a href="{{ .Site.BaseURL }}about/join/#50---frequently-asked-questions" title="Read answers to our frequently asked questions">FAQs</a></li>
+          </ul>
+          <h4>Governance</h4>
+          <ul class="layout-contact list-group">
+            <li class="list-group-item"><span class="contact-icon fa-info-circle-solid-x"></span> <a href="{{ .Site.BaseURL }}about/governance/#10---agm" title="Read AGM minutes">AGM</a></li>
+            <li class="list-group-item"><span class="contact-icon fa-info-circle-solid-x"></span> <a href="{{ .Site.BaseURL }}about/governance/#20---committee-meetings" title="Read minutes of Committee Meetings">Committee Meetings</a></li>
+            <li class="list-group-item"><span class="contact-icon fa-info-circle-solid-x"></span> <a href="{{ .Site.BaseURL }}about/governance/#30---policies-and-procedures" title="Read our policy documents">Policies & Procedures</a></li>
+            <li class="list-group-item"><span class="contact-icon fa-info-circle-solid-x"></span> <a  href="{{ .Site.BaseURL }}about/governance/#40---gdpr" title="Read GDPR compliance documents">GDPR</a></li>
+            <li class="list-group-item"><span class="contact-icon fa-info-circle-solid-x"></span> <a href="{{ .Site.BaseURL }}about/policies/privacy-policy/" title="Read our privacy policy">Privacy Policy</a></li>
+          </ul>
+        </div>      
+        <div class="col-lg-4">
+          <h4>Motorcycle Route Archive</h4>
+          <a href="{{ .Site.BaseURL }}motorcycle-routes/" title="Go to Motorcycle Route Archive"><img src="{{ .Site.BaseURL }}img/signs/Motorcycle-Routes-placeholder.png" data-src="{{ .Site.BaseURL }}img/signs/Motorcycle Routes-8.png" width="582" height="199" class="img-fluid lazyload" alt="Road sign showing summary of motorcycle routes."></a>
+          <h4>Sitemap</h4>
+          <ul class="layout-contact list-group">
+            <li class="list-group-item"><span class="contact-icon fa-sitemap-solid-x"></span> <a href="{{ .Site.BaseURL }}sitemap.html" title="Go to namrider.com sitemap">Sitemap</a></li>
+          </ul>
+          <h4>Privacy</h4>
+          <p class="layout-onetrust-button">
+            <!-- OneTrust Cookies Settings button start -->
+            <button id="ot-sdk-btn" class="ot-sdk-show-settings btn btn-danger"> Cookie Settings</button>
+            <!-- OneTrust Cookies Settings button end -->
+          </p>
+        </div>
+      </div>
+
+     </section> 
+      
+  </div>
+
+  <div class="layout-footer-bottom bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <section id="footer-copyright" class="layout-footer-copyright container pt-3 pb-3">
+            <p class="text-white font-size-sm">All Rights Reserved Northumbria Advanced Motorcyclists. Registered charity 1099238.</p>
+            <p class="text-white font-size-sm">Icons <a href="https://fontawesome.com/license" parent="_blank" title="Read Font Awesome license">licensed by</a> Font Awesome.</p>
+          </section>
+          <section id="footer-credit" class="layout-footer-copyright container pt-3 pb-3 d-flex align-items-start justify-content-between">
+            
+          </section> 
+        </div>
+        <div class="col-3">
+          <section class="layout-social pt-3 pb-3 d-flex justify-content-end">
+            <ul class="social-icons">
+              <li><a class="btn btn-light btn-sm d-flex align-items-center px-1 mb-1 mt-0" target="_blank" rel="noopener" href="https://www.facebook.com/NorthumbriaAdvancedMotorcyclists/" title="Go to NAM Facebook page"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg></a></li>
+              <li><a class="btn btn-light btn-sm d-flex align-items-center px-1 mb-1 mt-0" target="_blank" rel="noopener" href="https://twitter.com/nam_rider" title="Go to NAM Twitter feed"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></li>
+              <li><a class="btn btn-light btn-sm d-flex align-items-center px-1 mb-1 mt-0" target="_blank" rel="noopener" href="https://namrider.com/rss.xml" title="Subscribe to Northumbria Advanced Motorcyclists rss feed"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="rss" class="svg-inline--fa fa-rss fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path></svg></a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</footer>

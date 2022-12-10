@@ -1,0 +1,64 @@
+{{ $scores := getJSON "data/group_websites/IAM_group_website_performance_scores.json" }}
+
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table id="superbike-table" class="layout-superbike-table table table table-filter responsive nowrap"
+                data-toggle="table"
+                data-pagination="true"
+                data-search="true"
+            >
+            <thead>
+                <tr>
+                <th scope="col" class="text-center align-top">Group</th>
+                <th scope="col" class="text-center align-top text-wrap">Points</th>
+                <th scope="col" class="text-center align-top text-wrap">MP Rank</th>
+                <th scope="col" class="text-center align-top text-wrap">MP Score</th>
+                <th scope="col" class="text-center align-top text-wrap">MA Rank</th>
+                <th scope="col" class="text-center align-top text-wrap">MA Score</th>
+                <th scope="col" class="text-center align-top text-wrap">MB Rank</th>
+                <th scope="col" class="text-center align-top text-wrap">MB Score</th>
+                <th scope="col" class="text-center align-top text-wrap">MS Rank</th>
+                <th scope="col" class="text-center align-top text-wrap">MS Score</th>
+                <th scope="col" class="text-center align-top text-wrap">DP Rank</th>
+                <th scope="col" class="text-center align-top text-wrap">DP Score</th>
+                <th scope="col" class="text-center align-top text-wrap">DA Rank</th>
+                <th scope="col" class="text-center align-top text-wrap">DA Score</th>
+                <th scope="col" class="text-center align-top text-wrap">DB Rank</th>
+                <th scope="col" class="text-center align-top text-wrap">DB Score</th>
+                <th scope="col" class="text-center align-top text-wrap">DS Rank</th>
+                <th scope="col" class="text-center align-top text-wrap">DS Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                  {{ range $scores }}
+                      {{ if and ( .Group_Name ) ( gt .pts 0 ) }}
+                          <tr>
+                              <td class="text-left text-wrap">{{ .Group_Name }}</td>
+                              <td class="text-center">{{ .pts }}</td>
+                              <td class="text-center{{if eq ( int .MP ) 1 }} rank-1{{else if eq ( int .MP ) 2 }} rank-2{{else if eq ( int .MP ) 3 }} rank-3{{ end }}">{{ .MP }}</td>
+                              <td class="text-center">{{ .MP_score }}</td>
+                              <td class="text-center{{if eq ( int .MA ) 1 }} rank-1{{else if eq ( int .MA ) 2 }} rank-2{{else if eq ( int .MA ) 3 }} rank-3{{ end }}">{{ .MA }}</td>
+                              <td class="text-center">{{ .MA_score }}</td>
+                              <td class="text-center{{if eq ( int .MB ) 1 }} rank-1{{else if eq ( int .MB ) 2 }} rank-2{{else if eq ( int .MB ) 3 }} rank-3{{ end }}">{{ .MB }}</td>
+                              <td class="text-center">{{ .MB_score }}</td>
+                              <td class="text-center{{if eq ( int .MS ) 1 }} rank-1{{else if eq ( int .MS ) 2 }} rank-2{{else if eq ( int .MS ) 3 }} rank-3{{ end }}">{{ .MS }}</td>
+                              <td class="text-center">{{ .MS_score }}</td>
+                              <td class="text-center{{if eq ( int .DP ) 1 }} rank-1{{else if eq ( int .DP ) 2 }} rank-2{{else if eq ( int .DP ) 3 }} rank-3{{ end }}">{{ .DP }}</td>
+                              <td class="text-center">{{ .DP_score }}</td>
+                              <td class="text-center{{if eq ( int .DA ) 1 }} rank-1{{else if eq ( int .DA ) 2 }} rank-2{{else if eq ( int .DA ) 3 }} rank-3{{ end }}">{{ .DA }}</td>
+                              <td class="text-center">{{ .DA_score }}</td>
+                              <td class="text-center{{if eq ( int .DB ) 1 }} rank-1{{else if eq ( int .DB ) 2 }} rank-2{{else if eq ( int .DB ) 3 }} rank-3{{ end }}">{{ .DB }}</td>
+                              <td class="text-center">{{ .DB_score }}</td>
+                              <td class="text-center{{if eq ( int .DS ) 1 }} rank-1{{else if eq ( int .DS ) 2 }} rank-2{{else if eq ( int .DS ) 3 }} rank-3{{ end }}">{{ .DS }}</td>
+                              <td class="text-center">{{ .DS_score }}</td>
+                          </tr>
+                      {{ end }}
+                  {{ end }}
+              </tbody>
+              <caption>Superbike points scoring system applied to median performance, accessibility, best practice and search engine optimisation ratings. Source: Google Lighthouse.
+              </caption>
+              </table>
+        </div>
+    </div>
+</div>

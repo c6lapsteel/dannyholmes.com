@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<article id = "page-photogrid" class="page-section container">
+    {{ if .Site.Params.debug }}
+      {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/photos/single.html") }}
+    {{ end }}
+    <header class = "page-section-header">
+        <h1>{{ .Title }}</h1>
+        <p class="page-section-text">{{ .Content }}</p>
+    </header>
+    
+    <section class="layout-photogrid">
+        <div class="row justify-content-center no-gutters">
+            {{ range .Resources.ByType "image" }}
+              {{ $image := .Fit "800x600" }}
+        
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="{{ .RelPermalink }}"><img src="{{ $image.RelPermalink}}" class="layout-image img-fluid"></a>
+              </div>
+            {{ end }}
+          </div>
+    </section>
+            
+ 
+</article>
+
+
+{{ end }}

@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+  {{ if .Site.Params.debug }}
+    {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/route_roads/list.html") }}
+  {{ end }}
+
+  {{ partial "list-routes-by-taxonomy" (dict "myID" "routes-list" "myContext" . ) }}
+
+{{ end }}

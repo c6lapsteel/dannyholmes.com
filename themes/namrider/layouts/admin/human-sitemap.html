@@ -1,0 +1,18 @@
+{{ define "main"}}
+{{ if .Site.Params.debug }}
+    {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/human-sitemap.html") }}
+{{ end }}
+<section class="layout-404 py-3">
+    <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-lg-6 offset-lg-3">
+                <h1>{{ with .Params.heading }}{{ . }}{{ end }}</h1>
+                
+                {{ .Content }}
+                      
+              </div>
+            </div>
+    </div>
+    
+  </section>
+{{ end }}

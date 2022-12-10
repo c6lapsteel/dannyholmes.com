@@ -1,0 +1,23 @@
+{{ $headless := .Site.GetPage "/about/discounts" }}
+{{ $discounts := $headless.Resources.Match "*" }}
+
+{{ range $index, $value := sort $discounts "Title" }}
+    {{ $path := .Params.discount_image_link }}
+    {{ $my_image := resources.Get $path  }}
+    <div class="layout-discount-card card mb-4">
+        <div class="row no-gutters">
+            <div class="layout-overlay tinted-image col-4 h-100">
+                <img src="{{ $path }}" class="img-fluid" alt="...">
+                <div class="layout-discount-banner text-center">
+                    <p>{{ .Params.discount_incentive }}<br><span class="layout-large-text">{{ .Params.discount_amount }}</span><br><span>{{ .Params.qualifier }}</span></p>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="card-body layout-small-block">
+                    <h4 class="card-title mb-0">{{ .Title }}</h4>
+                    <p class="card-text">{{ .Content }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}

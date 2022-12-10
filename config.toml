@@ -1,36 +1,183 @@
 baseURL = "http://dannyholmes.com/"
 languageCode = "en-gb"
 title = "Danny Holmes"
-theme = "ananke"
-# themesDir = "../.."
+copyright = "Copyright Northumbria Advanced Motorcyclists. All rights reserved."
+# Define how many pages appear per site
+paginate = 12
+# Enable comments powered by Disqus by entering your disqus shortname
+disqusShortname = "northumbria-advanced-motorcyclists"
+# Enable gogle analytics by entering your tracking code
+googleAnalytics = "G-1TBBFM6E0Z"
+theme = "namrider"
+assetDir = "themes/namrider/assets"
+relativeURLs = true
+buildFuture = true
+# Add code highlighting
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+# Miscellaneous
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+canonifyURLs = false
+# RSS
+rssLimit = 100
+
+[author]
+    name = "Danny Holmes"
+    email = "info@namrider.com"
+
+[params]
+    site_author = "Danny Holmes"
+    site_logo = ""
+    short_title = "namrider"
+    site_description = "Promoting motorcycle road safety across Northumberland, Newcastle and the North East since 2002. Find out how we coach riders to pass their advanced motorcycle road test."
+    location = "Northumberland, England"
+    description = "The last theme you'll ever need. Maybe."
+    # Link custom assets relative to /static
+    avatar = "img/NAM_Logo.png"
+    favicon = ""
+    header_background = "img/northumbria_advanced_motorcyclists_event1_1140x760.jpg"
+    header_title = "Danny Holmes"
+    copyright = "Powered by [Hugo](http://gohugo.io)."
+    custom_css = []
+    custom_js  = []
+    minify = true
+    datatables = false
+    rss = ""
+    rssPageType = ["news", "posts", "events"]
+
+    debug = false
+
+    # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+    background_color_class = "bg-black"
+    featured_image = "/images/gohugo-default-sample-hero-image.jpg"
+    recent_posts_number = 2
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = ""
+    weight = 100
+
+  [[menu.main]]
+    identifier = "motorcycling"
+    name = "Motorcycling"
+    url = "/motorcycling/"
+    weight = 110
+
+  [[menu.main]]
+    identifier = "music"
+    name = "Music"
+    url = "/music/"
+    weight = 120
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Articles"
+    url = "/posts/"
+    weight = 150
+
+  [[menu.main]]
+    identifier = "routes"
+    name = "Routes"
+    url = "/motorcycle-routes/"
+    weight = 160
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 170
+
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+  category = "categories"
+  event_type = "event_types"
+  route_direction = "route_directions"
+  route_town = "route_towns"
+  route_road = "route_roads"
+  route_cafe = "route_cafes"
+
+[outputs]
+    page = ["HTML"]
+    home = ["HTML","RSS"]
+    section = ["HTML","RSS"]
+    taxonomyTerm = ["HTML"]
+    taxonomy = ["HTML"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = "application/rss"
+    baseName = "rss" 
+    
+[social]
+    # Add your social network accounts to the profile section on the left
+    # by entering your username. The links to your account will be
+    # create automatically.
+    twitter   = "nam_rider"
+    facebook  = ""
+    linkedin  = ""
+    behance   = ""
+    dribbble  = ""
+    instagram = ""
+    youtube = ""
+    github    = ""
+    gitlab = ""
+    mastodon = ""
+    slack = ""
+    stackoverflow = ""
+    gplus     = ""
+
+[imaging]
+  # Default resample filter used for resizing. Default is Box,
+  # a simple and fast averaging filter appropriate for downscaling.
+  # See https://github.com/disintegration/imaging
+  resampleFilter = "lanczos"
+  # Default JPEG quality setting. Default is 75.
+  quality = 85
+  # Anchor used when cropping pictures.
+  # Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
+  # Smart Cropping is content aware and tries to find the best crop for each image.
+  # Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+  anchor = "smart"
+
+[params.imaging]
+  # xl, lg, md, sm and below
+  sizes = ["1200","700","340"]
+
+[params.contact]
+  phone = "0191 364 3264"
+
+[params.accounts]
+    # Bank account details
+    names = ["events","training","social"]
+    sortCodes = ["20-58-17", "XX-XX-XX", "20-58-17"]
+    accountNumbers = ["93220117","12345678","80931403"]
+    accountNames = ["Northumbria Advanced Motorcyclists Events Account","Northumbria Advanced Motorcyclists Training Account","Northumbria Advanced Motorcyclists Social Account"]
+
+[params.private]
+    # Exclude from sitemaps
+    privateDirs = ["overview","timeline","events","faq","news","motorcycle-routes"]
+
+[params.robots]
+    # Set no-follow in robots meta tag
+    nofollowTypes = ["events","news","posts"]
+
+[frontmatter]
+date = ["eventStartDate", "lastRideDate", ":default"]
+
+# Check usage!
 
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
-googleAnalytics = ""
-enableRobotsTXT = true
 
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
   filename = "sitemap.xml"
-
-[params]
-  favicon = ""
-  site_logo = ""
-  description = "The last theme you'll ever need. Maybe."
-  facebook = ""
-  twitter = "https://twitter.com/GoHugoIO"
-  instagram = ""
-  youtube = ""
-  github = ""
-  gitlab = ""
-  linkedin = ""
-  mastodon = ""
-  slack = ""
-  stackoverflow = ""
-  rss = ""
-  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-  background_color_class = "bg-black"
-  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
-  recent_posts_number = 2

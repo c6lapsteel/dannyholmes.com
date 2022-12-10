@@ -1,0 +1,40 @@
+{{ define "main" }}
+  {{ $currentPage := . }}
+  {{ $dateFormat := default "Jan 2" (index .Site.Params "date_format") }}
+  {{ $.Scratch.Set "lastYear" ""}}
+
+  {{ if .Site.Params.debug }}
+    {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/posts/list.html") }}
+  {{ end }}
+
+  <section id="article-list" class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-lg-10">
+        <article class="layout-article mt-5">
+          <h1>
+            {{ partial "insert-heading.html" . }}
+          </h1>
+          <div class="layout-list-content">
+            {{ .Content }}
+          </div>
+        </article>
+        {{ partial "article-list.html" . }}
+      </div>
+          
+      <div class="d-none d-lg-block col-lg-2">
+        <aside class="layout-side-nav sticky-top mt-5">
+          <nav id="sidebar-nav" aria-label="Secondary navigation">
+            <section class="sidebar-nav-section">
+              <h5 class="sidebar-nav-h5">Article tags</h5>
+              {{ partial "tag-cloud.html" (dict "myContext" . "myTaxonomy" "tags") }}
+            </section>
+          </nav>
+        </aside>
+        </div>
+  
+    </div>
+  
+  </section>
+
+{{ end }}

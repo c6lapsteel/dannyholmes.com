@@ -1,0 +1,48 @@
+{{ define "main"}}
+{{ if .Site.Params.debug }}
+    {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/404.html") }}
+{{ end }}
+<section class="layout-404 py-3">
+    <div class="container">
+            <div class="row">
+                    <div class="col-xs-12 col-lg-6 offset-lg-3">
+                      <h1>Oops! Not so fast!</h1>
+                        <p class="lead-paragraph intro">As advanced motorcyclists, we should always carry out pre-ride safety checks. Looks like somebody forgot this time!</p>
+                        <div class="d-flex justify-content-center py-3">
+                                <img id="404error" src="{{ .Site.BaseURL }}/img/404 Error.png" class="img-fluid w-50 h-50" alt="404 error road sign">
+                        </div>
+
+
+
+                      <h2>Let's get you back on the road</h2>
+                        
+                        <p class="">We're used to helping riders to get back on the road and sharpen their skills. We'll have you up and running in no time!</p>
+                      
+                      <h3>Directions</h3>
+                              <ul>
+                                    <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+                                  <li><a href="{{ .Site.BaseURL }}/sitemap.html">Sitemap</a></li>
+                              </ul>  
+                        
+                        <h3>Search namrider.com</h3>
+                              <div>
+                                  <script>
+                                        (function() {
+                                          var cx = '001449826039252096952:bg8dk4h9qci';
+                                          var gcse = document.createElement('script');
+                                          gcse.type = 'text/javascript';
+                                          gcse.async = true;
+                                          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                          var s = document.getElementsByTagName('script')[0];
+                                          s.parentNode.insertBefore(gcse, s);
+                                        })();
+                                      </script>
+                                      <gcse:search></gcse:search>
+                              </div>
+                      
+                        </div>
+                  </div>
+    </div>
+    
+  </section>
+{{ end }}

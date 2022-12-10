@@ -1,0 +1,99 @@
+{{ $sizes := getJSON "data/group_websites/IAM_group_website_pingdom_sizes.json" }}
+
+{{ $rowCounter := 0 }}
+
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table id="group-page-size-table" class="layout-group-page-size-table table table table-filter responsive nowrap">
+            <thead>
+                <tr>
+                <th scope="col" class="text-center align-top text-wrap">Content Type</th>
+                <th scope="col" class="text-center align-top text-wrap">n</th>
+                <th scope="col" class="text-center align-top text-wrap">Mean Size (KB)</th>
+                <th scope="col" class="text-center align-top text-wrap">SD</th>
+                <th scope="col" class="text-center align-top text-wrap">Median</th>
+                <th scope="col" class="text-center align-top text-wrap">Trimmed</th>
+                <th scope="col" class="text-center align-top text-wrap">Mad</th>
+                <th scope="col" class="text-center align-top text-wrap">Min</th>
+                <th scope="col" class="text-center align-top text-wrap">Max</th>
+                <th scope="col" class="text-center align-top text-wrap">Range</th>
+                <th scope="col" class="text-center align-top text-wrap">Skew</th>
+                <th scope="col" class="text-center align-top text-wrap">Kurtosis</th>
+                <th scope="col" class="text-center align-top text-wrap">SE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td colspan="13" class="text-left font-weight-bolder">PageSpeed Rating = 0-49</td>
+                </tr>
+                  {{ range $sizes }}
+                      {{ if eq ( .group1 ) ("0-49") }}
+                          <tr>
+                              <td class="text-center">{{ .rowname }}</td>
+                              <td class="text-center">{{ .n }}</td>
+                              <td class="text-center">{{ .mean }}</td>
+                              <td class="text-center">{{ .sd }}</td>
+                              <td class="text-center">{{ .median }}</td>
+                              <td class="text-center">{{ .trimmed }}</td>
+                              <td class="text-center">{{ .mad }}</td>
+                              <td class="text-center">{{ .min }}</td>
+                              <td class="text-center">{{ .max }}</td>
+                              <td class="text-center">{{ .range }}</td>
+                              <td class="text-center">{{ .skew }}</td>
+                              <td class="text-center">{{ .kurtosis }}</td>
+                              <td class="text-center">{{ .se }}</td>
+                          </tr>
+                      {{ end }}
+                  {{ end }}
+                <tr>
+                    <td colspan="13" class="text-left font-weight-bolder">PageSpeed Rating = 50-89</td>
+                </tr>
+                  {{ range $sizes }}
+                      {{ if eq ( .group1 ) ("50-89") }}
+                          <tr>
+                              <td class="text-center">{{ .rowname }}</td>
+                              <td class="text-center">{{ .n }}</td>
+                              <td class="text-center">{{ .mean }}</td>
+                              <td class="text-center">{{ .sd }}</td>
+                              <td class="text-center">{{ .median }}</td>
+                              <td class="text-center">{{ .trimmed }}</td>
+                              <td class="text-center">{{ .mad }}</td>
+                              <td class="text-center">{{ .min }}</td>
+                              <td class="text-center">{{ .max }}</td>
+                              <td class="text-center">{{ .range }}</td>
+                              <td class="text-center">{{ .skew }}</td>
+                              <td class="text-center">{{ .kurtosis }}</td>
+                              <td class="text-center">{{ .se }}</td>
+                          </tr>
+                      {{ end }}
+                  {{ end }}
+                <tr>
+                    <td colspan="13" class="text-left font-weight-bolder">PageSpeed Rating = 90-100</td>
+                </tr>
+                  {{ range $sizes }}
+                      {{ if eq ( .group1 ) ("90-100") }}
+                          <tr>
+                              <td class="text-center">{{ .rowname }}</td>
+                              <td class="text-center">{{ .n }}</td>
+                              <td class="text-center">{{ .mean }}</td>
+                              <td class="text-center">{{ .sd }}</td>
+                              <td class="text-center">{{ .median }}</td>
+                              <td class="text-center">{{ .trimmed }}</td>
+                              <td class="text-center">{{ .mad }}</td>
+                              <td class="text-center">{{ .min }}</td>
+                              <td class="text-center">{{ .max }}</td>
+                              <td class="text-center">{{ .range }}</td>
+                              <td class="text-center">{{ .skew }}</td>
+                              <td class="text-center">{{ .kurtosis }}</td>
+                              <td class="text-center">{{ .se }}</td>
+                          </tr>
+                      {{ end }}
+                      
+                  {{ end }}
+              </tbody>
+              <caption>Page content size (KB) by content type. Source: Pingdom.</caption>
+              </table>
+        </div>
+    </div>
+</div>

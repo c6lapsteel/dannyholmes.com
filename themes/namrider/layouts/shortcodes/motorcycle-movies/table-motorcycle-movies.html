@@ -1,0 +1,39 @@
+{{ $movies := getJSON "data/motorcycle_movies/motorcycle_movie_summary.json" }}
+
+
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table id="movie-table" class="layout-movie-table table table-filter responsive nowrap"
+                data-toggle="table"
+                data-pagination="true"
+                data-search="true"
+            >
+                <thead>
+                  <tr>
+                  <th scope="col">Title</th>
+                  <th scope="col" class="text-center">Year</th>
+                  <th scope="col" class="text-center">Weighted Rating</th>
+                  <th scope="col" class="text-center">Genre</th>
+                  <th scope="col" class="text-center">Streaming</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {{ range $movies}}
+                        {{ if .Title }}
+                            <tr>
+                                <td>{{ .Title }}</td>
+                                <td class="text-center">{{ .Year }}</td>
+                                <td class="text-center">{{ .weightedRating }}</td>
+                                <td class="text-center">{{ .genres }}</td>
+                                <td class="text-center">{{ .Streaming_Now }}</td>
+                            </tr>
+                        {{ end }}
+                    {{ end }}
+                </tbody>
+                <caption>List of motorcycle movies. Last updated: April 2020.</caption>
+              </table>
+        </div>
+    </div>
+</div>
+

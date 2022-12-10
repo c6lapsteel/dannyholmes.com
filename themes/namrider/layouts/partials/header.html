@@ -1,0 +1,40 @@
+<header id="page-hero" class="site-header" >
+  <nav class="site-nav text-uppercase navbar navbar-expand-md navbar-light namrider-bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="{{ "/" | relURL}}"><img width="249" height= "160" sizes="(min-width: 380px) 80w" srcset="/img/NAM_Logo@1x.png 1x, /img/NAM_Logo@2x.png 2x" src="/img/NAM_Logo1x.png" alt="Northumbria Advanced Motorcyclists - Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <section class="collapse navbar-collapse" id="navbarSupportedContent">
+          {{ $current := . }}
+          <ul class="navbar-nav ml-auto">
+            {{ range .Site.Menus.main }}
+              {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+              {{ $active = or $active (eq .Name $current.Title) }}
+              {{ $active = or $active (and (eq .Name "About") (eq $current.Section "about")) }}
+              {{ $active = or $active (and (eq .Name "About") (eq $current.Kind "home")) }}
+              {{ $active = or $active (and (eq .Name "Training") (eq $current.Section "training")) }}
+              {{ $active = or $active (and (eq .Name "Social") (eq $current.Section "social")) }}
+              {{ $active = or $active (and (eq .Name "Events") (eq $current.Section "events")) }}
+              {{ $active = or $active (and (eq .Name "Events") (eq $current.Section "event_types")) }}
+              {{ $active = or $active (and (eq .Name "News") (eq $current.Section "news")) }}
+              {{ $active = or $active (and (eq .Name "Articles") (eq $current.Section "posts")) }}
+              {{ $active = or $active (and (eq .Name "Articles") (eq $current.Section "tags")) }}
+              {{ $active = or $active (and (eq .Name "Routes") (eq $current.Section "motorcycle-routes")) }}
+              {{ $active = or $active (and (eq .Name "Routes") (eq $current.Section "route_directions")) }}
+              {{ $active = or $active (and (eq .Name "Routes") (eq $current.Section "route_towns")) }}
+              {{ $active = or $active (and (eq .Name "Routes") (eq $current.Section "route_roads")) }}
+              {{ $active = or $active (and (eq .Name "Routes") (eq $current.Section "route_cafes")) }}
+              {{ $active = or $active (and (eq .Name "Contact") (eq $current.Section "contact")) }}
+                <li class="navbar-item {{if $active }} active{{end}}">
+                  <a class="nav-link" href="{{ .URL | relURL }}" title="{{ .Title }}">{{ .Name }}</a>
+                </li>
+            {{ end }}
+          </ul>
+        </section>
+    </div>
+    </nav>
+    {{if .Site.Params.debug}}
+      <p>*** themes/namrider/layouts/partials/header.html</p>
+    {{ end }}
+  </header>

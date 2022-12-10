@@ -1,0 +1,10 @@
+
+<section class="sidebar-nav-section">
+  <h5 class="sidebar-nav-h5">Route Directions</h5>
+  {{ $t := .Site.GetPage "/route_directions" }}
+  {{ range $t.Data.Pages }}
+  <ul>
+    <li class="sidebar-nav-entry"><a href="{{ .Page.Permalink }}" title="Explore motorcycle routes">{{ .Page.Title }}</a></li>
+  </ul>
+  {{ end }}
+</section>

@@ -1,0 +1,10 @@
+<!-- Replace title with heading parameter from markdown if maintained. -->
+{{ if .Params.heading }}
+  {{ .Params.heading | markdownify }}
+{{ else }}
+  {{ if in (slice "route_towns" "route_roads" "route_cafes" ) .Type }}
+    Motorcycle routes via {{ .Title | markdownify}}
+  {{ else }}
+    {{ .Title | markdownify}}
+  {{ end }}
+{{ end }}

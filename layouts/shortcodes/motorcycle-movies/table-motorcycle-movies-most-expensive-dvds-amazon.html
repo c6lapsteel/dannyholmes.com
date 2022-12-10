@@ -1,0 +1,31 @@
+{{ $movies := getJSON "data/motorcycle_movies/motorcycle_movies_most_expensive_amazon_dvd.json" }}
+
+
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table id="movie-expensive-dvd-table" class="layout-movie-table table table-filter">
+                <thead>
+                  <tr>
+                  <th scope="col">Title</th>
+                  <th scope="col" class="text-center">Year</th>
+                  <th scope="col" class="text-center">Price (£)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {{ range $movies}}
+                        {{ if .Title }}
+                            <tr>
+                                <td>{{ .Title }}</td>
+                                <td class="text-center">{{ .Year }}</td>
+                                <td class="text-center">{{ .Amazon_Price }}</td>
+                            </tr>
+                        {{ end }}
+                    {{ end }}
+                </tbody>
+                <caption>10 most expensive DVDs listed as available new on amazon.co.uk (April 2020). Source: Amazon.</caption>
+              </table>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,12 @@
+<div class="col-12">
+    <section id="latest-routes" class="layout-latest-routes">
+            <div class="row">
+                {{ range ( where site.RegularPages "Section" "motorcycle-routes" | first 1 ) }}
+                    <div>
+                        <p><a href="{{ .Permalink }}" title="Go to route {{ .Title }}">{{ .Title }}</a> <span class="text-muted"> (Published: {{ .PublishDate.Format "January 2, 2006"  }})</span></p>
+                    </div>
+
+                {{ end }}
+            </div>    
+      </section>
+  </div>

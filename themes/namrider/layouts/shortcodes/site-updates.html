@@ -1,0 +1,24 @@
+{{/*
+    Generates a list of all site updates.
+*/}}
+
+<h2>All Pages</h2>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <td scope="col">Content</td>
+            <td scope="col">Kind</td>
+            <td scope="col">Type</td>
+        </thead>
+        <tbody>
+            {{ range where .Site.Pages.ByPublishDate.Reverse "Section" "!=" "Three" }}
+                <tr>
+                    <td>{{ .Title}}</td>
+                    <td>{{ .Kind }}</td>
+                    <td>{{ .Type }}</td>
+                </tr>
+            {{ end }}
+        </tbody>
+    </table>
+</div>

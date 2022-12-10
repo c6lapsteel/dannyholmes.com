@@ -1,0 +1,72 @@
+{{ define "main" }}
+
+<section class="container py-3">
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+          <article class="layout-events container mb-3">
+              {{ if .Site.Params.debug }}
+                {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/event_types/terms.html") }}
+              {{ end }}
+              <div class="row">
+                <div class="col-xs-12">
+                  <h1 class="layout-page-title">{{ .Type | humanize}}</h1>
+                  <div class="layout-page-intro lead">
+                      {{ .Content }}
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      
+                      <table id="events-table" class="layout-events-table table table-filter">
+                        <thead>
+                          <tr class="d-flex justify-content-end">
+                            <div class="d-flex justify-content-end">
+                                <div class="btn-group">
+                                    {{ range .Site.Taxonomies.event_types }}
+                                      <button type="button" class="btn {{ .Page.Params.buttonClass }}"  type="submit" onclick= "location.href = '{{ .Page.Permalink }}';" role="button">{{ .Page.Params.buttonName }}</button>
+                                    {{ end }}
+                                    <button type="button" class="btn btn-light" type="submit" onclick="location.href = /events/">All</button>
+                                </div>
+                            </div>
+                          </tr>
+                        </thead>
+                        
+            
+                          <tbody>
+            
+            
+                            {{ range .Data.Terms.Alphabetical }}
+                                    <tr>
+                                      <td><a href="{{ .Page.Permalink }}">{{ .Page.Params.heading }}</a></td>
+                                      <td> {{ .Count }}</td>
+                                    </tr>
+                            {{ end }}
+
+
+            
+            
+            
+                          </tbody>
+                          
+            
+            
+            
+            
+                      </table>
+             
+                    </div>
+                  </div>
+                  
+                  <ul>
+
+                </ul>
+            
+                </div>
+              </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+
+
+{{ end }}

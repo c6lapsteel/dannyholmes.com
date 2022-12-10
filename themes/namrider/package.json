@@ -1,0 +1,16 @@
+{
+  "name": "namrider",
+  "version": "2.0.0",
+  "description": "Sass Bootstrap Project",
+  "scripts": {
+    "build": "node-sass --include-path node_modules theme.scss static/css/theme.css",
+    "watch": "node-sass --watch --include-path node_modules theme.scss static/css/theme.css"
+  },
+  "author": "Danny Holmes",
+  "license": "ISC",
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ]
+}

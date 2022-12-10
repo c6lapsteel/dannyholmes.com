@@ -1,0 +1,168 @@
+{{ define "main" }}
+
+<section class="container py-3">
+  <div class="row">
+    <div class="col-12 col-lg-8 offset-lg-2">
+
+      <article class="layout-article mt-5">
+        <section class="layout-article-header">
+          {{ if .Site.Params.debug }}
+            {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/events/single.html") }}
+          {{ end }}
+          <h1 class="mt-5">{{ .Title | markdownify}}</h1>
+        
+          {{ if .Params.Subtitle }}
+            <h2 class="font-weight-light font-italic mb-3">{{ .Params.Subtitle | markdownify }}</h2>
+          {{ end }}
+        
+          {{ if .Params.contact}}
+            <p>Contact: <strong>{{ .Params.contact }}</strong></p>
+          {{ end }}
+        
+          <p class="text-muted mt-3">
+            <a class="text-muted" href="{{ .Permalink }}">Date: {{ .Date.Format "January 2, 2006"  }}</a>
+        
+            {{ range .Params.tags }}
+              <a class="text-muted" href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a>
+            {{ end }}
+          </p>
+
+          {{ with .Site.GetPage "venues" }}
+            {{ with (index (.Resources.Match $.Params.venue) 0) }}
+                <p>Venue: {{ .Title }}</p>
+               
+               <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#venueModalScrollable">
+                  View venue details
+                </button>
+  
+              <!-- Modal -->
+              <div class="modal fade" id="venueModalScrollable" tabindex="-1" role="dialog" aria-labelledby="venueModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="venueModalScrollableTitle">{{ .Title }}</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <address class="layout-address vcard">
+                        <div class="adr">
+                          <div class="street-address">{{ .Params.streetAddress }}</div>
+                          <div class="locality">{{ .Params.city }}</div > 
+                          <div class="postal-code">{{ .Params.postalCode }}</div >
+                          <div class="country-name">{{ .Params.countryName }}</div >
+                        </div>
+                        {{ if .Params.telephone }}
+                          <div class="tel">Tel: {{ .Params.telephone }}</div>
+                        {{ end }}
+                        {{ if .Params.website }}
+                          <div class="url">Website: {{ .Params.website }}</div>
+                        {{ end }}
+                        {{ if .Params.email }}
+                        <div class="email">Email: <a class="email" href="mailto:{{ .Params.email }}}}">
+                            {{ .Params.email }}
+                          </a></div>
+                        {{ end }}
+                      </address>
+                      <div>
+                        {{ if .Params.googleMaps_URL }}  
+                          <div class="layout-google-maps mt-3">
+                            <iframe src="{{ .Params.googleMaps_URL}}" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                          </div>
+                        {{ end }}
+                        {{ if .Content }}
+                        <div>
+                          {{ .Content }}
+                        </div>
+                        {{ end }}
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            {{ end }}
+          {{ end }}
+
+        </section>
+
+        <section class="layout-article-content">
+            {{ .Content }}
+        </section>
+
+      </article>
+
+      <section class="layout-add-this">
+        <h3>Share this article</h3>
+        <div class="addthis_inline_share_toolbox"></div>
+      </section>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+{{ if or .Next .Prev }}
+  <article class="layout-next-prev section-alt-colour1 py-3">
+    <div class="container">
+        
+        
+            <h2 class="text-center">Further reading</h2>
+      
+            <div class="row">
+              <div class="col-md-6 text-center">
+                {{ if .Prev }}
+                  Previous Post:
+                  <a href="{{ .Prev.Permalink | relURL}}">{{ .Prev.Title | markdownify }}</a>
+                {{ end }}
+              </div>
+              <div class="col-md-6 text-center">
+                {{ if .Next }}
+                  Next Post:
+                  <a href="{{ .Next.Permalink | relURL }}">{{ .Next.Title | markdownify }}</a>
+                {{ end }}
+              </div>
+            </div>
+          
+        
+    </div>
+      
+
+    </article>
+  {{ end }}
+
+  {{ $related := .Site.RegularPages.Related . | first 3 }}
+  {{ with $related }}
+    <article class="layout-related-pages section-alt-colour2 py-3">
+
+      <div class="container mt-5">
+        <h2 class="text-center">See also</h2>
+        <div class="row">
+          {{ range . }}
+            <div class="col-md mb-3">
+              <p class="lead mb-0"><a class="text-body" href="{{ .RelPermalink }}">{{ .Title | markdownify}}</a></p>
+      
+              {{ if .Params.Subtitle }}
+                <p class="lead font-italic mb-0">{{ .Params.Subtitle | markdownify }}</p>
+              {{ end }}
+              <p class="font-weight-light mt-3">{{ .Summary }}</p>
+              <a href="{{ .RelPermalink }}" class="btn btn-primary">Read more</a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+
+    </article>
+  {{ end }}
+
+
+
+
+{{ end }}

@@ -1,0 +1,2 @@
+<a class="layout-external-link" href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank"{{ end }}>{{ .Text | safeHTML }}{{ if strings.HasPrefix .Destination "http" }} <span class="external-link-icon fa-external-link-alt-x">&nbsp;</span>{{ end }}</a>
+

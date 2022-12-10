@@ -1,0 +1,35 @@
+{{ $movies := getJSON "data/motorcycle_movies/motorcycle_movie_top_films.json" }}
+
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h2>Summary</h2>
+        The following table shows the top-rated motorcycle movie in each genre according to the Internet Movie Database (IMDb) (April 2020). Continue reading to discover the full list of over 400 films.
+        <div class="table-responsive">
+            <table id="top-films" class="layout-movie-table table table-filter responsive nowrap">
+                <thead>
+                  <tr>
+                  <th scope="col" class="text-center">Genre</th>
+                  <th scope="col">Title</th>
+                  <th scope="col" class="text-center">Year</th>
+                  <th scope="col" class="text-center">Weighted Rating</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {{ range $movies}}
+                        {{ if .Title }}
+                            <tr>
+                                <td class="text-center">{{ .Genre }}</td>
+                                <td>{{ .Title }}</td>
+                                <td class="text-center">{{ .Year }}</td>
+                                <td class="text-center">{{ .weightedRating }}</td>
+                            </tr>
+                        {{ end }}
+                    {{ end }}
+                </tbody>
+                <caption>Top-rated motorcycle movie per genre. Source: IMDB.</caption>
+              </table>
+        </div>
+    </div>
+</div>
+

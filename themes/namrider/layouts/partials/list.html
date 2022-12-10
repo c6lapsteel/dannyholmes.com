@@ -1,0 +1,72 @@
+{{ $navScratch := newScratch }}
+<section id="{{.myID}}" class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-lg-10">
+  
+          <section class="layout-page-header row">
+              <div class="col-12">
+                    <h1 class="layout-page-title">
+                        {{ partial "insert-heading.html" .myContext }}
+                    </h1>
+                    <div class="layout-page-intro lead">
+                      {{ .myContext.Content }}
+                    </div>
+              </div>
+            </section>
+          
+            <article class="row layout-page-section mt-2 container">
+                
+                  {{ range $index, $value := (  where .myContext.Site.RegularPages "Type" "in" (slice .mySlice) )  }}
+                    {{ $navScratch.SetInMap "page-headings" (printf "%s---%s" ( safeHTML (string .Weight)) (anchorize .Title)) .Title  }}
+                    <div class="row layout-top-row py-xl-5">
+                      <div class="col-sm-12 col-lg-12 col-xl-4">
+                        <h2 id="{{ (printf "%s---%s" ( safeHTML (string .Weight)) (anchorize .Title)) }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</h2>
+                        <div class="text-muted">
+                          {{ if .Lastmod }}
+                            Updated {{ .Lastmod.Format "January 2, 2006" }}
+                          {{ else if .PublishDate }}  
+                            Updated {{ .PublishDate.Format "January 2, 2006" }}
+                          {{ end }}
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-8 col-xl-8">
+                        {{ .Content }}
+                      </div>
+                      
+                    </div>
+                  {{ end }}
+            </article>
+            
+            <article class="row layout-page-section mt-2 container">
+              <div class="text-muted">
+                {{ if .myContext.Lastmod }}
+                    Page updated {{ .myContext.Lastmod.Format "January 2, 2006" }}
+                  {{ else if .myContext.PublishDate }}  
+                    Page updated {{ .myContext.PublishDate.Format "January 2, 2006" }}
+                  {{ end }}
+              </div>
+            </article>
+      </div>
+          
+      <div class="d-none d-lg-block col-lg-2">
+        <aside class="layout-side-nav sticky-top mt-5">
+          <nav id="sidebar-nav" aria-label="Secondary navigation">
+            <section class="sidebar-nav-section">
+              <h5 class="sidebar-nav-h5">On this page</h5>
+            </section>
+            <ul>
+              {{ range $index, $value := $navScratch.Get "page-headings" }}
+              {{ $string := $index }}
+              <li class="sidebar-nav-entry">
+                <a href="#{{ $string }}" title="{{ $value }}">{{- $value -}}</a>
+              </li>
+            {{ end }}
+            </ul>
+          </nav>
+        </aside>
+        </div>
+  
+    </div>
+  
+  </section>

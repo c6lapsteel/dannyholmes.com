@@ -1,0 +1,22 @@
+<div class="col-12">
+    <section id="route-direction-cards" class="layout-route-direction-cards">
+            <div class="row">
+              {{ $t := .Site.GetPage "/route_directions" }}
+              {{ range $t.Data.Pages }}
+                <div class="card mb-3">
+                  <div class="row no-gutters h-100">
+                    <div class="col-md-6 d-flex align-items-center">
+                      <a href="{{ .Page.Permalink }}" title="Explore motorcycle routes"><img class="layout-image card-img-top img-fluid p-3" src="{{.Params.road_sign}}" alt="{{ .Params.description }}"></a>
+                    </div>
+                    <div class="col-md-6 my-auto">
+                      <div class="card-body">
+                        <span class="route-count">{{len .Pages }}</span>
+                        <span class="route-direction"><a href="{{ .Page.Permalink }}" title="Explore motorcycle routes">routes</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {{ end }}
+            </div>    
+      </section>
+  </div>

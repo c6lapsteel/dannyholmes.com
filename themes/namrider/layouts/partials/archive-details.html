@@ -1,0 +1,38 @@
+
+
+<div class="layout-archive">
+    {{ range .Site.Data.archive }}
+    <h2 id="{{ (printf "%s" (anchorize .name )) }}">{{ .name | markdownify }}</h2>
+
+    <div class="row row-cols-1 row-cols-2 row-cols-md-3 row-cols-xl-4">
+      {{ range .publication }}
+      <div class="col mb-4">
+        <div class="layout-team-card card h-100">
+          <div class="card-body layout-small-block">
+            <div class="justify-content-center mb-4">
+              <img src="{{ .image }}" class="card-img-top" alt="Front Cover Newsletter {{ .title }}">
+            </div>
+            <h4 class="card-title mb-0">{{ .title }}</h4>
+            <p class="card-text">
+              {{ if .contents }}
+              <p>
+                <ul>
+                  {{ range .contents }}
+                    <li>{{ .entry}}</li>
+                  {{ end }}
+                </ul>
+                <a href="{{ .link }}" download="NAM_Newsletter_{{ .year }}_{{ .issue }}" class="btn btn-success btn-lg"><i class="fas fa-file-download"></i> Read ({{ .size }})</a>
+              </p>
+              {{ end }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
+
+
+

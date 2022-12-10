@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <a name="top"></a>
+    <head>
+        {{- partial "head.html" . -}}
+    </head>
+    <body>
+        {{- partial "GTM-body" . -}}
+        {{- partial "header.html" . -}}
+        <div id="content">
+            {{ if .Site.Params.debug }}
+                {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/_default/baseof.html") }}
+            {{ end }}
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+        {{- partial "style.html" . -}}
+    </body>
+</html>

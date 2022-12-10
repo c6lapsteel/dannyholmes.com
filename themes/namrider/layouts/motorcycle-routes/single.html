@@ -1,0 +1,123 @@
+{{ define "main" }}
+
+<section class="container py-3">
+  <div class="row">
+    <div class="col-12 col-lg-8 offset-lg-2">
+
+      <article class="layout-article mt-5">
+        <section class="layout-article-header">
+          {{ if .Site.Params.debug }}
+            {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/motorcycle-routes/single.html") }}
+          {{ end }}
+          <h1 class="mt-5">{{ .Title | markdownify}}</h1>
+        
+          {{ if .Params.leader}}
+            <p>Route devised by <strong>{{ .Params.leader }}</strong></p>
+          {{ end }}
+
+          {{ with .Params.mileage}}
+          <p>{{ . }} Miles</p>
+          {{ end }}
+        
+          <p>
+            {{ $publishDate := .PublishDate }}
+            Route Published: {{ .PublishDate.Format "January 2, 2006"  }}
+          </p>
+
+          {{ with .Params.eventStartDate }}
+            {{ $lastRideDate := . }}
+            {{ if gt $lastRideDate $publishDate }}
+              <p>Last Rideout: {{ .Format "January 2, 2006" }}</p>
+            {{ end }}
+          {{ end }}
+
+          <p class="text-muted mt-3">
+            {{ range .Params.route_towns }}
+              <a class="text-muted" href="{{ "/route_towns/" | relURL }}{{ . | urlize }}">#{{ . }}</a>
+            {{ end }}
+          </p>
+
+          
+        </section>
+
+        <section class="layout-article-content">
+          {{ with .Params.googleMaps_URL}}
+            <div class="layout-google-maps mt-3">
+                <iframe src="{{ . }}" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+          {{ end }}
+
+          {{ .Content }}
+        </section>
+
+      </article>
+
+      <section class="layout-add-this">
+        <h3>Share this article</h3>
+        <div class="addthis_inline_share_toolbox"></div>
+      </section>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+{{ if or .NextInSection .PrevInSection }}
+  <article class="layout-next-prev section-alt-colour1 py-3">
+    <div class="container">
+        
+        
+            <h2 class="text-center">More Motorcycle Routes</h2>
+      
+            <div class="row">
+              <div class="col-md-6 text-center">
+                {{ if .PrevInSection }}
+                  Previous Route:
+                  <a href="{{ .PrevInSection.Permalink | relURL}}">{{ .PrevInSection.Title | markdownify }}</a>
+                {{ end }}
+              </div>
+              <div class="col-md-6 text-center">
+                {{ if .NextInSection }}
+                  Next Route:
+                  <a href="{{ .NextInSection.Permalink | relURL }}">{{ .NextInSection.Title | markdownify }}</a>
+                {{ end }}
+              </div>
+            </div>
+          
+        
+    </div>
+      
+
+    </article>
+  {{ end }}
+
+  {{ $related := .Site.RegularPages.Related . | first 3 }}
+  {{ with $related }}
+    <article class="layout-related-pages section-alt-colour2 py-3">
+
+      <div class="container mt-5">
+        <h2 class="text-center">See also</h2>
+        <div class="row">
+          {{ range . }}
+            <div class="col-md mb-3">
+              <p class="lead mb-0"><a class="text-body" href="{{ .RelPermalink }}">{{ .Title | markdownify}}</a></p>
+      
+              {{ if .Params.Subtitle }}
+                <p class="lead font-italic mb-0">{{ .Params.Subtitle | markdownify }}</p>
+              {{ end }}
+              <p class="font-weight-light mt-3">{{ .Summary }}</p>
+              <a href="{{ .RelPermalink }}" class="btn btn-primary">Read more</a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+
+    </article>
+  {{ end }}
+
+
+
+
+{{ end }}

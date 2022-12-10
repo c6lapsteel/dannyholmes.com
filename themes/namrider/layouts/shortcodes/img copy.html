@@ -1,0 +1,131 @@
+{{/* 
+	see 
+	https://laurakalbag.com/processing-responsive-images-with-hugo/ 
+	https://discourse.gohugo.io/t/easy-way-to-serve-responsive-images-with-hugo/16184
+	https://www.adamwills.io/blog/responsive-images-hugo/
+	https://gohugo.io/content-management/image-processing/
+*/}}
+
+{{ $src := .Page.Resources.GetMatch (printf "**/%s" (.Get "src")) }}
+
+{{ if $src}}
+
+	{{ $type_arr := split $src "." }}
+	{{ $srcbase := index $type_arr 0 }}
+	{{ $srcext := index $type_arr 1 }}
+	{{ $.Scratch.Set "srcbase" $srcbase }}
+	{{ $.Scratch.Set "srcext" $srcext }}
+
+	{{ $type_arr := split $src.RelPermalink "." }}
+	{{ $permalinkbase := index $type_arr 0 }}
+	{{ $permalinkext := index $type_arr 1 }}
+	{{ $.Scratch.Set "permalinkbase" $permalinkbase }}
+	{{ $.Scratch.Set "permalinkext" $permalinkext }}
+
+	{{ $type_arr := split (.Get "src") "." }}
+	{{ $webp := .Page.Resources.GetMatch (printf "**/%s.%s" (index $type_arr 0) "webp")}}
+	{{ $jp2 := .Page.Resources.GetMatch (printf "**/%s.%s" (index $type_arr 0) "jp2")}}
+
+	{{ range last 1 .Site.Params.Imaging.Sizes }}
+		{{ $.Scratch.Set "smallest_width" . }}
+	{{ end }}
+
+	{{ $placeholder := ($src.Resize (print ($.Scratch.Get "smallest_width" ) "x q20" )) | images.Filter (images.GaussianBlur 6) }}
+
+	{{ $.Scratch.Set "srcset" "" }}
+	{{- range $i, $e := .Site.Params.Imaging.Sizes -}}
+		{{- if $i -}}
+			{{ $.Scratch.Set "srcset" (printf "%s%s" ($.Scratch.Get "srcset") ", ") }}
+		{{- end -}}
+		{{- if ge $src.Width $e -}}
+			{{ $small := $src.Resize (print $e "x") }}
+			{{ with $small.RelPermalink }}
+				{{ $.Scratch.Set "srcset" (printf "%s%s %sw" ($.Scratch.Get "srcset") . $e) }}
+			{{ end }}
+		{{- end -}}
+	{{- end -}}
+
+	{{ $.Scratch.Set "figure_class" "" }}
+	{{- with .Get "class" -}}
+		{{- $.Scratch.Set "figure_class" . -}}
+	{{- end -}}
+	{{- with .Get "lazy" -}}
+		{{- $.Scratch.Set "figure_class" (printf "%s lazy" ($.Scratch.Get "figure_class") ) -}}
+	{{- end -}}
+
+	{{ $.Scratch.Set "img_class" "img-fluid" }}
+	{{- with .Get "lazy" -}}
+		{{- $.Scratch.Set "img_class" (printf "%s lazyload" ($.Scratch.Get "img_class") ) -}}
+	{{- end -}}
+
+	<noscript>
+		<style>
+		  figure.lazy {
+			display: none;
+		  }
+		</style>
+		<figure class="{{ with .Get "class" }}{{.}}{{ end }}">
+			{{ with .Get "link" }}<a href="{{.}}">{{ end }}
+			<img class="img-fluid" src="{{ $src.RelPermalink }}" />
+			{{ if .Get "link"}}</a>{{ end }}
+			<figcaption class="font-weight-light font-italic">{{ with .Get "caption" }}"{{ . }}"{{ end }}</figcaption>
+		</figure>
+	</noscript>
+
+	<figure class="{{ trim ($.Scratch.Get "figure_class") " " }}">
+		<picture>
+			{{ with .Get "link" }}<a href="{{.}}">{{ end }}
+			{{ if $webp }} <!-- WebP Source with srcset -->
+				{{- if .Get "lazy" -}}
+				<source type="image/webp" width="1200" sizes="(min-width: 1200px) 1200px,(min-width: 700px) 700px,(min-width: 340px) 340px"
+					data-srcset="{{ $permalinkbase }}_340.webp 340w, {{ $permalinkbase }}_700.webp 700w, {{ $permalinkbase }}_1200.webp 1200w"/>
+				{{- else -}}
+				<source type="image/webp" width="1200" sizes="(min-width: 1200px) 1200px,(min-width: 700px) 700px,(min-width: 340px) 340px"
+					srcset="{{ $permalinkbase }}_340.webp 340w, {{ $permalinkbase }}_700.webp 700w, {{ $permalinkbase }}_1200.webp 1200w"/>
+				{{- end -}}
+			{{ end }}
+			{{ if $jp2 }}
+				<source srcset="{{ $permalinkbase }}.jp2" type="image/jp2">
+			{{ end }}
+			<img class="layout-object-fit-contain {{ trim ($.Scratch.Get "img_class") " " }}"
+				width="{{ range first 1 .Site.Params.Imaging.Sizes }}{{ . }}{{ end }}"
+				sizes="{{- range $i, $e := .Site.Params.Imaging.Sizes -}}
+					{{- if $i -}}, {{- end -}}
+					{{- if ge $src.Width $e -}}
+						(min-width: {{ $e }}px) {{ $e }}px
+					{{- end -}}
+				{{- end -}}"
+				{{- if .Get "lazy" -}}
+					srcset="data:image/jpeg;base64,{{ $placeholder.Content | base64Encode }}"
+					data-srcset="{{ $.Scratch.Get "srcset" }}"
+					data-src="{{ $src.RelPermalink }}"
+				{{- else -}}
+					srcset="{{ $.Scratch.Get "srcset" }}"
+					src="{{ $src.RelPermalink }}"
+				{{- end -}}
+				{{- with .Get "alt" -}}alt="{{.}}" {{- end -}}>
+			{{ if .Get "link"}}</a>{{ end }}
+		</picture>
+		<figcaption class="font-weight-light font-italic">{{ with .Get "caption" }}"{{ . }}"{{ end }}</figcaption>
+	</figure>
+
+{{ else }}
+	<p>Opps - unable to fetch image. Page Resources not set.</p>
+{{ end }}
+
+{{if .Site.Params.debug}}
+	<p>Image {{ (printf "**/%s" (.Get "src"))}}</p>
+	<p>{{ $src }}</p>
+	<p>{{ .Get "caption"}}</p>
+	<p>RelPermlink = {{ $src.RelPermalink }}</p>
+	<p>srcbase = {{ $.Scratch.Get "srcbase" }}</p>
+	<p>srcext = {{ $.Scratch.Get "srcext" }}</p>
+	<p>Original Width {{$src.Width }}</p>
+	<p>Original Height {{ $src.Height }}</p>
+	<p>Smallest Width {{ $.Scratch.Get "smallest_width" }}</p>
+	<p>Smallest Width {{ print ($.Scratch.Get "smallest_width" ) "x q20"  }}</p>
+	<p>srcset = {{ $.Scratch.Get "srcset" }}</p>
+	<p>figure class = {{ $.Scratch.Get "figure_class" }}</p>
+	<p>image class = {{ $.Scratch.Get "img_class" }}</p>
+	<p>permalink base = {{$.Scratch.Get "permalinkbase"}}</p>
+{{ end }}

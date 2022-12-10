@@ -1,0 +1,29 @@
+{{ $headless := .Site.GetPage "/about/faq" }}
+{{ $faqs := $headless.Resources.Match "*" }}
+<div class="layout-accordion layout-accordion-faq accordion" id="accordionFAQ">
+    {{ range $index, $value := $faqs }}
+        
+        {{ $id := ( printf "faq_%s" (string $index) ) }}
+        {{ $collapse := ( printf "collapse_%s" (string $index) ) }}
+        {{ $dataTarget := ( printf "#%s" $collapse) }}
+
+        <div class="card">
+            <div class="card-header" id='{{ $id }}' >
+            <h3 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="{{ $dataTarget}}" aria-expanded="false" aria-controls="{{ $collapse }}">
+                    {{- .Title | markdownify -}}
+                </button>
+            </h3>
+            </div>
+        
+            <div id="{{ $collapse }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ">
+                <div class="card-body">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    {{ end }}
+</div>
+
+
+

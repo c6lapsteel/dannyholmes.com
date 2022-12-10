@@ -1,0 +1,31 @@
+{{ $movies := getJSON "data/motorcycle_movies/motorcycle_movies_top_votes.json" }}
+
+
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table id="movie-votes-table" class="layout-movie-table table table-filter">
+                <thead>
+                  <tr>
+                  <th scope="col">Title</th>
+                  <th scope="col" class="text-center">Year</th>
+                  <th scope="col" class="text-center">Votes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {{ range $movies}}
+                        {{ if .Title }}
+                            <tr>
+                                <td>{{ .Title }}</td>
+                                <td class="text-center">{{ .Year }}</td>
+                                <td class="text-center">{{ .numVotes }}</td>
+                            </tr>
+                        {{ end }}
+                    {{ end }}
+                </tbody>
+                <caption>Motorcycle movies receiving the most votes on IMDB (April 2020). Source: IMDB.</caption>
+              </table>
+        </div>
+    </div>
+</div>
+

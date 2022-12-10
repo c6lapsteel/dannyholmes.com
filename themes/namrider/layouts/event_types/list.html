@@ -1,0 +1,126 @@
+{{ define "main" }}
+{{ $dateFormat := default "Jan 2" (index .Site.Params "date_format") }}
+{{ $now := now.Format "2006-01-02" }}
+{{ $currentYear := now.Format "2006" }} 
+{{ $.Scratch.Set "lastYear" ""}}
+
+{{ $venueBundle := .Site.GetPage "/venues" }}
+
+{{ $firstEvent := .Title }}
+
+<section class="container py-3">
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+          <article class="layout-events container mb-3">
+              {{ if .Site.Params.debug }}
+                {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/event_types/list.html") }}
+              {{ end }}
+              <div class="row">
+                <div class="col-xs-12">
+                  <h1 class="layout-page-title">{{ .Params.heading | humanize }}</h1>
+                  <div class="layout-page-intro lead">
+                      {{ .Content }}
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      
+                      <table id="events-table" class="layout-events-table table table-filter">
+                        <thead>
+                          <tr class="d-flex justify-content-end">
+                            <div class="d-flex justify-content-end">
+                                <div class="btn-group">
+                                    {{ range .Site.Taxonomies.event_types }}
+                                      <button type="button" class="btn {{ .Page.Params.buttonClass }}"  type="submit" onclick= "location.href = '{{ .Page.Permalink }}';" role="button">{{ .Page.Params.buttonName }}</button>
+                                    {{ end }}
+                                    <button type="button" class="btn btn-light" type="submit" onclick="location.href = /events/">All</button>
+                                </div>
+                            </div>
+                          </tr>
+                        </thead>
+                        
+                        {{ range .Pages.ByDate }}
+            
+                        {{ $firstEvent := index .Params.event_types 0 }}
+
+                        {{ $dataStatus := print $firstEvent "_event" }}
+                        {{ $startDate := dateFormat "2006-01-02" .Date }}
+            
+                        {{ $year := dateFormat "2006" .Date }}
+                        {{ $lastYear := $.Scratch.Get "lastYear"}}
+            
+                        {{ if ne $year $lastYear }}
+                          {{ if ge $year $currentYear }}
+                            <tr><td colspan="2">
+                              <div class="d-flex justify-content-center">
+                                  <h2>{{ $year }}</h2>
+                              </div></td></tr>
+                          {{ end }}              
+                        {{ end }}
+            
+                        {{ if ge $startDate $now }}
+            
+                          <tbody>
+            
+                            <tr data-status="{{ $dataStatus }}">
+                                  <td>
+                                    <a class="text-body" href="{{ .Permalink | relURL }}">
+                                      <time class="{{ $dataStatus }}" datetime="{{ dateFormat "2006-01-02T15:04:05Z07:00" .Date | safeHTML }}">
+                                        <span class="day">{{ dateFormat "02" .Date }}</span>
+                                        <span class="month">{{ dateFormat "Jan" .Date }}</span>
+                                        <span class="year">{{ dateFormat "2006" .Date }}</span>
+                                        <span class="time">{{ dateFormat "15:04" .Date }}</span>
+                                      </time>
+                                    </a>
+                                  </td>
+                                  <td>
+                                    <div class="media">
+                                      <div class="media-body">
+                                        <h3 class="title">
+                                          <a class="text-body" href="{{ .Permalink | relURL }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</a>
+                                        </h3>
+                                        {{ .Content }}
+                                        {{ $myVenue := .Params.Venue }}
+                                        <ul class="d-flex flex-column flex-md-row justify-content-start">
+                                          {{ range ( $venueBundle.Resources.Match .Params.venue) }}
+                                              <li class="pr-3"><span class="fa fa-location-arrow"></span>&nbsp;{{ .Title}}</a></li>
+                                          {{ end }}
+                                            <li class="pr-3"><span class="far fa-clock"></span>&nbsp;{{ dateFormat "15:04" .Date }}</li>
+                                          {{ with .Params.contact }}
+                                              <li class="pr-3"><span class="fa fa-male"></span>&nbsp;{{ . }} </li>
+                                          {{ end }}
+                                          {{ range .Resources.Match "*" }}
+                                            <li class="pr-3"><span class="fa fa-download"></span>&nbsp;<a target="_blank" href="{{ .Permalink }}">{{ .Params.shortName }}</a></li>
+                                          {{ end }}
+                                        </ul>
+            
+                                      </div>
+                                    </div>
+                                  </td>
+                            </tr>
+            
+            
+                          </tbody>
+                          
+            
+            
+                          {{ end }}
+                          {{ $.Scratch.Set "lastYear" $year }}
+            
+                        {{ end }}
+            
+            
+                      </table>
+             
+                    </div>
+                  </div>
+                  
+            
+                </div>
+              </div>
+            </article>
+      </div>
+    </div>
+  </section>
+
+
+{{ end }}

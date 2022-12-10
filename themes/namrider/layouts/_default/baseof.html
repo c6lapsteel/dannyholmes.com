@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "head.html" . -}}
+  <body>
+    <div class="layout-wrapper">
+      {{- partial "GTM-body" . -}}
+      {{- partial "header.html" . -}}
+      <div class="no-parallax">
+        <main id="content">
+          {{ if .Site.Params.debug }}
+              {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/_default/baseof.html") }}
+          {{ end }}
+          {{- block "main" . }}{{- end }}
+        </main>
+        {{- partial "footer.html" . -}}
+        {{- partial "style.html" . -}}
+      </div>
+    </div>
+  </body>
+</html>

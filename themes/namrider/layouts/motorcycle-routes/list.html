@@ -1,0 +1,33 @@
+{{ define "main" }}
+  {{ if .Site.Params.debug }}
+    {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/motorcycle-routes/list.html") }}
+  {{ end }}
+  <section id="route-list" class="container">
+
+      <div class="row">
+        <div class="col-sm-12 col-lg-10">
+          <article class="layout-article mt-5">
+            <h1>
+              {{ partial "insert-heading.html" . }}
+            </h1>
+            {{ .Content }}
+          </article>
+          <div class="text-muted">
+            {{ if now }}
+                Page updated {{ now.Format "January 2, 2006" }}
+              {{ end }}
+          </div>    
+        </div>
+            
+        <div class="d-none d-lg-block col-lg-2">
+          <aside class="layout-side-nav sticky-top mt-5">
+            <nav id="sidebar-nav" aria-label="Secondary navigation">
+              {{ partial "route-tags.html" . }}
+            </nav>
+          </aside>
+        </div>
+      </div>
+
+    
+    </section>
+{{ end }}
