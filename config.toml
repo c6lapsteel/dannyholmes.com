@@ -114,8 +114,8 @@ rssLimit = 100
 [outputFormats]
   [outputFormats.RSS]
     mediaType = "application/rss"
-    baseName = "rss" 
-    
+    baseName = "rss"
+
 [social]
     # Add your social network accounts to the profile section on the left
     # by entering your username. The links to your account will be
