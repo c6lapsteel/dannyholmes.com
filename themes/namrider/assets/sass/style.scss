@@ -1,5 +1,5 @@
 
-$white:    #fff !default;
+$white:    #ffffff !default;
 
 $instrument-panel1: #C08B1B !default;
 $instrument-panel2: #747579 !default;
@@ -148,7 +148,7 @@ footer {
 ul.social-icons {
 	margin-bottom: 0rem;
 }
-	
+
 ul.social-icons>li {
     list-style: none;
     display: inline-block;
@@ -257,7 +257,7 @@ ul.social-icons>li {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Helvetica Neue", sans-serif;
-	margin-top: $spacer * 3;	
+	margin-top: $spacer * 3;
 }
 
 html.fonts-loaded h1, html.fonts-loaded h2, html.fonts-loaded h3, html.fonts-loaded h4, html.fonts-loaded h5, html.fonts-loaded h6 {
@@ -352,12 +352,12 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 
 .layout-blockquote .blockquote-footer {
 	display: block;
-  	
+
   	text-align: right;
   	font-size: 80%;
   	font-style: italic;
   	color: #6e500c;
-	
+
 }
 
 .layout-blockquote .fa-quote-left{
@@ -447,13 +447,13 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 }
 
 /* Control buttons  */
-#layout-carousel-testimonial .carousel-control-prev, 
+#layout-carousel-testimonial .carousel-control-prev,
 #layout-carousel-testimonial .carousel-control-next
 {
   	background: none;
 }
 
-#layout-carousel-testimonial .carousel-control-prev-icon, 
+#layout-carousel-testimonial .carousel-control-prev-icon,
 #layout-carousel-testimonial .carousel-control-next-icon
 {
 	  width: 35px;
@@ -461,19 +461,19 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 }
 
 /* Previous button  */
-#layout-carousel-testimonial .carousel-control-prev 
+#layout-carousel-testimonial .carousel-control-prev
 {
   width: auto;
 }
 
 /* Next button  */
-#layout-carousel-testimonial .carousel-control-next 
+#layout-carousel-testimonial .carousel-control-next
 {
   width: auto;
 }
 
 /* Changes the position of the indicators */
-#layout-carousel-testimonial .carousel-indicators 
+#layout-carousel-testimonial .carousel-indicators
 {
 	margin-bottom: 10px;
 	bottom: -20px !important;
@@ -492,7 +492,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
   	font-size: .8125rem;
   	font-style: italic;
   	color: #6e500c;
-	
+
 }
 
 #page-testimonial .fa-quote-left{
@@ -577,8 +577,8 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 		right: 0;
 		background: linear-gradient(
 			rgba(243, 212, 122, 0.7),
-		   rgba(243, 212, 122, 0.3) 
-		
+		   rgba(243, 212, 122, 0.3)
+
 		);
 	  }
 
@@ -588,22 +588,22 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 
 	  .tinted-image .layout-discount-banner {
 		position: absolute;
-		top: 2rem; 
-   		left: 0; 
+		top: 2rem;
+   		left: 0;
 		width: 100%;
 		font-weight: 600;
 		font-size: $font-size-base * 2;
 		line-height: $line-height-base * 0.6;
 		text-transform: uppercase;
 		white-space: nowrap;
-		text-shadow: 0px 2px 4px rgba(78, 75, 67, 1.0); 
+		text-shadow: 0px 2px 4px rgba(78, 75, 67, 1.0);
 	  }
 
 	  .tinted-image .layout-large-text {
 		  font-size: $font-size-base * 3;
 		  font-weight: 900;
 	  }
-	
+
 
 /*	--------------------------------------------------
 	:: News card deck
@@ -671,7 +671,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 .layout-card-ribbon span {
     font-size: 20px;
     font-weight: 700;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
     text-align: center;
     line-height: 20px;
@@ -711,7 +711,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 	}
 
 	.fa-location-arrow-x {
-		background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23040404' d='M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z'%3E%3C/path%3E%3C/svg%3E");	
+		background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23040404' d='M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z'%3E%3C/path%3E%3C/svg%3E");
 	}
 
 	.fa-download-x {
@@ -811,7 +811,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 		font-weight: 800;
 		line-height: 1;
 	}
-	
+
 	.layout-events-table .media-body > ul
 	 {
 		display: table;
@@ -853,7 +853,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 		color: $white;
 		border-color: #6e500c;
 		font-size: 1.063rem;
-		
+
 	}
 
 	.layout-onetrust-button #ot-sdk-btn.ot-sdk-show-settings:hover {
@@ -915,7 +915,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 /*	--------------------------------------------------
 	:: Jumbotron
 	-------------------------------------------------- */
-	
+
 	.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 {
 		margin-top: 0rem;
 	}
@@ -932,7 +932,7 @@ ul.layout-downloads {
 /*	--------------------------------------------------
 	:: Timeline
 	-------------------------------------------------- */
-	
+
 /* Timeline holder */
 ul.timeline {
     list-style-type: none;
@@ -943,7 +943,7 @@ ul.timeline {
  /* Timeline vertical line */
 ul.timeline:before {
     content: ' ';
-    background: #fff;
+    background: $white;
     display: inline-block;
     position: absolute;
     left: 16px;
@@ -960,7 +960,7 @@ li.timeline-item {
 /* Timeline item arrow */
 .timeline-arrow {
     border-top: 0.5rem solid transparent;
-    border-right: 0.5rem solid #fff;
+    border-right: 0.5rem solid $white;
     border-bottom: 0.5rem solid transparent;
     display: block;
     position: absolute;
@@ -974,7 +974,7 @@ li.timeline-item::before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 3px solid $white;
     left: 11px;
     width: 14px;
     height: 14px;
@@ -995,7 +995,7 @@ li.timeline-item::before {
 	cursor: pointer;
 	box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
   }
-  
+
   .tint:before {
 	content: "";
 	display: block;
@@ -1006,7 +1006,7 @@ li.timeline-item::before {
 	right: 0;
 	background: rgba(237,223,211, .4);
   }
-  
+
   .t1:before { background: rgba(241,241,240, 0.4); }
   .t2:before { background: rgba(252,246,228, 0.4); }
 
@@ -1054,7 +1054,7 @@ li.timeline-item::before {
   #layout-tag-cloud {
 	padding-bottom: 1rem;
   }
-  
+
 
   /*	--------------------------------------------------
 	:: Parallax
@@ -1062,8 +1062,8 @@ li.timeline-item::before {
 
 	.layout-viewport {
 		margin-top: 100vh;
-	}  
-	
+	}
+
 	.parallax {
 		perspective: 1px;
 		height: 100vh;
@@ -1083,11 +1083,11 @@ li.timeline-item::before {
 	  .speed-1 {
 		transform: translateZ(-1px) scale(2);
 	  }
-	  
+
 	  .speed-2 {
 		transform: translateZ(-2px) scale(3);
 	  }
-	  
+
 	  .speed-3 {
 		transform: translateZ(-3px) scale(4);
 	  }
@@ -1096,7 +1096,7 @@ li.timeline-item::before {
 		margin-left: 250px;
 		height: 100px;
 		width: 300px;
-	  }  
+	  }
 
 	  .object-1 {
 		//margin-top: 100px;
@@ -1109,7 +1109,7 @@ li.timeline-item::before {
 		//background: red;
 		text-align: right;
 	  }
-	  
+
 	  .object-2 {
 		//margin-top: 200px;
 		position: absolute;
@@ -1119,7 +1119,7 @@ li.timeline-item::before {
 		//background: yellow;
 		text-align: right;
 	  }
-	  
+
 	  .object-3 {
 		//margin-top: 300px;
 		position: absolute;
@@ -1134,7 +1134,7 @@ li.timeline-item::before {
 		vertical-align: bottom;
 	  }
 
-	
+
 /*	--------------------------------------------------
 	:: Back to top button
 	-------------------------------------------------- */
@@ -1145,26 +1145,34 @@ li.timeline-item::before {
 
   	#this_title {
 		display:none;
-  	}	
+  	}
+
+/*	--------------------------------------------------
+	:: Movie Database form
+	-------------------------------------------------- */
+
+	#movie-table_wrapper .form-control, #movie-table_wrapper .form-select, #superbike-table_wrapper .form-control, #superbike-table_wrapper .form-select {
+		background-color: $white;
+  	}
 
  /*	--------------------------------------------------
 	:: Media queries
 	-------------------------------------------------- */
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
 	.layout-events-table .media-body {
 		font-size: 0.813rem;
 		line-height: 1.063rem;
 	}
-	
+
 	.media-body > ul >li {
 		display: block;
 		padding-top: 0.813rem;
 	}
 	.media-body > ul > li:nth-child(n+2) {
 		padding-left: 0px;
-		
+
 	}
 	.table-filter .media .title span {
 		display: none;
@@ -1172,8 +1180,8 @@ li.timeline-item::before {
  }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { 
-	
+@media (min-width: 576px) and (max-width: 767.98px) {
+
 	.layout-news-card h2 {
 		font-size: 1.32352941rem;
 		line-height: 1.985294115rem;
@@ -1193,14 +1201,14 @@ li.timeline-item::before {
 		font-size: 0.813rem;
 		line-height: 1.063rem;
 	}
-	
+
 	.media-body > ul >li {
 		display: block;
 		padding-top: 0.813rem;
 	}
 	.media-body > ul > li:nth-child(n+2) {
 		padding-left: 0px;
-		
+
 	}
 	.table-filter .media .title span {
 		display: none;
@@ -1210,7 +1218,7 @@ li.timeline-item::before {
 
 // Medium devices (tablets, 768px and up)
 @media screen and (min-width:768px) and (max-width:991.98px) {
-	
+
 	#page-testimonial .layout-testimonial-summary {
 		font-size: 1.5rem;
 		line-height: 1.938rem;
@@ -1219,7 +1227,7 @@ li.timeline-item::before {
 	}
 
 	.tinted-image .layout-discount-banner {
-		top: 4rem; 
+		top: 4rem;
 		font-size: $font-size-base * 3;
 		line-height: $line-height-base * 0.6;
 	  }
@@ -1228,12 +1236,12 @@ li.timeline-item::before {
 		  font-size: $font-size-base * 4;
 		  font-weight: 900;
 	  }
-	
+
 }
 
 // Large devices (desktops, 992px and up)
 @media screen and (min-width: 992px) and (max-width: 1199.98px)  {
-	
+
 	#page-testimonial .layout-testimonial-summary {
 		font-size: 1.5rem;
 		line-height: 1.938rem;
@@ -1248,7 +1256,7 @@ li.timeline-item::before {
 	.layout-footer-main .list-group-item {
 		padding: .5rem 0 .5rem 0;
 	}
-	
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -1258,14 +1266,14 @@ li.timeline-item::before {
 		width: 100%;
 		height: 19.5rem;
 	}
-	
+
 	#page-testimonial .layout-testimonial-summary {
 		font-size: 1.5rem;
 		line-height: 1.938rem;
 		padding-bottom: 0.5rem;
 		padding-top: 0rem;
 	}
-	
+
 	.layout-top-row h2, .timeline-item h3, .layout-top-row h3:first-of-type {
 		margin-top: 0;
 	}
@@ -1275,7 +1283,7 @@ li.timeline-item::before {
 	}
 
 	.tinted-image .layout-discount-banner {
-		top: 3rem; 
+		top: 3rem;
 		font-size: $font-size-base * 3;
 		line-height: $line-height-base * 0.6;
 	  }
@@ -1289,5 +1297,3 @@ li.timeline-item::before {
 		padding: .5rem 0 .5rem 0;
 	}
 }
-
-
