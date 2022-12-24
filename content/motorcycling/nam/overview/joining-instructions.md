@@ -1,6 +1,6 @@
 ---
 title: "Joining Instructions"
-type: join-overview
+type: nam-overview
 weight: 20
 draft: false
 ---

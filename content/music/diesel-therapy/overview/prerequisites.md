@@ -1,6 +1,6 @@
 ---
 title: "Pre-requisites"
-type: join-overview
+type: dieseltherapy-overview
 weight: 10
 draft: false
 ---

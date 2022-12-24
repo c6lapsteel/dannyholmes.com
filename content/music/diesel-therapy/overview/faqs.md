@@ -1,6 +1,6 @@
 ---
 title: "Frequently Asked Questions"
-type: join-overview
+type: dieseltherapy-overview
 weight: 50
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Discounts"
-type: join-overview
+type: dieseltherapy-overview
 weight: 40
 draft: false
 ---
