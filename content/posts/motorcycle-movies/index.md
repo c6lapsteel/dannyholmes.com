@@ -6,10 +6,10 @@ publishDate: 2020-04-13T16:53:06+01:00
 lastmod: 2020-04-13T16:53:06+01:00
 expiryDate:
 summary:
-tags: [ "movies", "films"] 
+tags: [ "movies", "films"]
 keywords: movies, films
 aliases:
-    - 
+    -
 draft: false
 datatables: true
 ---
@@ -18,9 +18,9 @@ Like many motorcyclists grounded by COVID-19, I find myself with the opportunity
 
 {{< motorcycle-movies/table-motorcycle-movies-top-films >}}
 
-What qualifies a film to be included in a list of biker movies? Is it enough that the main protagonist is lured to a biker bar, like the vampire feeding haunt 'La Tetilla del Diablo' in 'From Dusk till Dawn' (1996)? What if the only riding to be seen in the movie is a short, 250cc-charged chase; the opening sequence for 'Skyfall' (2012) or the fight scene in 'Gemini Man' (2019)? 
+What qualifies a film to be included in a list of biker movies? Is it enough that the main protagonist is lured to a biker bar, like the vampire feeding haunt 'La Tetilla del Diablo' in 'From Dusk till Dawn' (1996)? What if the only riding to be seen in the movie is a short, 250cc-charged chase; the opening sequence for 'Skyfall' (2012) or the fight scene in 'Gemini Man' (2019)?
 
-Even avoiding TV episodes, focusing on the big screen, the list of festival contenders had soon grown to over 400 titles. 
+Even avoiding TV episodes, focusing on the big screen, the list of festival contenders had soon grown to over 400 titles.
 
 The following is based on a 'snapshot' taken in April 2020, during the peak of the COVID-19 lockdown in the United Kingdom.
 
@@ -30,16 +30,16 @@ The following is based on a 'snapshot' taken in April 2020, during the peak of t
 
 ### Movie ratings
 
-Is it possible (or desirable) to produce a prioritised viewing and shopping list based on movie ratings that can be found on sites like the [Internet Movie Database (IMDb)](https://www.imdb.com "Go to the IMDb website"), [Rotten Tomatoes](https://www.rottentomatoes.com "Go to Rotten Tomatoes website") or [Amazon](https://www.amazon.co.uk/Amazon-Video/b/?ie=UTF8&node=3010085031&ref_=nav_cs_prime_video "Go to Amazon Prime Video website")? Perhaps IMDb and Amazon ratings together would give consensus about which films are worth watching. However, for the 400 plus biker movies identified, there are very significant differences in the distributions of average ratings. 
+Is it possible (or desirable) to produce a prioritised viewing and shopping list based on movie ratings that can be found on sites like the [Internet Movie Database (IMDb)](https://www.imdb.com "Go to the IMDb website"), [Rotten Tomatoes](https://www.rottentomatoes.com "Go to Rotten Tomatoes website") or [Amazon](https://www.amazon.co.uk/Amazon-Video/b/?ie=UTF8&node=3010085031&ref_=nav_cs_prime_video "Go to Amazon Prime Video website")? Perhaps IMDb and Amazon ratings together would give consensus about which films are worth watching. However, for the 400 plus biker movies identified, there are very significant differences in the distributions of average ratings.
 
 - Amazon voters tend to give a significantly higher rating than would be expected if the same group of people were voting on both sites.
-- Average ratings on Amazon are centered around a high score of 4.5. The same films show a much greater spread in popularity according to IMDb. 
+- Average ratings on Amazon are centered around a high score of 4.5. The same films show a much greater spread in popularity according to IMDb.
 
-It seems as though there are two distinct populations of film enthusiasts voting on the different platforms. We can only speculate why that might be the case. Perhaps voters on Amazon had recently bought the films themselves and are therefore pre-disposed towards giving their latest purchases higher votes compared to someone who may be recalling an earlier screening. 
+It seems as though there are two distinct populations of film enthusiasts voting on the different platforms. We can only speculate why that might be the case. Perhaps voters on Amazon had recently bought the films themselves and are therefore pre-disposed towards giving their latest purchases higher votes compared to someone who may be recalling an earlier screening.
 
 {{< img src="motorcycle_movies_IMDB_vs_Amazon_ratings.png" alt="Comparison of IMDb and Amazon ratings, April 2020" lazy="true" >}}
 
-There is some agreement amongst the mainstream titles, which receive the highest number of votes on both platforms, and 'Motocross Zombies from Hell' is the lowest rated film on both IMDb and Amazon. 
+There is some agreement amongst the mainstream titles, which receive the highest number of votes on both platforms, and 'Motocross Zombies from Hell' is the lowest rated film on both IMDb and Amazon.
 
 There are many discrepancies, however, with high-scoring films on one site receiving a low rating on the other. The two motorcycle films with the highest average rating, according to IMDb, are 'Girl Gone Bad' (2000) and 'Redline America' (2008). Both films scored 9 out of 10, out-gunning 'The Great Escape' (1963), 'Mad Max: Fury Road' (2015) and 'Akira' (1988). Is this justified?
 
@@ -87,13 +87,13 @@ When it comes to buying or renting, median prices are competitive across all str
 
 ### DVDs
 
-As of April 2020, 152 titles were listed as available to buy new on Amazon UK and the range of prices found shown below. The two most expensive films listed, 'Call the Mesquiteers' (1938) and 'Killer Biker Chicks' (2009), are priced at over £100! 
+As of April 2020, 152 titles were listed as available to buy new on Amazon UK and the range of prices found shown below. The two most expensive films listed, 'Call the Mesquiteers' (1938) and 'Killer Biker Chicks' (2009), are priced at over £100!
 
 {{< motorcycle-movies/table-motorcycle-movies-most-expensive-dvds-amazon >}}
 
 ## Motorcycle movies - the list
 
-The following table lists all of the motorcycle movies identified. In some cases, films may only feature riding or bikes for a few minutes. Weighted ratings, derived from IMDb scores, are provided for guidance and interest only. They do not reflect the opinions or endorsement of any individual motorcyclist or  Northumbria Advanced Motorcyclists. 
+The following table lists all of the motorcycle movies identified. In some cases, films may only feature riding or bikes for a few minutes. Weighted ratings, derived from IMDb scores, are provided for guidance and interest only. They do not reflect the opinions or endorsement of any individual motorcyclist or  Northumbria Advanced Motorcyclists.
 
 We have tried to present as comprehensive a list of biker movies as possible, without censorship. Some films reflect outdated attitudes and do not represent the values and diversity of Northumbria Advanced Motorcyclists.
 
@@ -114,6 +114,4 @@ Looking beyond the big screen, [British Pathé](https://www.britishpathe.com "Go
 - [Ice-track motorcycle racing](https://www.britishpathe.com/video/VLVACS1V0GREGI8477EMJQIVF75FR-SWEDEN-MOTOR-CYCLE-ICE-RACING-THRILLS/query/motorcycle "Go to British Pathe website") (Sweden, 1963)
 - [Motorcycle Ski Racing](https://www.britishpathe.com/video/tyrol-motor-cycle-ski-races/query/motorcycle+ski "Go to British Pathe website") (Austria, 1963)
 
-{{< comments callToAction = "Do you know of a motorcycle movie that we've missed or that you would recommend? Let us know!" >}}
-
-
+{{< comments callToAction = "Do you know of a motorcycle movie that I've missed or that you would recommend? Let me know!" >}}

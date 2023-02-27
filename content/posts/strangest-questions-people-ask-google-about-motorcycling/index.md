@@ -7,8 +7,8 @@ publishDate: 2019-08-21T13:13:11+01:00
 lastmod: 2019-08-21T13:13:11+01:00
 expiryDate:
 summary: "Northumbria Advanced Motorcyclists is run entirely by volunteers. Like everyone, our scarcest resource is time. We try to ensure that the articles we write, our workshops, the efforts of our training, social and marketing teams, are as useful or helpful to other motorcyclists as possible."
-tags: [ "general", "art"] 
-keywords: Google, 
+tags: [ "general", "art"]
+keywords: Google,
 aliases:
     - /articles/strangest-questions-people-ask-google-about-motorcycling.html
 draft: false
@@ -83,4 +83,4 @@ Looking through all the questions and picking those that were the most unexpecte
 + how to make a motorbike out of fondant icing
 + what does hiss mean on a motorbike
 
-{{< comments callToAction = "If you have answers to any of these questions, please let us know!" >}}
+{{< comments callToAction = "If you have answers to any of these questions, please let me know!" >}}
