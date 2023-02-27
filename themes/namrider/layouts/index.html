@@ -7,44 +7,39 @@
 {{ $section_colours := slice "bg-light" "section-alt-colour1" "section-alt-colour2" }}
 {{ $.Scratch.Set "counter" 0 }}
 
-
-<!--   <div class="position-absolute object-wrapper speed-1 container">
-    <div class="object object-1">
-      <h1 class="">{{ .Site.Title}}</h1>
-    </div>
-  </div>
-  <div class="position-absolute object-wrapper speed-1 container">
-    <div class="object object-2">
-      <p>{{ .Site.Params.Description }}</p>
-      <p>{{- .Content -}}</p>
-    </div>
-  </div>
-  <div class="position-absolute object-wrapper speed-2 container">
-    <div class="object object-3">
-      <img class="layout-rider-sketch" src="/img/NAM_Rider_Sketch.svg">
-    </div>
-  </div> 
-
-<section class="layout-viewport layout-site-title d-flex align-items-center text-center {{ index $section_colours ($.Scratch.Get "counter")}}">
-
--->
-  
+<section class="layout-site-title {{ index $section_colours ($.Scratch.Get "counter")}}">
   <div class="container lead">
-    <div class="row justify-content-center">
-      <div class="col-11 col-sm-10 col-md-8">
-          <h1 class="">{{ .Site.Title}}</h1>
-          <p>{{ .Site.Params.Description }}</p>
+    <div class="d-flex justify-content-left">
+      <div class="col col-12">
+        <h1 class="display-1">Hi, I'm {{ .Site.Title}}</h1>
+          <!-- <p>{{ .Site.Params.Description }}</p> -->
           <p>{{- .Content -}}</p>
       </div>
-
     </div>
   </div>
 </section>
 
+<article id = "page-photogrid" class="page-section container">
+  <section class="layout-photogrid container">
+      <div class="d-flex justify-content-center">
+            <div class="col col-12">
+                {{ range (  where .Site.RegularPages "Type" "in" (slice "about-gallery") )}}
+                  {{ .Content }}
+                {{ end }}
+            </div>
+        </div>
+  </section>
+</article>
+
 {{ $headless := .Site.GetPage "/services" }}
 {{ $reusablePages := $headless.Resources.Match "*" }}
-<article id="page-services" class="page-section container justify-content-center">
-  <section class="layout-multicolumn container mt-5">
+<article id="page-services" class="page-section container">
+
+  <div class="d-flex justify-content-left">
+    <h2 class="display-2">Talk to me about</h2>
+  </div>
+
+  <div class="container">
     <div class="row">
       {{ range $index, $value := $reusablePages}}
         <section class="service col-md-4">
@@ -55,27 +50,18 @@
 
         </section>
         {{ if eq (mod (add $index 1) 3 ) 0 }}
-          <div class="w-100 .d-md-none"></div>
+          <!-- <div class="w-100 .d-md-none"></div> -->
         {{ end }}
       {{ end }}
     </div>
-  </section>
+  </div>
+
+
+
 </article>
 
-<article id = "page-photogrid" class="page-section container">
-    <section class="layout-photogrid container">
-        <div class="row justify-content-center">
-            
-              <div class="col-12">
-                  {{ range (  where .Site.RegularPages "Type" "in" (slice "about-gallery") )}}
-                    {{ .Content }}
-                  {{ end }}
+<!--
 
-              </div>
-           
-          </div>
-    </section>
-</article>
 
 {{ range (where $.Site.RegularPages "Params.homepage_include" true) | intersect (where .Site.RegularPages "Type" "in" (slice "single-page-section")) }}
   {{ if lt ($.Scratch.Get "counter") ( sub (len $section_colours) 1 ) }}
@@ -83,7 +69,7 @@
   {{ else }}
     {{ $.Scratch.Set "counter" 0 }}
   {{ end }}
-  
+
   <article id = '{{ .Params.page_id }}' class='layout-page-section {{ index $section_colours ($.Scratch.Get "counter")}}'>
     <header class="page-section-header container pt-1">
       <h2>{{ .Title | markdownify}}</h2>
@@ -97,7 +83,7 @@
       {{ end }}
     </section>
   </article>
-   
+
 {{ end }}
 
 {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 0) }}
@@ -132,7 +118,7 @@
                       <section class="carousel-item {{ if (eq $index 0) }}active{{ end }}">
                         <div class="container">
 
-                       
+
                           <blockquote class="layout-blockquote-testimonial blockquote col-10 offset-1">
                             <div class="row">
                                 <div class="col-md-4 text-center mb-3">
@@ -146,9 +132,9 @@
                             </div>
 
                           </blockquote>
-                          
-                        </div> 
-                          
+
+                        </div>
+
                       </section>
                     {{ end }}
 
@@ -163,7 +149,7 @@
                     </span>
                   </a>
                 </div>
-          
+
               </section>
         </div>
       </div>
@@ -179,6 +165,8 @@
   {{ $.Scratch.Set "counter" 0 }}
 {{ end }}
 
+
+
 <article id="page-find-out-more" class="layout-small-block page-section {{ index $section_colours ($.Scratch.Get "counter")}}">
   <div class="container">
     {{ $recentposts := 3 }}
@@ -187,9 +175,9 @@
     {{ end }}
     <div class="row">
       <div class="container">
-        
+
         <h2 class="text-center">Find out more</h2>
-        
+
         <div class="row">
           {{ range first $recentposts (where .Site.RegularPages "Type" "about-more" ) }}
           <section class="col-lg-4">
@@ -210,4 +198,7 @@
     </div>
   </div>
 </article>
+
+-->
+
 {{ end }}

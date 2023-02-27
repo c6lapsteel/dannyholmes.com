@@ -1,10 +1,10 @@
 ---
-title: "Social"
+title: "English History"
 date: 2019-08-30T06:52:15+01:00
 weight: 5
 draft: false
-fa_icon: '<i class="fas fa-users fa-2x"></i>'
-service_class: fa-users 
+fa_icon: '<i class="bi-timeline"></i>'
+service_class: bi-timeline
 ---
 
-Providing opportunities for riders to share experiences through monthly meetings and weekend breaks.
+Who do we think we are?

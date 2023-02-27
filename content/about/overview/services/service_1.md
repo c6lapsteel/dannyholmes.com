@@ -1,10 +1,10 @@
 ---
-title: "IAM Roadsmart Coaching"
+title: "Motorcycling"
 date: 2019-08-30T06:48:15+01:00
 weight: 1
 draft: false
-fa_icon: '<i class="fas fa-road fa-2x"></i>'
-service_class: fa-road 
+fa_icon: '<i class="bi-map"></i>'
+service_class: bi-map
 ---
 
-Preparing riders to pass their advanced motorcycle road test.
+Finding new roads, developing riding skills, bike gear.

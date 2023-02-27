@@ -1,10 +1,10 @@
 ---
-title: "Rideouts"
+title: "Data Analytics"
 date: 2019-08-30T06:52:10+01:00
 weight: 4
 draft: false
-fa_icon: '<i class="fas fa-tachometer-alt fa-2x"></i>'
-service_class: fa-tachometer
+fa_icon: '<i class="bi-database"></i>'
+service_class: bi-database
 ---
 
-Monthly ride-outs for Full Members from March to October.
+Data analytics, machine learning, R and Python, geo-spatial analysis, GQIS.

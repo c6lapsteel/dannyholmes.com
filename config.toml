@@ -1,7 +1,7 @@
 baseURL = "http://dannyholmes.com/"
 languageCode = "en-gb"
 title = "Danny Holmes"
-copyright = "Copyright Northumbria Advanced Motorcyclists. All rights reserved."
+copyright = "Copyright Danny Holmmes. All rights reserved."
 # Define how many pages appear per site
 paginate = 12
 # Enable comments powered by Disqus by entering your disqus shortname
@@ -25,15 +25,15 @@ rssLimit = 100
 
 [author]
     name = "Danny Holmes"
-    email = "info@namrider.com"
+    email = "hi@dannyholmes.com"
 
 [params]
     site_author = "Danny Holmes"
     site_logo = ""
-    short_title = "namrider"
-    site_description = "Promoting motorcycle road safety across Northumberland, Newcastle and the North East since 2002. Find out how we coach riders to pass their advanced motorcycle road test."
+    short_title = "dannyholmes.com"
+    site_description = "Helping to promote motorcycle road safety across Northumberland, Newcastle and the North East. Find out pass your advanced motorcycle road test."
     location = "Northumberland, England"
-    description = "The last theme you'll ever need. Maybe."
+    description = "Welcome to my digital playground and scrapbook."
     # Link custom assets relative to /static
     avatar = "img/NAM_Logo.png"
     favicon = ""
@@ -88,12 +88,6 @@ rssLimit = 100
     url = "/motorcycle-routes/"
     weight = 160
 
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 170
-
 [taxonomies]
   author = "authors"
   tag = "tags"
@@ -120,7 +114,7 @@ rssLimit = 100
     # Add your social network accounts to the profile section on the left
     # by entering your username. The links to your account will be
     # create automatically.
-    twitter   = "nam_rider"
+    twitter   = ""
     facebook  = ""
     linkedin  = ""
     behance   = ""
@@ -157,13 +151,13 @@ rssLimit = 100
 [params.accounts]
     # Bank account details
     names = ["events","training","social"]
-    sortCodes = ["20-58-17", "XX-XX-XX", "20-58-17"]
-    accountNumbers = ["93220117","12345678","80931403"]
-    accountNames = ["Northumbria Advanced Motorcyclists Events Account","Northumbria Advanced Motorcyclists Training Account","Northumbria Advanced Motorcyclists Social Account"]
+    sortCodes = ["XX-XX-XX", "XX-XX-XX", "XX-XX-XX"]
+    accountNumbers = ["XXXXXXXX","XXXXXXXX","XXXXXXXX"]
+    accountNames = ["","",""]
 
 [params.private]
     # Exclude from sitemaps
-    privateDirs = ["overview","timeline","events","faq","news","motorcycle-routes"]
+    privateDirs = ["overview","timeline","events","faq","news","motorcycle-routes","namrider"]
 
 [params.robots]
     # Set no-follow in robots meta tag

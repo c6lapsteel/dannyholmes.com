@@ -1,5 +1,5 @@
 ---
-title: "Gallery | Northumbria Advanced Motorcyclists"
+title: "Gallery | Danny Holmes"
 type: "about-gallery"
 resources:
 - src: "motorcyclist_event_cover.jpg"
@@ -11,7 +11,4 @@ resources:
   title: "The Image #:counter"
 ---
 
-{{< img src="Danny_Holmes_Splash_1140x1163.png" caption="Northumbria Advanced Motorcyclists Open Day" alt="Northumbria Advanced Motorcyclists Open Day" >}}
-
-
-
+{{< img src="Danny_Holmes_Splash_1140x1163.png" caption="Blyton Park Track Day" alt="Danny on BMW R1250GS at Blyton Park" >}}

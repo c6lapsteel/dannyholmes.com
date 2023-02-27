@@ -1,10 +1,10 @@
 ---
-title: "Motorcycle Skills Days"
+title: "Web Design"
 date: 2019-08-30T06:52:05+01:00
 weight: 3
 draft: false
-fa_icon: '<i class="fas fa-motorcycle fa-2x"></i>'
-service_class: fa-motorcycle
+fa_icon: '<i class="bi-vector-penx"></i>'
+service_class: bi-vector-pen
 ---
 
-Providing safe environments in which to practice essential motorcycle skills and slow riding.
+Graphic design, web design, search engine optimisation, Adobe creative cloud applications.

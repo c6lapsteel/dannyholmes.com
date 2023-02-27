@@ -10,19 +10,19 @@
             {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/motorcycle-routes/single.html") }}
           {{ end }}
           <h1 class="mt-5">{{ .Title | markdownify}}</h1>
-        
-          {{ if .Params.leader}}
+
+          <!-- {{ if .Params.leader}}
             <p>Route devised by <strong>{{ .Params.leader }}</strong></p>
-          {{ end }}
+          {{ end }} -->
 
           {{ with .Params.mileage}}
           <p>{{ . }} Miles</p>
           {{ end }}
-        
-          <p>
+
+          <!-- <p>
             {{ $publishDate := .PublishDate }}
             Route Published: {{ .PublishDate.Format "January 2, 2006"  }}
-          </p>
+          </p> -->
 
           {{ with .Params.eventStartDate }}
             {{ $lastRideDate := . }}
@@ -37,7 +37,7 @@
             {{ end }}
           </p>
 
-          
+
         </section>
 
         <section class="layout-article-content">
@@ -67,10 +67,10 @@
 {{ if or .NextInSection .PrevInSection }}
   <article class="layout-next-prev section-alt-colour1 py-3">
     <div class="container">
-        
-        
+
+
             <h2 class="text-center">More Motorcycle Routes</h2>
-      
+
             <div class="row">
               <div class="col-md-6 text-center">
                 {{ if .PrevInSection }}
@@ -85,10 +85,10 @@
                 {{ end }}
               </div>
             </div>
-          
-        
+
+
     </div>
-      
+
 
     </article>
   {{ end }}
@@ -103,7 +103,7 @@
           {{ range . }}
             <div class="col-md mb-3">
               <p class="lead mb-0"><a class="text-body" href="{{ .RelPermalink }}">{{ .Title | markdownify}}</a></p>
-      
+
               {{ if .Params.Subtitle }}
                 <p class="lead font-italic mb-0">{{ .Params.Subtitle | markdownify }}</p>
               {{ end }}

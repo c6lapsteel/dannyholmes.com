@@ -1,10 +1,10 @@
 ---
-title: "91% Pass Rate"
+title: "Music"
 date: 2019-08-30T06:43:21+01:00
 weight: 2
 draft: false
-fa_icon: '<i class="fas fa-certificate fa-2x"></i>'
-service_class: fa-certificate
+fa_icon: '<i class="bi-vinyl-fill"></i>'
+service_class: bi-vinyl-fill
 ---
 
-Continuous training of Observers to maintain high standard of IAM Roadsmart test passes.
+Guitars and vinyl.

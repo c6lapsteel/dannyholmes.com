@@ -6,7 +6,7 @@
                   <thead>
                     <th scope="col" class="text-center">Mileage</th>
                     <th scope="col">Route</th>
-                    <th scope="col" class="text-center">Last Rideout Date</th>
+                    <!-- <th scope="col" class="text-center">Last Rideout Date</th> -->
                   </thead>
                   <tbody>
                     {{ range sort .myContext.Pages "Params.mileage" "desc"}}
@@ -17,13 +17,13 @@
                         <td>
                           <a class="layout-text-body" href="{{ .Permalink | relURL }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</a>
                         </td>
-                        <td class="text-center">
+                        <!-- <td class="text-center">
                             <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-                        </td>
+                        </td> -->
                       </tr>
                     {{ end }}
                   </tbody>
-      
+
                 </table>
           </div>
         </div>
