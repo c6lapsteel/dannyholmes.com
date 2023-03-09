@@ -7,12 +7,5 @@
 			"path": "../namrider-HUGO"
 		}
 	],
-	"settings": {
-		"workbench.colorCustomizations": {
-			"statusBar.border": "#EDDFD2",
-			"statusBar.background": "#EDDFD2",
-			"statusBar.foreground": "#040404",
-			"workspaceInStatusBar.text": "#040404"
-		}
-	}
+	"settings": {}
 }
