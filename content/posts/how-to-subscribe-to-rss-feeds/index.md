@@ -7,8 +7,8 @@ publishDate: 2020-12-05T06:51:11Z
 lastmod: 2020-12-09T06:51:11Z
 expiryDate:
 summary: "Have you ever missed a ride out, training event or an important update because you forgot to check namrider.com? Make sure that you're always the first to know when new content is added by subscribing to one of the namrider.com news (RSS) feeds."
-tags: [ "namrider", "news", "articles", "events", "rss", "subscribe"] 
-keywords: [ "namrider", "news", "articles", "events", "rss", "subscribe"] 
+tags: [ "namrider", "news", "articles", "events", "rss", "subscribe", "Northumbria Advanced Motorcyclists"]
+keywords: [ "namrider", "news", "articles", "events", "rss", "subscribe", "Northumbria Advanced Motorcyclists"]
 draft: false
 ---
 
@@ -79,7 +79,7 @@ Many (Feedly, Inoreader, Reeder, NetNewsWire) offer iOS and Android apps and the
 
 ### Browser extensions or plug-ins
 
-Most web browsers have extensions (small utility programs) that help to discover the RSS feeds that are available within a website. Usually these extensions make it possible to add feeds to your preferred news reader with a single click of a bookmark in your browser toolbar. 
+Most web browsers have extensions (small utility programs) that help to discover the RSS feeds that are available within a website. Usually these extensions make it possible to add feeds to your preferred news reader with a single click of a bookmark in your browser toolbar.
 
 Search for 'RSS' in webstore or app store associated with your browser (Chrome, Safari, Firefox, Edge, etc.).
 
@@ -95,7 +95,7 @@ Theses services also offer basic plans which allow you to subscribe to a small n
 
 If you already use the IFTTT ('if this then that') automation service, you can create an applet to send yourself an email notification whenever an RSS feed is updated.
 
-If you only follow a few RSS feeds, receiving email alerts when new content is added can be convenient. However, once you subscribe to many different feeds you need to be prepared to spend more time managing a busy inbox. For that reason I prefer to use a news reader to manage RSS subscriptions. 
+If you only follow a few RSS feeds, receiving email alerts when new content is added can be convenient. However, once you subscribe to many different feeds you need to be prepared to spend more time managing a busy inbox. For that reason I prefer to use a news reader to manage RSS subscriptions.
 
 ## What RSS feeds are available on namrider.com?
 
@@ -110,9 +110,8 @@ The main feed consolidates all items from each of the news, events and articles 
 - drag the URL of the RSS feed into your news reader
 - cut and paste the URL of the RSS feed into your news reader
 
-Some websites only include summary paragraphs in their RSS feeds and it is necessary to follow links back to site to read the full article. This is often done to ensure that website visits can be recorded, especially if the site needs 'clicks' to make money from advertising. 
+Some websites only include summary paragraphs in their RSS feeds and it is necessary to follow links back to site to read the full article. This is often done to ensure that website visits can be recorded, especially if the site needs 'clicks' to make money from advertising.
 
 All namrider.com feeds contain complete articles so that you can read them in full, right from within your favourite news reader.
 
-{{< comments callToAction = "What is your 'go-to' news reader application? Do you prefer RSS feeds or email subscriptions?" >}}
-
+{{< comments1 callToAction = "What is your 'go-to' news reader application? Do you prefer RSS feeds or email subscriptions?" >}}

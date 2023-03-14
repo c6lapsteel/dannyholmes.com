@@ -9,7 +9,7 @@ draft: false
 outputs:
     - html
 aliases:
-    -
+    - /motorcycling/namrider/
 ---
 
 There is nothing like the thrill of accelerating on a motorcycle. Or the satisfaction from taking the perfect line through a series of bends. Riding a motorbike is fun!

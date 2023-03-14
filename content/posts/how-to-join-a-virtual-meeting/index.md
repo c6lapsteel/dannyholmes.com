@@ -7,8 +7,8 @@ publishDate: 2020-10-21T06:51:11Z
 lastmod: 2020-10-21T06:51:11Z
 expiryDate:
 summary: "Like many organisations and charities, some of our meetings and presentations will need to take place online. If you haven't attended a virtual meeting before, here are a few pointers to get you on your way."
-tags: [ "Zoom"] 
-keywords: ["Zoom"]
+tags: [ "Zoom", "namrider", "Northumbria Advanced Motorcyclists"]
+keywords: ["Zoom", "namrider", "Northumbria Advanced Motorcyclists"]
 aliases:
 draft: false
 ---
@@ -25,11 +25,11 @@ If you have received a meeting invitation and link from your host, you can join 
 
 - using Zoom Client software on your computer
 - using your web browser (Google Chrome, Safari, Microsoft Edge or Internet Explorer, Firefox)
-- using your mobile device (Android or iOS) 
+- using your mobile device (Android or iOS)
 
 If you're completely new to Zoom, [watch this short tutorial](https://youtu.be/hIkCmbvAHQQ "Watch tutorial on YouTube") to find out how to join a meeting.
 
-Before joining a Zoom meeting on a computer or mobile device, you will need to [download the Zoom app](https://zoom.us/download). Otherwise, you will be prompted to download and install Zoom when you click a join link for the first time. To make sure that you're not late for that all-important meeting (like our AGM), it's worth taking a little time to make sure everything is installed in advance. 
+Before joining a Zoom meeting on a computer or mobile device, you will need to [download the Zoom app](https://zoom.us/download). Otherwise, you will be prompted to download and install Zoom when you click a join link for the first time. To make sure that you're not late for that all-important meeting (like our AGM), it's worth taking a little time to make sure everything is installed in advance.
 
 To check that you're all set to go, [join a test meeting](https://zoom.us/test "Join Zoom test meeting") meeting and familiarize yourself with the Zoom meeting layout.
 
@@ -53,7 +53,7 @@ To submit a question to the meeting host, use the 'Chat' button to open the chat
 
 ### Respond to a poll
 
-During some meetings (e.g. an AGM) the host may launch a poll to gather audience feedback. Once poll questions appear, submit your answers. 
+During some meetings (e.g. an AGM) the host may launch a poll to gather audience feedback. Once poll questions appear, submit your answers.
 
 {{< img src="zoom_poll_question.png" alt="How to submit an answer to a Zoom poll question" lazy="true" >}}
 
@@ -113,7 +113,7 @@ Try and position lights in front of you to ensure that you don't disappear into 
 
 {{< img src="video_conference_lighting_front1_0.png" alt="lighting from front" caption="Light in front of monitor, built in camera"  lazy="true" >}}
 
-For best results you need ensure that both sides of your face are illuminated evenly. There are many low-cost lighting solutions available including battery-operated lamps that will clip onto your computer or mobile device without the inconvenience of mains cables. If you have a permanent workspace and attend meetings frequently, it may be worth investing in an LED desk lamp. Look for a lamp which allows you to vary brightness levels and colour. 
+For best results you need ensure that both sides of your face are illuminated evenly. There are many low-cost lighting solutions available including battery-operated lamps that will clip onto your computer or mobile device without the inconvenience of mains cables. If you have a permanent workspace and attend meetings frequently, it may be worth investing in an LED desk lamp. Look for a lamp which allows you to vary brightness levels and colour.
 
 {{< img src="video_conference_lighting_front2_0.png" alt="lighting from front using GoPro Hero 8" caption= "TaoTronics LED desk lamp, GoPro Hero 8 camera" lazy="true" >}}
 
@@ -159,5 +159,4 @@ Finally, if you have an important point to make, look at the camera! That's the 
 
 {{< img src="video_conference_lighting_front3_0.png" alt="look at the camera" lazy="true" >}}
 
-{{< comments callToAction = "Do you have any Zoom meeting tips? We'd love to hear them." >}}
-
+{{< comments1 callToAction = "Do you have any Zoom meeting tips? We'd love to hear them." >}}

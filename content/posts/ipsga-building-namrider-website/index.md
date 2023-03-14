@@ -6,10 +6,10 @@ publishDate: 2020-06-02T23:53:34+01:00
 lastmod: 2020-06-02T23:53:34+01:00
 expiryDate:
 summary:
-tags: [ "IPSGA", "namrider"] 
-keywords: IPSGA, namrider
+tags: [ "IPSGA", "namrider", "Northumbria Advanced Motorcyclists"]
+keywords: [IPSGA, namrider, "Northumbria Advanced Motorcyclists"]
 aliases:
-    - 
+    -
 draft: true
 ---
 
@@ -17,7 +17,7 @@ draft: true
 
 Even before setting out for his or her first observed ride, each prospective associate will, most likely, have initiated a number of smaller journeys. Some will start as a result of an on-line search for information: Is advanced riding right for me? What will I learn? What will it involve? How much will it cost? Others will be started to provide reassurance: Can I imagine being part of Northumbria Advanced Motorcyclists? Will I fit in? How professional is the training? What support will I get? Will I be the only one? What will be expected of me?
 
-In response to these information requests, small packets of information begin their separate journeys from our server to the prospective associate's computer or, more likely, mobile device. Like separate pieces of a jigsaw puzzle being couriered across a congested city by a fleet of motorcycle dispatch riders, each packet will navigate a different route through 'the web' before the puzzle is re-assembled by the viewer's browser. 
+In response to these information requests, small packets of information begin their separate journeys from our server to the prospective associate's computer or, more likely, mobile device. Like separate pieces of a jigsaw puzzle being couriered across a congested city by a fleet of motorcycle dispatch riders, each packet will navigate a different route through 'the web' before the puzzle is re-assembled by the viewer's browser.
 
 Even before the last piece of the puzzle reaches its destination, as our web page is still forming in front of the curious rider, first impressions are made. Rightly or wrongly, inferences are drawn between the online experience and the ability of the group to deliver first-class road safety training. Would you buy a brand new motorcycle from a dealer with broken signage and dirty floors?
 
@@ -27,7 +27,7 @@ Given that responsibility, what considerations need to be made when designing ou
 
 ## Information
 
-This is a never-ending process: there are many 'hazards' that need to be re-evaluated through each of the subsequent phases. namrider.com continues to evolve based on testing and feedback. 
+This is a never-ending process: there are many 'hazards' that need to be re-evaluated through each of the subsequent phases. namrider.com continues to evolve based on testing and feedback.
 
 ### Take
 
@@ -54,21 +54,21 @@ This is a never-ending process: there are many 'hazards' that need to be re-eval
     - how will the way in which users interact with namrider.com will change?
     - what impact will voice search have? (Two-thirds of site visits are already from mobile devices.)
     - when should we use new techniques (e.g. http/2 protocol) for increased speed? How will that affect hosting costs?
-    
+
 * best practice and web standards
     - browser statistics
         - which 'make and model' do site visitors use? Which will we support?
 
 * site audits
     - speed
-        - how responsive is each page? 
+        - how responsive is each page?
         - where are the bottlenecks?
         - are there any errors or broken links?
     - search engine optimisation (SEO)
         - how does each page rank in searches?
         - is there anything that might be harming our ranking?
     - accessibility
-        - how easily can individuals with colour-blindness or disabilities access namrider.com? 
+        - how easily can individuals with colour-blindness or disabilities access namrider.com?
     - how does namrider.com perform compared to peer and 'competitor' sites?
 
 * rules and regulations
@@ -81,7 +81,7 @@ This is a never-ending process: there are many 'hazards' that need to be re-eval
 
 ### Use
 
-* output of our 'customer journey' workshop 
+* output of our 'customer journey' workshop
     - this identified potential 'pain points' and frequently asked questions that should be answered as a potential Associate is deciding whether to commit to advanced rider training
 
 * privacy preferences
@@ -89,7 +89,7 @@ This is a never-ending process: there are many 'hazards' that need to be re-eval
 
 * diagnostics (analytics)
     - how can we quantify the value of namrider.com?
-    - what can we learn about how visitors use namrider.com? 
+    - what can we learn about how visitors use namrider.com?
     - which pages are contributing to our charitable aims?
     - which pages are not contributing to our charitable aims?
     - which pages have high 'bounce rates' and may need to be re-written?
@@ -114,7 +114,7 @@ This is a never-ending process: there are many 'hazards' that need to be re-eval
     - choice of colour palette that will give strong contrast between different elements of the site
     - choice of typography (fonts) that are easy to read across all devices
 
-* articles   
+* articles
 
 * signposts and site map
     - provide site maps, menus and links that will allow users and search engine robots to navigate through the site
@@ -143,7 +143,7 @@ Okay, not really part of 'the system' but particularly important in this context
 * prioritisation of visual content for mobile devices
     - how should the priority and position of each component change on different screen sizes, orientations and resolutions?
 
-* use of 'white space' 
+* use of 'white space'
     - ensure that pages can breathe and don't feel overwhelming  (a bit like cracking open the visor on a helmet as you're riding)
 
 * typographic layout
@@ -170,7 +170,7 @@ However, even before we can get off the starting grid, 600ms will already have e
 - 50-100ms for each round trip of data between browser and server over a 4G network. That increases to 200-300ms over 3G.
 - 200ms for the browser to collect and layout the pieces of the puzzle.
 
-Practically, to achieve a load time of under 1 second, we have only ~400ms in which to transfer content. Like winning a superbike race, it takes a lot of preparation and effort to shave milliseconds off each lap time. 
+Practically, to achieve a load time of under 1 second, we have only ~400ms in which to transfer content. Like winning a superbike race, it takes a lot of preparation and effort to shave milliseconds off each lap time.
 
 ### Wrong turns
 
@@ -190,7 +190,7 @@ If you have too much luggage to fit in your panniers, more round trips are requi
 ### Road blocks and level crossings
 Each journey needs to be planned to avoid delays en route; temporary traffic lights or level crossings giving priority to other traffic. Care has to be given to ensure that scripts and stylesheets are loaded in the right sequence and that there are no 'render-blocking resources' getting in the way of loading above the fold content.
 
-* All scripts need to be written to be as lean as possible, to execute quickly and in the right sequence. 
+* All scripts need to be written to be as lean as possible, to execute quickly and in the right sequence.
 * Avoid any blocking script or stylesheets from external (third-party) plug-ins.
 * Avoid creating chains where critical resources have to be loaded sequentially.
 
@@ -269,4 +269,3 @@ landing pages - serndipity
 </div>
 
 </div>
-

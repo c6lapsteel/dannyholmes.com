@@ -11,4 +11,4 @@ resources:
   title: "The Image #:counter"
 ---
 
-{{< img src="Danny_Holmes_Splash_1140x1163.png" caption="Blyton Park Track Day" alt="Danny on BMW R1250GS at Blyton Park" >}}
+{{< img src="Danny_Holmes_Splash_1140x1163.png" alt="Danny on BMW R1250GS at Blyton Park" >}}

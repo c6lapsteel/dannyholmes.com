@@ -1,0 +1,7 @@
+<section class="layout-comments">
+        <h3>Comments</h3>
+        {{ with .Get "callToAction" }}
+            <p>{{ . | markdownify }} Please send your comments to <a class="e-l" href="#" data-ep1="hi" data-ep2="dannyholmes" data-ep3="com">email</a>.</p>
+        {{ end }}
+        <!-- {{ template "_internal/disqus.html" . }} -->
+</section>
