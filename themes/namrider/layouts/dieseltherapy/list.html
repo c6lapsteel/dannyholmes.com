@@ -4,7 +4,7 @@
     {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/dieseltherapy/list.html") }}
   {{ end }}
 
-  {{ partial "list" (dict "myID" "join" "myContext" . "mySlice" "dieseltherapy-overview") }}
+  {{ partial "list-simple" (dict "myID" "join" "myContext" . "mySlice" "dieseltherapy-overview") }}
 
 
 {{ end }}

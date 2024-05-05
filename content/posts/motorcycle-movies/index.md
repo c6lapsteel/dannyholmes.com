@@ -114,4 +114,8 @@ Looking beyond the big screen, [British Pathé](https://www.britishpathe.com "Go
 - [Ice-track motorcycle racing](https://www.britishpathe.com/video/VLVACS1V0GREGI8477EMJQIVF75FR-SWEDEN-MOTOR-CYCLE-ICE-RACING-THRILLS/query/motorcycle "Go to British Pathe website") (Sweden, 1963)
 - [Motorcycle Ski Racing](https://www.britishpathe.com/video/tyrol-motor-cycle-ski-races/query/motorcycle+ski "Go to British Pathe website") (Austria, 1963)
 
+In 1948, director Carl Theodor Dreyer made the cautionary 'De nåede færgen' (They Caught The Ferry).
+
+{{< youtube xNZ-0SeYAjc>}}
+
 {{< comments1 callToAction = "Do you know of a motorcycle movie that I've missed or that you would recommend? Let me know!" >}}

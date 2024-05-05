@@ -1,3 +1,23 @@
-public/
-resources/
-/node_modules
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/
+/node_modules/
+/themes/namrider/node_modules/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+/static/pagefind
+dist
+tmp
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/.hugo_build.lock
+
+# Mac
+.DS_Store

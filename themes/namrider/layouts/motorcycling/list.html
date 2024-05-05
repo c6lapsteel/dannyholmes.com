@@ -4,6 +4,6 @@
     {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/training/list.html") }}
   {{ end }}
 
-  {{ partial "list" (dict "myID" "training" "myContext" . "mySlice" "training-overview") }} 
+  {{ partial "list-simple" (dict "myID" "training" "myContext" . "mySlice" "training-overview") }}
 
 {{ end }}

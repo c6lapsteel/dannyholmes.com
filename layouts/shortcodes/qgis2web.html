@@ -1,0 +1,9 @@
+{{ $src := ( .Get "src" ) }}
+
+{{ if $src }}
+
+    <figure class="layout-google-maps mt-3 mb-3">
+        <iframe src="{{ $src }}" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </figure>
+
+{{ end }}

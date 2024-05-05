@@ -18,36 +18,37 @@
       <div class="col-xs-12 col-lg-9">
           <article id="news-cards" class="layout-multicolumn">
 
-            <section class="layout-news-card card-deck ">
+            <section class="layout-news-card">
 
-                  <div class="row">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
                       {{ range $index, $value := .Pages }}
-                        <section class="layout-small-block card mb-3">
-                          {{ if isset .Params "news_ribbon" }}
-                            <div class="layout-card-ribbon"><span>{{.Params.news_ribbon}}</span></div>
-                          {{ end }}
-                          <div layout-news-image>
-                              {{ $img_src := "/img/twisty_road6_700x350.jpg" }}
-                              {{ with .Params.news_category }}
-                                {{ if eq . "covid" }}
-                                {{ $img_src = "/img/covid19_700x350.jpg" }}
+                        <div class="col">
+                          <div class="layout-small-block card h-100">
+                            {{ if isset .Params "news_ribbon" }}
+                              <div class="layout-card-ribbon"><span>{{.Params.news_ribbon}}</span></div>
+                            {{ end }}
+                            <div layout-news-image>
+                                {{ $img_src := "/img/twisty_road6_700x350.jpg" }}
+                                {{ with .Params.news_category }}
+                                  {{ if eq . "covid" }}
+                                  {{ $img_src = "/img/covid19_700x350.jpg" }}
+                                  {{ end }}
                                 {{ end }}
-                              {{ end }}
-                              <img class="layout-image card-img-top img-fluid" src={{ $img_src }} alt="Aerial photograph of road with hairpins">
-                              <div class="layout-news-date"> <span class="date">{{ .Date.Format "2" }}</span> <span class="month">{{ .Date.Format "Jan" }}</span></div>    
-                          </div>
-                         <div class="card-body">
-                            <h2 class="layout-title card-title">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</h4>
-                            <div class="layout-text card-text">
-                              {{ .Content }}
+                                <img class="layout-image card-img-top img-fluid" src={{ $img_src }} alt="Aerial photograph of road with hairpins">
+                                <div class="layout-news-date"> <span class="date">{{ .Date.Format "2" }}</span> <span class="month">{{ .Date.Format "Jan" }}</span></div>
+                            </div>
+                           <div class="card-body">
+                              <h2 class="layout-title card-title">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</h4>
+                              <div class="layout-text card-text">
+                                {{ .Content }}
+                              </div>
                             </div>
                           </div>
-                        </section>
-                        {{ if eq (mod (add $index 1) 2 ) 0 }}
-                          <div class="w-100 .d-md-none"></div>
-                        {{ end }}
+                        </div>
+
+
                       {{ end }}
-                    </div>    
+                    </div>
             </section>
           </article>
 
@@ -68,10 +69,6 @@
           {{ end }}
       </div>
   </div>
- 
-
-  
-
 
   </section>
 {{ end }}

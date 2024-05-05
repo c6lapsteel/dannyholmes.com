@@ -1,14 +1,16 @@
 <!-- Timeline -->
-<ul class="layout-small-block timeline">
-  {{ range where .Site.RegularPages "Type" "in" (slice "training-timeline") }}
-    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-      <div class="timeline-arrow"></div>
-      <h3 class="h4">{{ .Title }}</h3>
-      <!--
-      <span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>21 March, 2019</span>
-      -->
-      {{ .Content }}
-    </li>
-  {{ end }}
-</ul>
+<div class="col-xs-12 col-md-8 offset-md-2 py-3">
+  <ul class="layout-small-block timeline">
+    {{ range where .Site.RegularPages "Type" "in" (slice "training-timeline") }}
+      <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+        <div class="timeline-arrow"></div>
+        <h3 class="h4">{{ .Title }}</h3>
+        <!--
+        <span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>21 March, 2019</span>
+        -->
+        {{ .Content }}
+      </li>
+    {{ end }}
+  </ul>
+</div>
 <!-- Timeline End -->

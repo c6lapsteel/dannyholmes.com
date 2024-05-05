@@ -6,3 +6,5 @@ draft: false
 ---
 
 The following albums are available on all the usual streaming services.
+
+{{< dieseltherapy-releases >}}

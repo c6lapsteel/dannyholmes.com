@@ -1,0 +1,46 @@
+{{ $navScratch := newScratch }}
+<section id="{{.myID}}" class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-lg-10">
+        <article class="layout-article mt-5">
+          <h1>
+            {{ partial "insert-heading.html" .myContext }}
+          </h1>
+          {{ .myContext.Content }}
+
+
+          {{ range $index, $value := (  where .myContext.Site.RegularPages "Type" "in" (slice .mySlice) )  }}
+            {{ $navScratch.SetInMap "page-headings" (printf "%s---%s" ( safeHTML (string .Weight)) (anchorize .Title)) .Title  }}
+            <h2 id="{{ (printf "%s---%s" ( safeHTML (string .Weight)) (anchorize .Title)) }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</h2>
+            {{ .Content }}
+          {{ end }}
+
+        </article>
+        <div class="text-muted">
+          {{ if now }}
+              Page updated {{ now.Format "January 2, 2006" }}
+            {{ end }}
+        </div>
+      </div>
+
+      <div class="d-none d-lg-block col-lg-2">
+        <aside class="layout-side-nav sticky-top mt-5">
+          <nav id="sidebar-nav" aria-label="Secondary navigation">
+            <section class="sidebar-nav-section">
+              <h5 class="sidebar-nav-h5">On this page</h5>
+            </section>
+            <ul>
+              {{ range $index, $value := $navScratch.Get "page-headings" }}
+              {{ $string := $index }}
+              <li class="sidebar-nav-entry">
+                <a href="#{{ $string }}" title="{{ $value }}">{{- $value -}}</a>
+              </li>
+            {{ end }}
+            </ul>
+          </nav>
+        </aside>
+      </div>
+    </div>
+
+</section>

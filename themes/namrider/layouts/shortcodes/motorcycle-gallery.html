@@ -1,0 +1,19 @@
+<!-- Motorcycle Gallery -->
+<article id="mc-gallery" class="layout-multicolumn">
+
+            <section class="layout-mc-gallery">
+                    <div class="row" data-masonry='{"percentPosition": true }'>
+
+                        {{ $galleryPage := index (where .Site.RegularPages "Type" "motorcycle-gallery") 0 }}
+                          {{ range $galleryPage.Resources }}
+                            {{ $small := .Resize "360x q85 Box"}}
+                            <div class="col-6 col-md-4 col-xl-3 pb-3 px-2">
+                              <img src="{{ $small.RelPermalink }}"  height="{ $small.Height }"  width="{ $small.Width }" alt="{{printf "%s" (.Title | markdownify) }}" class="img-fluid">
+                            </div>
+                          {{ end }}
+
+
+                    </div>
+            </section>
+          </article>
+<!-- Motorcycle Gallery End -->

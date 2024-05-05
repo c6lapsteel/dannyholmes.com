@@ -1,0 +1,38 @@
+<!-- Diesel Therapy Album Releases -->
+<article id="news-cards" class="layout-multicolumn">
+
+            <section class="layout-news-card">
+
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    {{ range where .Site.RegularPages.ByDate "Type" "in" (slice "dieseltherapy-releases") }}
+                        <div class="col">
+                          <div class="layout-small-block card h-100">
+                            {{ if isset .Params "discog_ribbon" }}
+                              <div class="layout-card-ribbon"><span>{{.Params.discog_ribbon}}</span></div>
+                            {{ end }}
+                            <div layout-news-image>
+                                {{ $img_src := "/img/twisty_road6_700x350.jpg" }}
+                                {{ with .Params.img_front_cover }}
+                                  {{ $img_src = . }}
+                                {{ end }}
+                                <img class="layout-image card-img-top img-fluid" src={{ $img_src }} alt={{printf "%s %s" (.Title | markdownify) "Album Cover" }}>
+                                <!-- <div class="layout-news-date"> <span class="date">{{ .Date.Format "2" }}</span> <span class="month">{{ .Date.Format "Jan" }}</span></div> -->
+                            </div>
+                           <div class="card-body">
+                              <h3 class="layout-title card-title">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</h3>
+                              {{ with .Date }}
+                                <p>Release date: {{ . | time.Format ":date_long" }}</p>
+                              {{ end }}
+                              <div class="layout-text card-text">
+                                {{ .Content }}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                      {{ end }}
+                    </div>
+            </section>
+          </article>
+<!-- Diesel Therapy Album Releases End -->
