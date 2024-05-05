@@ -73,7 +73,7 @@ rssLimit = 100
   [[menu.main]]
     identifier = "music"
     name = "Music"
-    url = "/music/"
+    url = "/music/diesel-therapy"
     weight = 120
 
   [[menu.main]]
@@ -102,7 +102,7 @@ rssLimit = 100
     page = ["HTML"]
     home = ["HTML","RSS"]
     section = ["HTML","RSS"]
-    taxonomyTerm = ["HTML"]
+    term = ["HTML"]
     taxonomy = ["HTML"]
 
 [outputFormats]
