@@ -1,5 +1,6 @@
 ---
 title: "Ettrick Water"
+routeID: "0070"
 leader: Danny Holmes
 description: "Follow our suggested motorycycle ride to Ettrick Water."
 eventStartDate: 2018-09-16 00:00:00 +0000 UTC

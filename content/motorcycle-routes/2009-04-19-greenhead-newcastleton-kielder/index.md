@@ -1,5 +1,6 @@
 ---
 title: "Newcastleton and Kielder via Greenhead"
+routeID: "0003"
 leader: Jack Stewart
 description: "Follow our suggested motorycycle ride to Newcastleton and Kielder via Greenhead."
 eventStartDate: 2009-04-19 00:00:00 +0000 UTC

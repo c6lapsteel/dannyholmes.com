@@ -1,5 +1,6 @@
 ---
 title: "Ampleforth, Byland Abbey and Jervaulx Abbey"
+routeID: "0073"
 leader: Danny Holmes
 description: "Follow our suggested motorycycle ride to Ampleforth, Byland Abbey and Jervaulx."
 eventStartDate: 2023-04-29 00:00:00 +0000 UTC

@@ -1,0 +1,32 @@
+{{ $lat := .Params.latitude | default 51.505 }}
+{{ $lon := .Params.longitude | default -0.09 }}
+{{ $zoom := .Params.zoom | default 13 }}
+{{ $gpx := .Params.gpx }}
+
+<div id="map" style="height: 400px;"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+
+<script>
+    var map = L.map('map').setView([{{ $lat }}, {{ $lon }}], {{ $zoom }});
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    {{ if $gpx }}
+    new L.GPX('{{ $gpx }}', {
+        async: true,
+        marker_options: {
+            startIconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-icon-start.png',
+            endIconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-icon-end.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-shadow.png'
+        }
+    }).on('loaded', function(e) {
+        map.fitBounds(e.target.getBounds());
+    }).addTo(map);
+    {{ else }}
+    L.marker([{{ $lat }}, {{ $lon }}]).addTo(map);
+    {{ end }}
+</script>

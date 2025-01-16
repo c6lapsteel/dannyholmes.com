@@ -1,0 +1,46 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #eddfd2;
+
+$mainColor: #040404;
+$headingColor: #040404;
+
+$mainFontSize: 42px;
+$mainFont: source-sans-pro, system-ui, -apple-system, segoe ui, Roboto, helvetica neue, noto sans, liberation sans, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+$headingFont: source-sans-pro, system-ui, -apple-system, segoe ui, Roboto, helvetica neue, noto sans, liberation sans, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #6e500c;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: rgba( $linkColor, 0.75 );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+// Change text colors against light slide backgrounds
+@include light-bg-text-color(#222);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

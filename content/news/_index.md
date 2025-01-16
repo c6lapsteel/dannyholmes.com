@@ -1,6 +1,6 @@
 ---
 title: "News"
-description: "Read the latest news and announcements from the top UK motorcycle club."
+description: "Read the latest news and announcements from dannyholmes.com."
 linktitle: "News"
 date: 2019-01-01T08:49:29+01:00
 publishDate: 2019-01-01T08:49:29+01:00
@@ -12,4 +12,4 @@ aliases:
     - /news/news.html
 ---
 
-All the latest news, announcements and club notices from Northumbria Advanced Motorcyclists.
+All the latest news, announcements.

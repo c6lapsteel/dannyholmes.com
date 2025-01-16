@@ -1,5 +1,6 @@
 ---
 title: "Alnwick, Bamburgh, Wooler, Town Yetholm, Jedburgh, Chesters, Otterburn"
+routeID: "0053"
 leader: Paul and Carol
 description: "Follow our suggested motorycycle ride to Alnwick, Bamburgh, Wooler, Town Yetholm, Jedburgh, Chesters, Otterburn."
 eventStartDate: 2015-09-20 00:00:00 +0000 UTC

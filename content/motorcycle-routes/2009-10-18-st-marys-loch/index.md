@@ -1,5 +1,6 @@
 ---
 title: "St. Mary's Loch"
+routeID: "0010"
 leader: Robert Attwell and David Henderson
 description: "Follow our suggested motorycycle ride to St. Marys Loch."
 eventStartDate: 2014-05-18 00:00:00 +0000 UTC

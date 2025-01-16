@@ -1,5 +1,6 @@
 ---
 title: "Yarm, Ellerton, Masham, Grassington, Leyburn and Richmond"
+routeID: "0065"
 leader: Terry Murphy
 description: "Follow our suggested motorycycle ride to Yarm, Ellerton, Yafferton, Masham, Leighton, Lofthouse, Pately Bridge, Grassington, Kettlewell, Leyburn, Skeeby and Scotch Corner."
 eventStartDate: 2016-09-18 00:00:00 +0000 UTC

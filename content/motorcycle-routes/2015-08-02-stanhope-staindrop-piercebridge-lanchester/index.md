@@ -1,5 +1,6 @@
 ---
 title: "Down to County Durham"
+routeID: "0051"
 leader: Ian Du Rose
 description: "Follow our suggested motorycycle ride to Corbridge, Hexham, Blanchland, Stanhope, Hamsterley, Staindrop and Piercebridge."
 eventStartDate: 2015-08-02 00:00:00 +0000 UTC

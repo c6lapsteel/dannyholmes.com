@@ -88,6 +88,12 @@ rssLimit = 100
     url = "/motorcycle-routes/"
     weight = 160
 
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 170
+
 [taxonomies]
   author = "authors"
   tag = "tags"

@@ -1,5 +1,6 @@
 ---
 title: "Newcastleton and Kielder via Alston"
+routeID: "0004"
 leader: Don Frazer
 description: "Follow our suggested motorycycle ride to Newcastleton and Kielder via Alston."
 eventStartDate: 2009-05-17 00:00:00 +0000 UTC

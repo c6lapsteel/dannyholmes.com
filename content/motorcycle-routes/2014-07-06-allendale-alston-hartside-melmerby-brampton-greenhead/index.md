@@ -1,5 +1,6 @@
 ---
 title: "Up to Hartside and Over the Edge"
+routeID: "0039"
 leader: Ian Du Rose
 description: "Follow our suggested motorycycle ride to Allendale, Alston, Hartside, Melmerby, Brampton and Greenhead."
 eventStartDate: 2014-07-06 00:00:00 +0000 UTC

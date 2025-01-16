@@ -3,7 +3,13 @@
 {{ if $src }}
 
     <figure class="layout-google-maps mt-3 mb-3">
-        <iframe src="{{ $src }}" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe title="OpenStreetMap showing proposed motorcycle route" src="{{ $src }}" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy">
+            <p>Unable to show map here as your browser does not support iframes. Try displaying on a new page using the link below.</p>
+        </iframe>
     </figure>
+
+    <p>
+        <a href="{{ $src }}" target="_blank" title="Open in new page">View map full-size in a new page.</a>
+    </p>
 
 {{ end }}

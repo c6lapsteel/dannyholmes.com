@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section id="news" class="container">
+<section id="news" class="container min-vh-100">
   {{ if .Site.Params.debug }}
     {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/news/list.html") }}
   {{ end }}
@@ -54,14 +54,14 @@
 
       </div>
 
-      <div class="col-xs-12 col-lg-3">
+<!--       <div class="col-xs-12 col-lg-3">
         <article id="twitter-card" class="layout-twitter-card card mb-3">
           <div class="card-header d-flex justify-content-center">
             <h2 class="card-title d-flex align-items-center"><em class="fab fa-twitter-square fa-2x mr-2" aria-hidden="true"></em> @nam_rider </h2>
           </div>
           <div class="card-body"> <a class="twitter-timeline" data-width="100%" href="https://twitter.com/nam_rider" data-tweet-limit="4" data-chrome="noheader nofooter">Tweets by namrider</a></div>
         </article>
-      </div>
+      </div> -->
 
       <div class="text-muted">
         {{ if now }}

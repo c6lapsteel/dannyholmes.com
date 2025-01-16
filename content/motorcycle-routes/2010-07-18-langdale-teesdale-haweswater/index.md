@@ -1,5 +1,6 @@
 ---
 title: "Haweswater via Langdale and Teesdale"
+routeID: "0012"
 leader: Bob Atwell
 description: "Follow our suggested motorycycle ride to Haweswater via Langdale and Teesdale."
 eventStartDate: 2010-07-18 00:00:00 +0000 UTC

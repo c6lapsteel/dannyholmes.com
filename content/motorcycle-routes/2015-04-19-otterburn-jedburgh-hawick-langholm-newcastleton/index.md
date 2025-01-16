@@ -1,5 +1,6 @@
 ---
 title: "Otterburn, Jedburgh, Hawick, Langholm, Newcastleton, Kielder and Bellingham"
+routeID: "0046"
 leader: Terry Murphy
 description: "Follow our suggested motorycycle ride to Otterburn, Jedburgh, Hawick, Langholm, Newcastleton, Kielder and Bellingham."
 eventStartDate: 2015-04-19 00:00:00 +0000 UTC

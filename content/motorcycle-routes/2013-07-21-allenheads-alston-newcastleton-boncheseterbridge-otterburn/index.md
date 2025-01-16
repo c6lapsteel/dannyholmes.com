@@ -1,5 +1,6 @@
 ---
 title: "Three Counties and Over The Border"
+routeID: "0031"
 leader: A Leader
 description: "Follow our suggested motorycycle ride to Allenheads, Alston, Newcastleton, Boncheseter Bridge and Otterburn."
 eventStartDate: 2013-07-21 00:00:00 +0000 UTC

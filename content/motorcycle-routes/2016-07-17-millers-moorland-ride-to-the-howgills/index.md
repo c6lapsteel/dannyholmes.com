@@ -1,5 +1,6 @@
 ---
 title: "Miller's Moorland Ride to the Howgills"
+routeID: "0062"
 leader: Keith Miller
 description: "Follow our suggested motorycycle ride to Edmundbyers, Stanhope, Middleton-in-Teesdale, Kirkby Stephen, Sedbergh, Orton, Appleby-in-Westmorland, Langwathby, Haltwhistle, Fourstones and Chollerford."
 eventStartDate: 2016-07-17 00:00:00 +0000 UTC

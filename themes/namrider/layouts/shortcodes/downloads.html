@@ -2,8 +2,8 @@
 <ul class="layout-downloads">
     {{ range .Page.Resources.Match "**" }}
 		{{ if not (in .Name ".DS_Store" ) }}
-			<li>
-				<a href="{{ .Permalink }}" download="{{ .Name }}" class="btn btn-success btn-lg"><i class="fas fa-file-{{ .Params.icon }}"></i><span class="contact-icon bi-envelope-at-fill"></span> {{ .Title }}</a>
+			<li class="layout-contact">
+				<a href="{{ .Permalink }}" download="{{ .Name }}" class="btn btn-success btn-lg"><i class=""></i><span class="contact-icon {{ .Params.icon }}"></span> {{ .Title }}</a>
 			</li>
 		{{ end }}
   	{{ end }}

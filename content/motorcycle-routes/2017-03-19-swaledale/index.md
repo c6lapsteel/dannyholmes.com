@@ -1,5 +1,6 @@
 ---
 title: "Exploring Swaledale"
+routeID: "0067"
 leader: Mick Goodwin
 description: "Follow our suggested motorycycle ride to Richmond, Reeth, Kirkby Stephen, Middleton-in-Teesdale, Stanhope and Blanchland."
 eventStartDate: 2017-03-19 00:00:00 +0000 UTC

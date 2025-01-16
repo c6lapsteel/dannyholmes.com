@@ -1,5 +1,6 @@
 ---
 title: "The Lakes and Forest of Bowland (2 days)"
+routeID: "0050"
 leader: Ian Du Rose
 description: "Follow our suggested motorycycle ride to the Lakes and Forest of Bowland."
 eventStartDate: 2015-07-18 00:00:00 +0000 UTC

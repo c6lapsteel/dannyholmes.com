@@ -1,5 +1,6 @@
 ---
 title: "Lanercost, Langholm, Eskdalemuir, Hawick, Kielder and Otterburn"
+routeID: "0068"
 leader: Dave Glennie
 description: "Follow our suggested motorycycle ride to Chollerford, Lanercost, Langholm, Eskdalemuir, Hawick, Bonchester Bridge, Kielder and Otterburn."
 eventStartDate: 2017-04-16 00:00:00 +0000 UTC

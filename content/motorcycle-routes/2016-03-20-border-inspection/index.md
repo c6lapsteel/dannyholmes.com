@@ -1,5 +1,6 @@
 ---
 title: "An Inspection of the Borders"
+routeID: "0056"
 leader: Mick Goodwin
 description: "Follow our suggested motorycycle ride to Scot's Gap, Rothbury, Coldstream, Kelso, Jedburgh and Otterburn."
 eventStartDate: 2016-03-20 00:00:00 +0000 UTC

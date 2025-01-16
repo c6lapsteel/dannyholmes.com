@@ -1,5 +1,6 @@
 ---
 title: "Stanhope, Alston, Brampton, Longtown, Newcastleton, Kielder and Otterburn"
+routeID: "0049"
 leader: Dave Glennie
 description: "Follow our suggested motorycycle ride to Stanhope, Alston, Brampton, Longtown, Newcastleton, Kielder and Otterburn."
 eventStartDate: 2015-07-05 00:00:00 +0000 UTC

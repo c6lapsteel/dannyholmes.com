@@ -1,5 +1,6 @@
 ---
 title: "Three Rivers (Alternative Route)"
+routeID: "0058"
 leader: Stewart Wilkinson
 description: "Follow our suggested motorycycle ride to Wylam, Hexham, Allendale, Stanhope, Piercebridge, Staindrop, Middleton-in-Teesdale, Alston."
 eventStartDate: 2016-04-17 00:00:00 +0000 UTC

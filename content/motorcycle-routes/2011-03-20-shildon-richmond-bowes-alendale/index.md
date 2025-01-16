@@ -1,5 +1,6 @@
 ---
 title: "Shildon, Richmond, Bowes and Alendale"
+routeID: "0014"
 leader: Michael Sutherland
 description: "Follow our suggested motorycycle ride to Shildon, Richmond, Bowes and Alendale."
 eventStartDate: 2011-03-20 00:00:00 +0000 UTC

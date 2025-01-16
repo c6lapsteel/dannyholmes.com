@@ -1,5 +1,6 @@
 ---
 title: "Kielder, Jedburgh and Seahouses"
+routeID: "0007"
 leader: Alan Thompson
 description: "Follow our suggested motorycycle ride to Kielder, Jedburgh and Seahouses."
 eventStartDate: 2009-07-19 00:00:00 +0000 UTC

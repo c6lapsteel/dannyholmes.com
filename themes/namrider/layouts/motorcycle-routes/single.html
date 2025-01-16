@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-12 col-lg-8 offset-lg-2">
 
-      <article class="layout-article mt-5">
+      <article data-pagefind-body class="layout-article mt-5">
         <section class="layout-article-header">
           {{ if .Site.Params.debug }}
             {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/motorcycle-routes/single.html") }}
@@ -52,13 +52,10 @@
 
       </article>
 
-      <section class="layout-add-this">
+<!--       <section class="layout-add-this">
         <h3>Share this article</h3>
         <div class="addthis_inline_share_toolbox"></div>
-      </section>
-
-
-
+      </section> -->
 
     </div>
   </div>

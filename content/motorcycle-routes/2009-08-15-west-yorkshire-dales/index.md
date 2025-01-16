@@ -1,5 +1,6 @@
 ---
 title: "West Yorkshire Dales"
+routeID: "0008"
 leader: Michael Sutherland
 description: "Follow our suggested motorycycle ride to the West Yorkshire Dales."
 eventStartDate: 2009-08-15 00:00:00 +0000 UTC

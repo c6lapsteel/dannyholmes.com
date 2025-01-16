@@ -1,12 +1,16 @@
 {{/*
-    Generates a list of all site updates.
+    Site search.
 */}}
 
-<h2>All Pages</h2>
-
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<!-- <link href="/pagefind/pagefind-ui.css" rel="stylesheet"> -->
 <script src="/pagefind/pagefind-ui.js"></script>
-<div id="search"></div>
+<div class="container">
+    <div class="row">
+        <div id="search" class="input-group mb-3"></div>
+    </div>
+</div>
+
+
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#search", showSubResults: false, showImages: false, resetStyles: true });

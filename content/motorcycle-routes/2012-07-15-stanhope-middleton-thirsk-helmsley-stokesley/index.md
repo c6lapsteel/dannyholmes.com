@@ -1,5 +1,6 @@
 ---
 title: "Stanhope, Middleton-in-Teesdale, Thirsk, Helmsley and Stokesley"
+routeID: "0025"
 leader: Paddy Jarvis
 description: "Follow our suggested motorycycle ride to Stanhope, Middleton-in-Teesdale, Thirsk, Helmsley and Stokesley."
 eventStartDate: 2012-07-15 00:00:00 +0000 UTC

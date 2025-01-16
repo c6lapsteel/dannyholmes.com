@@ -1,5 +1,6 @@
 ---
 title: "Coastal Castles and Admiral Lord Nelson"
+routeID: "0057"
 leader: Michael Sutherland
 description: "Follow our suggested motorycycle ride to Warkworth, Alnwick, Bamburgh, Barmoor, Ford and Swarland."
 eventStartDate: 2016-04-03 00:00:00 +0000 UTC

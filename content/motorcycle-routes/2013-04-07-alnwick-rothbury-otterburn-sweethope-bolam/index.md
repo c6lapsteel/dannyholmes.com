@@ -1,5 +1,6 @@
 ---
 title: "Alnwick, Rothbury, Otterburn, Sweethope Loughs and Bolam Lake"
+routeID: "0028"
 leader: Roland McLeod
 eventStartDate: 2013-04-07 00:00:00 +0000 UTC
 publishDate: 2013-04-07T21:21:45Z

@@ -1,5 +1,6 @@
 ---
 title: "Kirkharle, Alston, Hartside, Kirkby Steven, Reeth, Staindrop and Stanhope"
+routeID: "0040"
 leader: Dave Glennie
 description: "Follow our suggested motorycycle ride to Kirkharle, Alston, Hartside, Kirkby Steven, Reeth, Staindrop and Stanhope."
 eventStartDate: 2014-07-20 00:00:00 +0000 UTC

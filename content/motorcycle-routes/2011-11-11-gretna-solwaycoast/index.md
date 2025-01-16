@@ -1,5 +1,6 @@
 ---
 title: "Gretna and the Solway Coast"
+routeID: "0021"
 leader: Don Fraser
 description: "Follow our suggested motorycycle ride to Gretna and the Solway Coast."
 eventStartDate: 2011-11-11 00:00:00 +0000 UTC

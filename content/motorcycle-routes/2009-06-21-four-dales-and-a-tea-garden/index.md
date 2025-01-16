@@ -1,5 +1,6 @@
 ---
 title: "Four Dales and a Tea Garden"
+routeID: "0006"
 leader: Michael Sutherland
 description: "Follow our suggested motorycycle ride to Eskdale, Glaisdale, Rosedale, Billsdale and the Sleights Victorian Riverside Tea Gardens."
 eventStartDate: 2010-03-21 00:00:00 +0000 UTC

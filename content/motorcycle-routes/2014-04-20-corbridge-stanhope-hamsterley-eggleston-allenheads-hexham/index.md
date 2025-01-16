@@ -1,5 +1,6 @@
 ---
 title: "Corbridge, Blanchland, Stanhope, Hamsterley, Allenheads and Hexham"
+routeID: "0036"
 leader: Terry Murphy
 description: "Follow our suggested motorycycle ride to Corbridge, Blanchland, Stanhope, Hamsterley, Allenheads and Hexham."
 eventStartDate: 2014-04-20 00:00:00 +0000 UTC

@@ -1,5 +1,6 @@
 ---
 title: "Northumberland and the Borders"
+routeID: "0029"
 leader: David Glennie
 description: "Follow our suggested motorycycle ride to Bellingham, Falstone, Hawick, Kelso, Wooler, Bamburgh and Boulmer."
 eventStartDate: 2013-04-21 00:00:00 +0000 UTC

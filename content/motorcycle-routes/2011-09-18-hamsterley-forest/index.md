@@ -1,5 +1,6 @@
 ---
 title: "Hamsterley Forest"
+routeID: "0019"
 leader: Richie Robinson
 description: "Follow our suggested motorycycle ride to Hamsterley Forest."
 eventStartDate: 2011-09-18 00:00:00 +0000 UTC

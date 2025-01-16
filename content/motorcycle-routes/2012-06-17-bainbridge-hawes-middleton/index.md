@@ -1,5 +1,6 @@
 ---
 title: "Bainbridge, Hawes, Middleton-in-Teesdale"
+routeID: "0024"
 leader: Richie Robinson
 description: "Follow our suggested motorycycle ride to Bainbridge, Hawes, Middleton-in-Teesdale."
 eventStartDate: 2012-06-17 00:00:00 +0000 UTC

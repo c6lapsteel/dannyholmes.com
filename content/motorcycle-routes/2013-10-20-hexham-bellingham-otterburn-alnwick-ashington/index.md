@@ -1,5 +1,6 @@
 ---
 title: "Rothbury, Chillingham, Bamburgh, Seahouses and Ashington"
+routeID: "0033"
 leader: Roland McLeod
 description: "Follow our suggested motorycycle ride to Rothbury, Chillingham, Bamburgh, Seahouses and Ashington."
 eventStartDate: 2014-04-06 00:00:00 +0000 UTC

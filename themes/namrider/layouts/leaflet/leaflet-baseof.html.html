@@ -1,0 +1,119 @@
+{{ $lat := .Params.latitude | default 51.505 }}
+{{ $lon := .Params.longitude | default -0.09 }}
+{{ $zoom := .Params.zoom | default 13 }}
+{{ $gpx := .Params.gpx }}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <style>
+            html, body, #map {
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <title>Leaflet GPX Map</title>
+    </head>
+    <body>
+        <div id="map-container" style="width: 100%; height: 100%;"></div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+        <script>
+            var map = L.map('map-container').setView([{{- $lat -}}, {{- $lon -}}], {{- $zoom -}}); // Example center coordinates for Newcastle upon Tyne
+        
+            // Add base tiles (e.g., OpenStreetMap)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors & <a href="https://dannyholmes.com/">Danny Holmes</a>'
+            }).addTo(map);
+        
+            {{ with .Resources.GetMatch "gpx/*.gpx" }}
+                var gpx = {{ .RelPermalink }}; // URL to your GPX file or the GPX itself
+            {{ end }}  
+
+            {{ with .Resources.GetMatch "legend/Waypoint*.png" }}
+                var waypointURL = {{ .RelPermalink }}; // URL to waypoints image file
+            {{ end }}
+
+            var markersLayer = L.layerGroup();
+            var routeLayer = L.layerGroup();
+
+            var myIconSize = 20
+
+                new L.GPX(gpx, {
+                        async: true,
+                        gpx_options: {
+                            parseElements: ['waypoint', 'track'],
+                            joinTrackSegments: false
+                        },
+                        polyline_options: {
+                            color: '#6e500c',  // Custom color (OrangeRed)
+                            weight: 4,
+                            opacity: 0.8,
+                            dashArray: '5, 10'  // Dashed line pattern
+                        },
+                        marker_options: {
+                            wptIcons: {
+                                '': L.icon({
+                                    iconUrl: '/leaflet/route_0076/legend/Waypoints_2.png',
+                                    iconSize: [myIconSize, myIconSize],
+                                    iconAnchor: [myIconSize/2, myIconSize/2],
+                                    popupAnchor: [0, -myIconSize/2]
+                                })
+                            },
+                            startIconUrl: null,
+                            endIconUrl: null,
+                            shadowUrl: null
+                        },
+                        pointToLayer: function (point, latlng) {
+                            var marker = L.marker(latlng);
+                            markersLayer.addLayer(marker);
+                            return marker;
+                        }
+                    }).on('addpoint', function(e) {
+                        var marker = e.point;
+                        markersLayer.addLayer(marker);
+                        
+                        // Add popup with waypoint name if available
+                        if (e.point.name) {
+                            marker.bindPopup(e.point.name);
+                        }
+                    }).on('addline', function(e) {
+                        routeLayer.addLayer(e.line);
+                    }).on('loaded', function(e) {
+                        var gpx = e.target;
+                        var bounds = gpx.getBounds();
+                        
+                        // Calculate centroid
+                        var centroid = bounds.getCenter();
+                        
+                        // Set map view to centroid
+                        map.setView(centroid, map.getBoundsZoom(bounds));
+
+                        // Add a marker at the centroid (optional)
+                        // L.marker(centroid).addTo(map).bindPopup("Centroid");
+                    }).addTo(map);
+
+                    markersLayer.addTo(map);
+                    routeLayer.addTo(map);
+
+                    var overlayMaps = {
+                        "Waypoints": markersLayer,
+                        "Route": routeLayer
+                    };
+
+                    L.control.layers(null, overlayMaps).addTo(map);
+
+        </script>
+    </body>
+</html>

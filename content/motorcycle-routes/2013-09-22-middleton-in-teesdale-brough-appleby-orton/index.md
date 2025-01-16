@@ -1,5 +1,6 @@
 ---
 title: "Middleton-in-Teesdale, Brough, Appleby-in-Westmorland and Orton"
+routeID: "0032"
 leader: John Magee
 description: "Follow our suggested motorycycle ride to Middleton-in-Teesdale, Brough, Appleby-in-Westmorland and Orton."
 eventStartDate: 2013-09-22 00:00:00 +0000 UTC

@@ -1,12 +1,12 @@
 {{ define "main" }}
-  <section class="container py-3">
+  <section class="container layout-main-container min-vh-100 py-3">
     {{ if .Site.Params.debug }}
       {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/_default/single.html") }}
     {{ end }}
       <div class="row">
         <div class="col-12 col-lg-8 offset-lg-2">
     
-          <article class="layout-article mt-5">
+          <article data-pagefind-body class="layout-article mt-5">
             <h1>
               {{ partial "insert-heading.html" . }}
             </h1>
@@ -19,14 +19,14 @@
           </article>
 
           {{ if .Params.addThis }}
-            <section class="layout-add-this">
+            <section data-pagefind-ignore class="layout-add-this">
               <h3>Share this article</h3>
               <div class="addthis_inline_share_toolbox"></div>
             </section>
           {{ end }}
 
       </div>
-      <div class="d-none d-lg-block col-lg-2">
+      <div data-pagefind-ignore class="d-none d-lg-block col-lg-2">
         {{ partial "toc.html" . }}
       </div>
     </div>

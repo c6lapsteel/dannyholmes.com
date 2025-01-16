@@ -1,5 +1,6 @@
 ---
 title: "Yet Another Inspection of the Border!"
+routeID: "0064"
 leader: Steve Alport
 description: "Follow our suggested motorycycle ride to Corbridge, Haydon Bridge, Alston, Brampton, Longtown, Newcastleton, Hawick, Jedburgh, Otterburn."
 eventStartDate: 2016-08-21 00:00:00 +0000 UTC

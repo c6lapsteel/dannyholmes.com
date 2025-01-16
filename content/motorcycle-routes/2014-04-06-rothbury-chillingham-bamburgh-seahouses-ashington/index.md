@@ -1,5 +1,6 @@
 ---
 title: "Hexham, Bellingham, Otterburn, Alnwick, Ashington"
+routeID: "0035"
 leader: Paul Connell
 description: "Follow our suggested motorycycle ride to Hexham, Bellingham, Otterburn, Alnwick and Ashington."
 eventStartDate: 2013-10-20 00:00:00 +0000 UTC

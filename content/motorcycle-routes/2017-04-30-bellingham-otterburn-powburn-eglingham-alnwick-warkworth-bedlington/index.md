@@ -1,5 +1,6 @@
 ---
 title: "Bellingham, Otterburn, Powburn, Eglingham, Alnwick, Warkworth, Bedlington"
+routeID: "0069"
 leader: Ashley Webster
 description: "Follow our suggested motorycycle ride to Bellingham, Otterburn, Powburn, Eglingham, Alnwick, Warkworth, Bedlington."
 eventStartDate: 2017-04-30 00:00:00 +0000 UTC

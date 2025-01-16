@@ -1,5 +1,6 @@
 ---
 title: "A Quick Inspection of the Borders"
+routeID: "0034"
 leader: Michael Goodwin
 description: "Follow our suggested motorycycle ride to Kielder, Jedburgh, Kelso, Coldstream and Alnwick."
 eventStartDate: 2014-03-16 00:00:00 +0000 UTC

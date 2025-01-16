@@ -1,5 +1,6 @@
 ---
 title: "A Dip Into The North Pennines"
+routeID: "0005"
 leader: Craig Hopkins
 description: "Follow our suggested motorycycle ride to into the North Pennines."
 eventStartDate: 2009-06-21 00:00:00 +0000 UTC

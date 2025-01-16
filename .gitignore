@@ -21,3 +21,6 @@ hugo.linux
 
 # Mac
 .DS_Store
+
+# Shell files
+*.sh

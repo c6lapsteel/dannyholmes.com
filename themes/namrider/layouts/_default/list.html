@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="container">
+<div data-pagefind-body class="container">
   {{ if .Site.Params.debug }}
     {{ partial "show-template" (dict "Which" .Kind "Template" "themes/namrider/layouts/_default/list.html") }}
   {{ end }}

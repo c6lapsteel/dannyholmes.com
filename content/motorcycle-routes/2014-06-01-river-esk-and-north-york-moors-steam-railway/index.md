@@ -1,5 +1,6 @@
 ---
 title: "The River Esk and North York Moors Steam Railway"
+routeID: "0037"
 leader: Michael Sutherland
 description: "Follow our suggested motorycycle ride to the river Esk and the North York Moors Steam Railway."
 eventStartDate: 2014-06-01 00:00:00 +0000 UTC

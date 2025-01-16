@@ -24,8 +24,12 @@ resources:
     icon: word
 aliases:
     -
-draft: false
+draft: true
 ---
+
+<div class="layout-google-maps mt-3">
+    <iframe src="file:///Users/dannyholmes/Code/Websites/dannyholmes/public/qgis2web/Day%201/index.html#9/55.1650/-1.8547" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
 
 ## Route Description
 

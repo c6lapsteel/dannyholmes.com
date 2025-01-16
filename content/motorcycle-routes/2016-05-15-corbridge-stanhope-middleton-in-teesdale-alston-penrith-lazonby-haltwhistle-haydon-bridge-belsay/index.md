@@ -1,5 +1,6 @@
 ---
 title: "Corbridge, Stanhope, Middleton-in-Teesdale, Alston, Penrith, Lazonby, Haltwhistle, Haydon Bridge, Belsay"
+routeID: "0059"
 leader: Dave Glennie
 description: "Follow our suggested motorycycle ride to Corbridge, Stanhope, Middleton-in-Teesdale, Alston, Penrith, Lazonby, Haltwhistle, Haydon Bridge, Chollerford and Belsay."
 eventStartDate: 2016-05-15 00:00:00 +0000 UTC

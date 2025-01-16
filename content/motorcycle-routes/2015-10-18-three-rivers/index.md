@@ -1,5 +1,6 @@
 ---
 title: "Three Rivers"
+routeID: "0055"
 leader: Stewart Wilkinson
 description: "Follow our suggested motorycycle ride to Kirkley, Belsay, Matfen, Corbridge, Hexham, Alston, Middleton-in-Teesdale, Piercebridge, Stanhope, St. John's Chapel and Allendale."
 eventStartDate: 2015-10-18 00:00:00 +0000 UTC

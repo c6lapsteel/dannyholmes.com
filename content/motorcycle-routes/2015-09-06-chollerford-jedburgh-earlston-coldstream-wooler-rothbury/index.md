@@ -1,5 +1,6 @@
 ---
 title: "Chollerford, Jedburgh, Earlston, Coldstream, Wooler and Rothbury"
+routeID: "0052"
 leader: Roland McLeod
 description: "Follow our suggested motorycycle ride to Chollerford, Jedburgh, Earlston, Coldstream, Wooler and Rothbury."
 eventStartDate: 2015-09-06 00:00:00 +0000 UTC

@@ -1,5 +1,6 @@
 ---
 title: "St. Mary's Loch (Alternative Route)"
+routeID: "0066"
 leader: Ian Du Rose
 description: "Follow our suggested motorycycle ride to Otterburn, Bonchester Bridge, Hawick, St. Mary's Loch, Eskdalemuir, Langholm,  Wark and Chollerford."
 eventStartDate: 2016-10-16 00:00:00 +0000 UTC

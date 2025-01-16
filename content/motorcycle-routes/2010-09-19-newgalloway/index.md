@@ -1,5 +1,6 @@
 ---
 title: "New Galloway"
+routeID: "0013"
 leader: Bill Davison
 description: "Follow our suggested motorycycle ride to New Galloway."
 eventStartDate: 2011-05-15 00:00:00 +0000 UTC

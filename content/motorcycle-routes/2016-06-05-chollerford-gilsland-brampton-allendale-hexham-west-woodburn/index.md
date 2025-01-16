@@ -1,5 +1,6 @@
 ---
 title: "Chollerford, Gilsland, Brampton, Alledale Town, Hexham, Corbridge, West Woodburn"
+routeID: "0060"
 leader: Neil Potts
 description: "Follow our suggested motorycycle ride to Chollerford, Gilsland, Brampton, Alledale Town, Hexham, Corbridge, West Woodburn."
 eventStartDate: 2016-06-05 00:00:00 +0000 UTC

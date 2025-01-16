@@ -56,6 +56,8 @@ Source: Conversation with Bing, 18/01/2024
 
 {{< qgis2web src="/qgis2web/statues1/index.html" >}}
 
+***NEXT***
+
 {{< qgis2web src="/qgis2web/statues2/index.html" >}}
 
 {{< qgis2web src="/qgis2web/statues3/index.html" >}}

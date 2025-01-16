@@ -1,5 +1,6 @@
 ---
 title: "Three Dales and a First World War Pageant"
+routeID: "0042"
 leader: Michael Sutherland
 description: "Follow our suggested motorycycle ride Ripon, Grassington, Leyburn and Richmond."
 eventStartDate: 2014-09-21 00:00:00 +0000 UTC

@@ -1,5 +1,6 @@
 ---
 title: "A Border Jaunt"
+routeID: "0018"
 leader: Paddy Jarvis
 description: "Follow our suggested motorycycle border jaunt."
 eventStartDate: 2011-08-21 00:00:00 +0000 UTC

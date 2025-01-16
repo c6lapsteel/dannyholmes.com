@@ -1,5 +1,6 @@
 ---
 title: "Border Reivers"
+routeID: "0047"
 leader: Simon Parry
 description: "Follow our suggested motorycycle ride to Kielder, Bonchester Bridge, Chesters, Oxnam, Town Yetholm, Akeld, Wooler, and Alnwick."
 eventStartDate: 2015-05-17 00:00:00 +0000 UTC

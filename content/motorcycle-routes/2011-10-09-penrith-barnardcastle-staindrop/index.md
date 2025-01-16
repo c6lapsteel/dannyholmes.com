@@ -1,5 +1,6 @@
 ---
 title: "Penrith, Barnard Castle and Staindrop"
+routeID: "0020"
 leader: Ron Patrick
 description: "Follow our suggested motorycycle ride to Penrith, Barnard Castle and Staindrop."
 eventStartDate: 2011-10-09 00:00:00 +0000 UTC

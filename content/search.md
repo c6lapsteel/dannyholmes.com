@@ -9,6 +9,6 @@ outputs:
     - html
 ---
 
-Search the site
+Search dannyholmes.com (requires JavaScript).
 
 {{< site-search >}}

@@ -1,5 +1,6 @@
 ---
 title: "Blanchland, Alston, Jedburgh and Alnwick"
+routeID: "0001"
 leader: David Glennie
 description: "Follow our suggested motorycycle ride to Blanchland, Alston, Jedburgh and Alnwick."
 eventStartDate: 2009-04-19 00:00:00 +0000 UTC
