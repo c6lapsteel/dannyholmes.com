@@ -9,7 +9,8 @@
 
     {{- partial "favicon" . -}}
     {{- partial "meta" . -}}
-    <link rel="preconnect" href="https://use.typekit.net/" crossorigin>
+    <!-- <link rel="preconnect" href="https://use.typekit.net/" crossorigin> -->
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
     <style type="text/css">
       {{ if eq $.Site.Params.minify true }}{{ readFile "/themes/namrider/static/critical/critical.css" | safeCSS }}{{ else }}{{ readFile "/themes/namrider/static/critical/critical.css" | safeCSS }}{{ end }}
     </style>

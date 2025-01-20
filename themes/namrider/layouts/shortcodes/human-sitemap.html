@@ -86,9 +86,9 @@
       {{ end }}
 </ul>
 
-<h2>News</h2>
+<h2>Routes</h2>
 <ul>
-{{ range (where .Site.Pages.ByTitle ".Type" "news") }}
+{{ range (where .Site.Pages.ByTitle ".Type" "Best Bike Routes") }}
     <li><article itemscope itemtype="http://schema.org/Blog">
         <a href="{{ .Permalink }}">{{ .Title }}</a>
     </article></li>

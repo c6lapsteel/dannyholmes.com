@@ -1,4 +1,12 @@
-{{ $movies := getJSON "data/motorcycle_movies/motorcycle_movie_top_films.json" }}
+{{ $movies := dict }}
+{{ $path := "data/motorcycle_movies/motorcycle_movie_top_films.json" }}
+{{ with resources.Get $path }}
+    {{ with . | transform.Unmarshal }}
+        {{ $movies = . }}
+    {{ end }}
+{{ else }}
+    {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
 
 
 <div class="jumbotron jumbotron-fluid">

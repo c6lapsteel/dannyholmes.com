@@ -31,8 +31,6 @@
   </section>
 </article>
 
-{{ $headless := .Site.GetPage "/services" }}
-{{ $reusablePages := $headless.Resources.Match "*" }}
 <article id="page-services" class="page-section container">
 
   <div class="d-flex justify-content-left">
@@ -41,17 +39,23 @@
 
   <div class="container">
     <div class="row">
-      {{ range $index, $value := $reusablePages}}
-        <section class="service col-md-4">
-          <div class="service-icon {{ .Params.service_class }}">
-          </div>
-          <h3>{{ .Title | markdownify }}</h3>
-          {{ .Content }}
+      {{ with .Site.GetPage "/about/overview/services" }}
+        {{ $headless := . }}
+        {{ $reusablePages := $headless.Resources.Match "*" }}   
+        {{ range $index, $value := $reusablePages}}
+          <section class="service col-md-4">
+            <div class="service-icon {{ .Params.service_class }}">
+            </div>
+            <h3>{{ .Title | markdownify }}</h3>
+            {{ .Content }}
 
-        </section>
-        {{ if eq (mod (add $index 1) 3 ) 0 }}
-          <!-- <div class="w-100 .d-md-none"></div> -->
+          </section>
+          {{ if eq (mod (add $index 1) 3 ) 0 }}
+            <!-- <div class="w-100 .d-md-none"></div> -->
+          {{ end }}
         {{ end }}
+      {{ else }}
+          <p>... motorcycling; music; web design; data analytics; English history; allotmenting ... </p>
       {{ end }}
     </div>
   </div>

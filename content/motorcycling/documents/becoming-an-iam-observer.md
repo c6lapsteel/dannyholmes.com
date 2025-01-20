@@ -7,7 +7,7 @@ linktitle: "Becoming an IAM Observer"
 date: 2019-06-29T16:59:53+01:00
 weight: 50
 addThis: true
-draft: false
+draft: true
 aliases:
     - /training/training/becoming-an-IAM-observer.html
 ---

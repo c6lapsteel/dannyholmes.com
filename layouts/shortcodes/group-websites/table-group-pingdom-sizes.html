@@ -1,4 +1,12 @@
-{{ $sizes := getJSON "data/group_websites/IAM_group_website_pingdom_sizes.json" }}
+{{ $sizes := dict }}
+{{ $path := "data/group_websites/IAM_group_website_pingdom_sizes.json" }}
+{{ with resources.Get $path }}
+    {{ with . | transform.Unmarshal }}
+        {{ $sizes = . }}
+    {{ end }}
+{{ else }}
+    {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
 
 {{ $rowCounter := 0 }}
 

@@ -1,4 +1,12 @@
-{{ $scores := getJSON "data/group_websites/IAM_group_website_performance_scores.json" }}
+{{ $scores := dict }}
+{{ $path := "data/group_websites/IAM_group_website_performance_scores.json" }}
+{{ with resources.Get $path }}
+    {{ with . | transform.Unmarshal }}
+        {{ $scores = . }}
+    {{ end }}
+{{ else }}
+    {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
 
 <div class="card mb-4">
     <div class="card-body">

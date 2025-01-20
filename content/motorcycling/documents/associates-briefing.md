@@ -7,7 +7,7 @@ linktitle: "Briefing for new Associates"
 date: 2019-06-29T16:59:53+01:00
 weight: 10
 addThis: true
-draft: false
+draft: true
 aliases:
     - /training/training-associates-briefing.html
 ---

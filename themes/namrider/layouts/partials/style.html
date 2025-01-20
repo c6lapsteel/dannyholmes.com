@@ -1,7 +1,8 @@
 {{ $options := (dict "targetPath" "css/theme.css" "outputStyle" "compressed" "enableSourceMap" true) }}
 {{ $style := resources.Get "sass/theme.scss" | toCSS $options | postCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
-<link rel="stylesheet" href="https://use.typekit.net/wzw2mmy.css">
+<!-- <link rel="stylesheet" href="https://use.typekit.net/wzw2mmy.css"> -->
+<link href="https://fonts.bunny.net/css?family=playfair-display:400,600,700" rel="stylesheet" />
 {{ if .Params.datatables }}
     <!--
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" media="print" onload="this.media='all'">

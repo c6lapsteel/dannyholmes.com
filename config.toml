@@ -2,8 +2,6 @@ baseURL = "https://dannyholmes.com/"
 languageCode = "en-gb"
 title = "Danny Holmes"
 copyright = "Copyright Danny Holmmes. All rights reserved."
-# Define how many pages appear per site
-paginate = 12
 # Enable comments powered by Disqus by entering your disqus shortname
 disqusShortname = "northumbria-advanced-motorcyclists"
 # Enable gogle analytics by entering your tracking code
@@ -23,11 +21,14 @@ canonifyURLs = false
 # RSS
 rssLimit = 100
 
-[author]
-    name = "Danny Holmes"
-    email = "hi@dannyholmes.com"
+# Define how many pages appear per site
+[pagination]
+  disableAliases = false
+  pagerSize = 12
+  path = 'page'
 
 [params]
+    debug = false
     site_author = "Danny Holmes"
     site_logo = ""
     short_title = "dannyholmes.com"
@@ -46,8 +47,9 @@ rssLimit = 100
     datatables = false
     rss = ""
     rssPageType = ["news", "posts", "events"]
-
-    debug = false
+    [params.author]
+      name = "Danny Holmes"
+      email = "hi@dannyholmes.com"
 
     # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
     background_color_class = "bg-black"
@@ -163,7 +165,7 @@ rssLimit = 100
 
 [params.private]
     # Exclude from sitemaps
-    privateDirs = ["overview","timeline","events","faq","news","motorcycle-routes","namrider"]
+    privateDirs = ["overview","timeline","events","faq","news","motorcycle-routes","documents", "leaflet"]
 
 [params.robots]
     # Set no-follow in robots meta tag

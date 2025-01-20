@@ -50,6 +50,7 @@ $line-height-base:            1.5 !default;
 $font-weight-base:			  400 !default;
 
 $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif:			  ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !default;
 
 body {
 	font-family: $font-family-sans-serif;
@@ -83,7 +84,7 @@ body a {
 }
 
 html.fonts-loaded body {
-	font-family: source-sans-pro, $font-family-sans-serif;
+	font-family: $font-family-sans-serif;
   }
 
 .lead-paragraph {
@@ -254,12 +255,12 @@ ul.social-icons>li {
 	-------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $font-family-sans-serif;
+	font-family: 'Playfair Display', $font-family-serif;
 	margin-top: $spacer * 3;
 }
 
 html.fonts-loaded h1, html.fonts-loaded h2, html.fonts-loaded h3, html.fonts-loaded h4, html.fonts-loaded h5, html.fonts-loaded h6 {
-	font-family: souce-sans-pro, $font-family-sans-serif;
+	font-family: 'Playfair Display', $font-family-serif;
 }
 
 h1 {
