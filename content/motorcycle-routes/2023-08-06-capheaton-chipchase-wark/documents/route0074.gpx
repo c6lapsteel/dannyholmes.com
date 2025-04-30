@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:trp="http://www.garmin.com/xmlschemas/TripExtensions/v1" version="1.1" creator="inRoute-v8.6.7">
+	<wpt lat="55.066509" lon="-1.633922">
+		<name>Seaton Burn Services4</name>
+		<src>Fina Service Station, Fisher Lane, Newcastle Upon Tyne, England, NE13 6BP, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.079506" lon="-1.647696">
+		<name>Berwick Hill Road (to Ponteland)</name>
+		<src><![CDATA[1–21 Berwick Hill Road, Seaton Burn]]></src>
+	</wpt>
+	<wpt lat="55.057228" lon="-1.748884">
+		<name>North Road (Ponteland)</name>
+		<src>North Road, Ponteland, Newcastle Upon Tyne, England, NE20, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.140984" lon="-1.733967">
+		<name>B6524 (to Whalton)</name>
+		<src>B6524, Shilvington, Newcastle Upon Tyne, England, NE20, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.105789" lon="-1.844349">
+		<name>A696 (towards Rothbury)</name>
+		<src>Wood House Cottage, Newcastle Upon Tyne, England, NE20 0EU, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.108372" lon="-1.861620">
+		<name>B6309 (to Stamfordham)</name>
+		<src>B6309, Belsay, Newcastle Upon Tyne, England, NE20, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.043430" lon="-1.881439">
+		<name>West View (Stamfordham)</name>
+		<src>West View, Newcastle Upon Tyne, England, NE18 0QQ, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.041615" lon="-1.954866">
+		<name>North Side (Matfen)</name>
+		<src>6 North Side, Newcastle Upon Tyne, England, NE20 0RW, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.062721" lon="-1.976490">
+		<name>Ryal (to B6342)</name>
+		<desc>Ryal</desc>
+		<src>Newcastle Upon Tyne, England, NE20, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.065266" lon="-2.076657">
+		<name>B6342 (to Capheaton)</name>
+		<src>B6342, Colwell, Hexham, England, NE46, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.105434" lon="-1.966964">
+		<name>Road (to Capheaton)</name>
+		<desc>Road</desc>
+		<src>Newcastle Upon Tyne, England, NE19, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.118164" lon="-1.946642">
+		<name>Silver Hill (Capheaton)</name>
+		<desc>Silver Hill</desc>
+		<src>Silver Hill, Capheaton, Newcastle Upon Tyne, England, NE19, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.130798" lon="-1.949038">
+		<name>A696 (towards Otterburn)</name>
+		<src>A696, Middleton, Morpeth, England, NE61, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.152393" lon="-2.010331">
+		<name>Road (towards Carrycoats)</name>
+		<src>A696, Kirkwhelpington, Newcastle Upon Tyne, England, NE19, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.128674" lon="-2.044299">
+		<name>Road (for A68)</name>
+		<desc>Road</desc>
+		<src>Newcastle Upon Tyne, England, NE19, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.106880" lon="-2.126241">
+		<name>A68 Junction</name>
+		<src>A68, Birtley, Hexham, England, NE48, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.102314" lon="-2.147091">
+		<name>Road (to Chipchase Castle)</name>
+		<src>Hexham, England, NE48, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.076302" lon="-2.182695">
+		<name>Chipchase Castle (to Park)</name>
+		<src>Hexham, England, NE48, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.087719" lon="-2.220161">
+		<name>Front St (Wark)</name>
+		<src>Post Office, Front Street, Hexham, England, NE48 3LG, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.087578" lon="-2.220408">
+		<name>B6320 (towards Chollerford)</name>
+		<src>1 Hexham Road, England NE48 3LR, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.061131" lon="-2.193859">
+		<name>Ward Lane (Nunwick)</name>
+		<src>Ward Lane, Nunwick, Simonburn, Hexham, England, NE48, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.070087" lon="-2.280924">
+		<name>Ward Lane (towards Stonehaugh)</name>
+		<desc>Ward Lane</desc>
+		<src>The Bothy, Hexham, England, NE48 3EQ, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.069996" lon="-2.290392">
+		<name>Ward Lane (to Whygate)</name>
+		<desc>Ward Lane</desc>
+		<src>Ward Lane, Wark, Hexham, England, NE48, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.078197" lon="-2.357580">
+		<name>Stonehaugh Loop</name>
+		<src>Hexham, England, NE48, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.087811" lon="-2.223732">
+		<name>Elliot Terrace (Park)</name>
+		<src>The Chippings, Hexham, England, NE48 3DG, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.087490" lon="-2.220436">
+		<name>B6320 (to Chollerford)</name>
+		<src>2-3 Hexham Road, England NE48 3LR, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.055351" lon="-2.180594">
+		<name>B6320 (Humshaugh)</name>
+		<src>B6320, Humshaugh, Hexham, England, NE46, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.030273" lon="-2.128715">
+		<name>B6320 (Chollerford)</name>
+		<src>7 Hadrian Court, England NE46 4DE, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.008923" lon="-1.899856">
+		<name>B6309 (to Stamfordham)</name>
+		<src>B6309, Stamfordham, Newcastle Upon Tyne, England, NE18, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.042362" lon="-1.828108">
+		<name>Dalton</name>
+		<desc>Dalton</desc>
+		<src>Dalton Millbank House, Newcastle Upon Tyne, England, NE18 0AX, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.042662" lon="-1.813947">
+		<name>Road (towards Capheaton)</name>
+		<src>Paddock Lane, Dalton, Newcastle Upon Tyne, England, NE18, United Kingdom</src>
+		<sat>1</sat>
+	</wpt>
+	<wpt lat="55.046874" lon="-1.814371">
+		<name>Limestone Lane (to Ponteland)</name>
+		<src>Limestone Lane, Dalton, Newcastle Upon Tyne, England, NE18, United Kingdom</src>
+		<sat>1</sat>
+	</wpt>
+	<wpt lat="55.055019" lon="-1.763374">
+		<name>A696 (to Ponteland)</name>
+		<src><![CDATA[84–98 A696, Ponteland, Newcastle Upon Tyne, England, NE20, United Kingdom]]></src>
+		<sat>1</sat>
+	</wpt>
+	<wpt lat="55.050452" lon="-1.746042">
+		<name>Merton Road Car Park</name>
+		<src>42 Merton Road, Newcastle Upon Tyne, England, NE20 9PS, United Kingdom</src>
+		<sat>1</sat>
+	</wpt>
+	<wpt lat="55.087811" lon="-2.223732">
+		<name>Wark (Elliot Terrace)</name>
+	</wpt>
+	<wpt lat="55.066509" lon="-1.633922">
+		<name>Seaton Burn Services</name>
+		<src>Fina Service Station, Fisher Lane, Newcastle Upon Tyne, England, NE13 6BP, United Kingdom</src>
+	</wpt>
+	<wpt lat="55.087719" lon="-2.220161">
+		<name>Wark (Front St)</name>
+	</wpt>
+	<rte>
+		<name>Rte-20250504 - Capheaton, Chipchase and Wark F</name>
+		<desc>Now</desc>
+		<src>Exclude1027</src>
+		<link href="">
+			<text>Europe/London</text>
+		</link>
+		<number>0</number>
+		<type>0</type>
+		<rtept lat="55.066509" lon="-1.633922">
+			<name>Seaton Burn Services4</name>
+			<src>Fina Service Station, Fisher Lane, Newcastle Upon Tyne, England, NE13 6BP, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.079506" lon="-1.647696">
+			<name>Berwick Hill Road (to Ponteland)</name>
+			<src><![CDATA[1–21 Berwick Hill Road, Seaton Burn]]></src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.057228" lon="-1.748884">
+			<name>North Road (Ponteland)</name>
+			<src>North Road, Ponteland, Newcastle Upon Tyne, England, NE20, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.140984" lon="-1.733967">
+			<name>B6524 (to Whalton)</name>
+			<src>B6524, Shilvington, Newcastle Upon Tyne, England, NE20, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.105789" lon="-1.844349">
+			<name>A696 (towards Rothbury)</name>
+			<src>Wood House Cottage, Newcastle Upon Tyne, England, NE20 0EU, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.108372" lon="-1.861620">
+			<name>B6309 (to Stamfordham)</name>
+			<src>B6309, Belsay, Newcastle Upon Tyne, England, NE20, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.043430" lon="-1.881439">
+			<name>West View (Stamfordham)</name>
+			<src>West View, Newcastle Upon Tyne, England, NE18 0QQ, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.041615" lon="-1.954866">
+			<name>North Side (Matfen)</name>
+			<src>6 North Side, Newcastle Upon Tyne, England, NE20 0RW, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.062721" lon="-1.976490">
+			<name>Ryal (to B6342)</name>
+			<desc>Ryal</desc>
+			<src>Newcastle Upon Tyne, England, NE20, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.065266" lon="-2.076657">
+			<name>B6342 (to Capheaton)</name>
+			<src>B6342, Colwell, Hexham, England, NE46, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.105434" lon="-1.966964">
+			<time>1969-12-31T23:59:59Z</time>
+			<name>Road (to Capheaton)</name>
+			<desc>Road</desc>
+			<src>Newcastle Upon Tyne, England, NE19, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ShapingPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.118164" lon="-1.946642">
+			<name>Silver Hill (Capheaton)</name>
+			<desc>Silver Hill</desc>
+			<src>Silver Hill, Capheaton, Newcastle Upon Tyne, England, NE19, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.130798" lon="-1.949038">
+			<name>A696 (towards Otterburn)</name>
+			<src>A696, Middleton, Morpeth, England, NE61, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.152393" lon="-2.010331">
+			<name>Road (towards Carrycoats)</name>
+			<src>A696, Kirkwhelpington, Newcastle Upon Tyne, England, NE19, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.128674" lon="-2.044299">
+			<time>1969-12-31T23:59:59Z</time>
+			<name>Road (for A68)</name>
+			<desc>Road</desc>
+			<src>Newcastle Upon Tyne, England, NE19, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ShapingPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.106880" lon="-2.126241">
+			<name>A68 Junction</name>
+			<src>A68, Birtley, Hexham, England, NE48, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.102314" lon="-2.147091">
+			<name>Road (to Chipchase Castle)</name>
+			<src>Hexham, England, NE48, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.076302" lon="-2.182695">
+			<name>Chipchase Castle (to Park)</name>
+			<src>Hexham, England, NE48, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.087719" lon="-2.220161">
+			<name>Front St (Wark)</name>
+			<src>Post Office, Front Street, Hexham, England, NE48 3LG, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.087578" lon="-2.220408">
+			<name>B6320 (towards Chollerford)</name>
+			<src>1 Hexham Road, England NE48 3LR, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.061131" lon="-2.193859">
+			<name>Ward Lane (Nunwick)</name>
+			<src>Ward Lane, Nunwick, Simonburn, Hexham, England, NE48, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.070087" lon="-2.280924">
+			<time>1969-12-31T23:59:59Z</time>
+			<name>Ward Lane (towards Stonehaugh)</name>
+			<desc>Ward Lane</desc>
+			<src>The Bothy, Hexham, England, NE48 3EQ, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ShapingPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.069996" lon="-2.290392">
+			<time>1969-12-31T23:59:59Z</time>
+			<name>Ward Lane (to Whygate)</name>
+			<desc>Ward Lane</desc>
+			<src>Ward Lane, Wark, Hexham, England, NE48, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ShapingPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.078197" lon="-2.357580">
+			<name>Stonehaugh Loop</name>
+			<src>Hexham, England, NE48, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.087811" lon="-2.223732">
+			<name>Elliot Terrace (Park)</name>
+			<src>The Chippings, Hexham, England, NE48 3DG, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.087490" lon="-2.220436">
+			<name>B6320 (to Chollerford)</name>
+			<src>2-3 Hexham Road, England NE48 3LR, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.055351" lon="-2.180594">
+			<name>B6320 (Humshaugh)</name>
+			<src>B6320, Humshaugh, Hexham, England, NE46, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.030273" lon="-2.128715">
+			<name>B6320 (Chollerford)</name>
+			<src>7 Hadrian Court, England NE46 4DE, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.008923" lon="-1.899856">
+			<name>B6309 (to Stamfordham)</name>
+			<src>B6309, Stamfordham, Newcastle Upon Tyne, England, NE18, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.042362" lon="-1.828108">
+			<time>1969-12-31T23:59:59Z</time>
+			<name>Dalton</name>
+			<desc>Dalton</desc>
+			<src>Dalton Millbank House, Newcastle Upon Tyne, England, NE18 0AX, United Kingdom</src>
+			<fix>none</fix>
+			<extensions>
+				<trp:ShapingPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.042662" lon="-1.813947">
+			<name>Road (towards Capheaton)</name>
+			<src>Paddock Lane, Dalton, Newcastle Upon Tyne, England, NE18, United Kingdom</src>
+			<fix>none</fix>
+			<sat>1</sat>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.046874" lon="-1.814371">
+			<name>Limestone Lane (to Ponteland)</name>
+			<src>Limestone Lane, Dalton, Newcastle Upon Tyne, England, NE18, United Kingdom</src>
+			<fix>none</fix>
+			<sat>1</sat>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.055019" lon="-1.763374">
+			<name>A696 (to Ponteland)</name>
+			<src><![CDATA[84–98 A696, Ponteland, Newcastle Upon Tyne, England, NE20, United Kingdom]]></src>
+			<fix>none</fix>
+			<sat>1</sat>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+		<rtept lat="55.050452" lon="-1.746042">
+			<name>Merton Road Car Park</name>
+			<src>42 Merton Road, Newcastle Upon Tyne, England, NE20 9PS, United Kingdom</src>
+			<sat>1</sat>
+			<extensions>
+				<trp:ViaPoint/>
+			</extensions>
+		</rtept>
+	</rte>
+	<trk>
+		<name>Trk-20250504 - Capheaton, Chipchase and Wark F</name>
+		<trkseg>
+			<trkpt lat="55.066539" lon="-1.634115">
+			</trkpt>
+			<trkpt lat="55.066773" lon="-1.633540">
+			</trkpt>
+			<trkpt lat="55.066464" lon="-1.633363">
+			</trkpt>
+			<trkpt lat="55.066014" lon="-1.635024">
+			</trkpt>
+			<trkpt lat="55.066406" lon="-1.636013">
+			</trkpt>
+			<trkpt lat="55.067615" lon="-1.637475">
+			</trkpt>
+			<trkpt lat="55.069190" lon="-1.638336">
+			</trkpt>
+			<trkpt lat="55.070204" lon="-1.640927">
+			</trkpt>
+			<trkpt lat="55.070735" lon="-1.641579">
+			</trkpt>
+			<trkpt lat="55.076821" lon="-1.645393">
+			</trkpt>
+			<trkpt lat="55.079532" lon="-1.647533">
+			</trkpt>
+			<trkpt lat="55.078486" lon="-1.661827">
+			</trkpt>
+			<trkpt lat="55.075091" lon="-1.679755">
+			</trkpt>
+			<trkpt lat="55.073704" lon="-1.685202">
+			</trkpt>
+			<trkpt lat="55.072880" lon="-1.690642">
+			</trkpt>
+			<trkpt lat="55.073049" lon="-1.692004">
+			</trkpt>
+			<trkpt lat="55.074052" lon="-1.694783">
+			</trkpt>
+			<trkpt lat="55.074305" lon="-1.709847">
+			</trkpt>
+			<trkpt lat="55.074329" lon="-1.719462">
+			</trkpt>
+			<trkpt lat="55.074087" lon="-1.725119">
+			</trkpt>
+			<trkpt lat="55.074238" lon="-1.727938">
+			</trkpt>
+			<trkpt lat="55.073672" lon="-1.731669">
+			</trkpt>
+			<trkpt lat="55.072974" lon="-1.732973">
+			</trkpt>
+			<trkpt lat="55.068133" lon="-1.733482">
+			</trkpt>
+			<trkpt lat="55.064665" lon="-1.734813">
+			</trkpt>
+			<trkpt lat="55.063723" lon="-1.735883">
+			</trkpt>
+			<trkpt lat="55.062825" lon="-1.738374">
+			</trkpt>
+			<trkpt lat="55.060950" lon="-1.741778">
+			</trkpt>
+			<trkpt lat="55.055500" lon="-1.743342">
+			</trkpt>
+			<trkpt lat="55.056564" lon="-1.745480">
+			</trkpt>
+			<trkpt lat="55.056833" lon="-1.748060">
+			</trkpt>
+			<trkpt lat="55.057120" lon="-1.748779">
+			</trkpt>
+			<trkpt lat="55.059424" lon="-1.749439">
+			</trkpt>
+			<trkpt lat="55.064643" lon="-1.752907">
+			</trkpt>
+			<trkpt lat="55.065531" lon="-1.753017">
+			</trkpt>
+			<trkpt lat="55.066499" lon="-1.752306">
+			</trkpt>
+			<trkpt lat="55.068803" lon="-1.753105">
+			</trkpt>
+			<trkpt lat="55.072078" lon="-1.757187">
+			</trkpt>
+			<trkpt lat="55.074962" lon="-1.759298">
+			</trkpt>
+			<trkpt lat="55.075321" lon="-1.760551">
+			</trkpt>
+			<trkpt lat="55.083362" lon="-1.763893">
+			</trkpt>
+			<trkpt lat="55.084081" lon="-1.763088">
+			</trkpt>
+			<trkpt lat="55.084991" lon="-1.760213">
+			</trkpt>
+			<trkpt lat="55.085932" lon="-1.759644">
+			</trkpt>
+			<trkpt lat="55.088421" lon="-1.759221">
+			</trkpt>
+			<trkpt lat="55.090358" lon="-1.756412">
+			</trkpt>
+			<trkpt lat="55.096173" lon="-1.752765">
+			</trkpt>
+			<trkpt lat="55.097656" lon="-1.749122">
+			</trkpt>
+			<trkpt lat="55.101076" lon="-1.748875">
+			</trkpt>
+			<trkpt lat="55.102647" lon="-1.748301">
+			</trkpt>
+			<trkpt lat="55.109152" lon="-1.749535">
+			</trkpt>
+			<trkpt lat="55.110860" lon="-1.750683">
+			</trkpt>
+			<trkpt lat="55.113945" lon="-1.750863">
+			</trkpt>
+			<trkpt lat="55.116651" lon="-1.752655">
+			</trkpt>
+			<trkpt lat="55.120240" lon="-1.753872">
+			</trkpt>
+			<trkpt lat="55.122783" lon="-1.753306">
+			</trkpt>
+			<trkpt lat="55.124824" lon="-1.750504">
+			</trkpt>
+			<trkpt lat="55.127410" lon="-1.749232">
+			</trkpt>
+			<trkpt lat="55.128973" lon="-1.745646">
+			</trkpt>
+			<trkpt lat="55.134923" lon="-1.736685">
+			</trkpt>
+			<trkpt lat="55.136897" lon="-1.734979">
+			</trkpt>
+			<trkpt lat="55.141009" lon="-1.733884">
+			</trkpt>
+			<trkpt lat="55.139992" lon="-1.741641">
+			</trkpt>
+			<trkpt lat="55.139874" lon="-1.744699">
+			</trkpt>
+			<trkpt lat="55.140123" lon="-1.748951">
+			</trkpt>
+			<trkpt lat="55.139163" lon="-1.753550">
+			</trkpt>
+			<trkpt lat="55.136451" lon="-1.758510">
+			</trkpt>
+			<trkpt lat="55.134236" lon="-1.766269">
+			</trkpt>
+			<trkpt lat="55.133372" lon="-1.770481">
+			</trkpt>
+			<trkpt lat="55.132922" lon="-1.774198">
+			</trkpt>
+			<trkpt lat="55.132830" lon="-1.783406">
+			</trkpt>
+			<trkpt lat="55.131181" lon="-1.791037">
+			</trkpt>
+			<trkpt lat="55.130894" lon="-1.791463">
+			</trkpt>
+			<trkpt lat="55.127021" lon="-1.792223">
+			</trkpt>
+			<trkpt lat="55.127031" lon="-1.797300">
+			</trkpt>
+			<trkpt lat="55.127530" lon="-1.801516">
+			</trkpt>
+			<trkpt lat="55.126347" lon="-1.802369">
+			</trkpt>
+			<trkpt lat="55.126117" lon="-1.803670">
+			</trkpt>
+			<trkpt lat="55.123684" lon="-1.804797">
+			</trkpt>
+			<trkpt lat="55.122104" lon="-1.806575">
+			</trkpt>
+			<trkpt lat="55.121635" lon="-1.810325">
+			</trkpt>
+			<trkpt lat="55.119387" lon="-1.815778">
+			</trkpt>
+			<trkpt lat="55.118955" lon="-1.817725">
+			</trkpt>
+			<trkpt lat="55.119352" lon="-1.828398">
+			</trkpt>
+			<trkpt lat="55.116474" lon="-1.828521">
+			</trkpt>
+			<trkpt lat="55.115576" lon="-1.827553">
+			</trkpt>
+			<trkpt lat="55.111823" lon="-1.826568">
+			</trkpt>
+			<trkpt lat="55.107647" lon="-1.826718">
+			</trkpt>
+			<trkpt lat="55.107398" lon="-1.827040">
+			</trkpt>
+			<trkpt lat="55.107339" lon="-1.835049">
+			</trkpt>
+			<trkpt lat="55.107132" lon="-1.835645">
+			</trkpt>
+			<trkpt lat="55.106295" lon="-1.835682">
+			</trkpt>
+			<trkpt lat="55.105609" lon="-1.843992">
+			</trkpt>
+			<trkpt lat="55.106647" lon="-1.846596">
+			</trkpt>
+			<trkpt lat="55.108428" lon="-1.860487">
+			</trkpt>
+			<trkpt lat="55.108151" lon="-1.865640">
+			</trkpt>
+			<trkpt lat="55.107486" lon="-1.865779">
+			</trkpt>
+			<trkpt lat="55.106660" lon="-1.867676">
+			</trkpt>
+			<trkpt lat="55.104906" lon="-1.884617">
+			</trkpt>
+			<trkpt lat="55.097637" lon="-1.882924">
+			</trkpt>
+			<trkpt lat="55.095988" lon="-1.882152">
+			</trkpt>
+			<trkpt lat="55.092914" lon="-1.879435">
+			</trkpt>
+			<trkpt lat="55.090980" lon="-1.878767">
+			</trkpt>
+			<trkpt lat="55.087989" lon="-1.879933">
+			</trkpt>
+			<trkpt lat="55.085608" lon="-1.880191">
+			</trkpt>
+			<trkpt lat="55.084789" lon="-1.880070">
+			</trkpt>
+			<trkpt lat="55.083370" lon="-1.878759">
+			</trkpt>
+			<trkpt lat="55.081941" lon="-1.878340">
+			</trkpt>
+			<trkpt lat="55.078408" lon="-1.878804">
+			</trkpt>
+			<trkpt lat="55.077778" lon="-1.876144">
+			</trkpt>
+			<trkpt lat="55.075917" lon="-1.874676">
+			</trkpt>
+			<trkpt lat="55.070702" lon="-1.873488">
+			</trkpt>
+			<trkpt lat="55.069230" lon="-1.873351">
+			</trkpt>
+			<trkpt lat="55.068431" lon="-1.873901">
+			</trkpt>
+			<trkpt lat="55.068044" lon="-1.874435">
+			</trkpt>
+			<trkpt lat="55.067857" lon="-1.876377">
+			</trkpt>
+			<trkpt lat="55.067642" lon="-1.876551">
+			</trkpt>
+			<trkpt lat="55.063391" lon="-1.874700">
+			</trkpt>
+			<trkpt lat="55.053898" lon="-1.872898">
+			</trkpt>
+			<trkpt lat="55.052463" lon="-1.874531">
+			</trkpt>
+			<trkpt lat="55.050927" lon="-1.874864">
+			</trkpt>
+			<trkpt lat="55.046766" lon="-1.874502">
+			</trkpt>
+			<trkpt lat="55.043119" lon="-1.877359">
+			</trkpt>
+			<trkpt lat="55.043349" lon="-1.881245">
+			</trkpt>
+			<trkpt lat="55.044140" lon="-1.883351">
+			</trkpt>
+			<trkpt lat="55.045106" lon="-1.884939">
+			</trkpt>
+			<trkpt lat="55.045820" lon="-1.889466">
+			</trkpt>
+			<trkpt lat="55.047107" lon="-1.894691">
+			</trkpt>
+			<trkpt lat="55.048518" lon="-1.898875">
+			</trkpt>
+			<trkpt lat="55.050116" lon="-1.902131">
+			</trkpt>
+			<trkpt lat="55.051045" lon="-1.905589">
+			</trkpt>
+			<trkpt lat="55.051506" lon="-1.909642">
+			</trkpt>
+			<trkpt lat="55.051039" lon="-1.912117">
+			</trkpt>
+			<trkpt lat="55.050465" lon="-1.912978">
+			</trkpt>
+			<trkpt lat="55.049950" lon="-1.917155">
+			</trkpt>
+			<trkpt lat="55.048826" lon="-1.922090">
+			</trkpt>
+			<trkpt lat="55.047963" lon="-1.932703">
+			</trkpt>
+			<trkpt lat="55.047981" lon="-1.936193">
+			</trkpt>
+			<trkpt lat="55.047080" lon="-1.949317">
+			</trkpt>
+			<trkpt lat="55.041976" lon="-1.950647">
+			</trkpt>
+			<trkpt lat="55.041295" lon="-1.952573">
+			</trkpt>
+			<trkpt lat="55.041402" lon="-1.954842">
+			</trkpt>
+			<trkpt lat="55.043891" lon="-1.955137">
+			</trkpt>
+			<trkpt lat="55.057573" lon="-1.953498">
+			</trkpt>
+			<trkpt lat="55.059467" lon="-1.954598">
+			</trkpt>
+			<trkpt lat="55.062143" lon="-1.958511">
+			</trkpt>
+			<trkpt lat="55.062669" lon="-1.970222">
+			</trkpt>
+			<trkpt lat="55.062825" lon="-1.982624">
+			</trkpt>
+			<trkpt lat="55.062133" lon="-2.008379">
+			</trkpt>
+			<trkpt lat="55.062868" lon="-2.012856">
+			</trkpt>
+			<trkpt lat="55.063418" lon="-2.013875">
+			</trkpt>
+			<trkpt lat="55.064198" lon="-2.016739">
+			</trkpt>
+			<trkpt lat="55.064094" lon="-2.025001">
+			</trkpt>
+			<trkpt lat="55.063332" lon="-2.029703">
+			</trkpt>
+			<trkpt lat="55.065252" lon="-2.043218">
+			</trkpt>
+			<trkpt lat="55.065008" lon="-2.049135">
+			</trkpt>
+			<trkpt lat="55.065308" lon="-2.060315">
+			</trkpt>
+			<trkpt lat="55.065035" lon="-2.067892">
+			</trkpt>
+			<trkpt lat="55.065427" lon="-2.072449">
+			</trkpt>
+			<trkpt lat="55.064917" lon="-2.076590">
+			</trkpt>
+			<trkpt lat="55.065107" lon="-2.076995">
+			</trkpt>
+			<trkpt lat="55.065451" lon="-2.076360">
+			</trkpt>
+			<trkpt lat="55.069442" lon="-2.073476">
+			</trkpt>
+			<trkpt lat="55.072352" lon="-2.074101">
+			</trkpt>
+			<trkpt lat="55.074632" lon="-2.073541">
+			</trkpt>
+			<trkpt lat="55.079814" lon="-2.073887">
+			</trkpt>
+			<trkpt lat="55.080999" lon="-2.071773">
+			</trkpt>
+			<trkpt lat="55.084451" lon="-2.069702">
+			</trkpt>
+			<trkpt lat="55.085219" lon="-2.068522">
+			</trkpt>
+			<trkpt lat="55.086224" lon="-2.064201">
+			</trkpt>
+			<trkpt lat="55.088681" lon="-2.059770">
+			</trkpt>
+			<trkpt lat="55.099533" lon="-2.044884">
+			</trkpt>
+			<trkpt lat="55.100770" lon="-2.026755">
+			</trkpt>
+			<trkpt lat="55.101902" lon="-2.020173">
+			</trkpt>
+			<trkpt lat="55.102444" lon="-2.019019">
+			</trkpt>
+			<trkpt lat="55.104367" lon="-2.018370">
+			</trkpt>
+			<trkpt lat="55.105120" lon="-2.015959">
+			</trkpt>
+			<trkpt lat="55.106711" lon="-2.003514">
+			</trkpt>
+			<trkpt lat="55.105311" lon="-2.000472">
+			</trkpt>
+			<trkpt lat="55.102084" lon="-1.997307">
+			</trkpt>
+			<trkpt lat="55.100915" lon="-1.992197">
+			</trkpt>
+			<trkpt lat="55.101964" lon="-1.986366">
+			</trkpt>
+			<trkpt lat="55.103160" lon="-1.977341">
+			</trkpt>
+			<trkpt lat="55.105306" lon="-1.965238">
+			</trkpt>
+			<trkpt lat="55.105582" lon="-1.954925">
+			</trkpt>
+			<trkpt lat="55.107532" lon="-1.938733">
+			</trkpt>
+			<trkpt lat="55.109546" lon="-1.939983">
+			</trkpt>
+			<trkpt lat="55.111802" lon="-1.943226">
+			</trkpt>
+			<trkpt lat="55.114194" lon="-1.945433">
+			</trkpt>
+			<trkpt lat="55.117153" lon="-1.947544">
+			</trkpt>
+			<trkpt lat="55.117421" lon="-1.947447">
+			</trkpt>
+			<trkpt lat="55.117574" lon="-1.946603">
+			</trkpt>
+			<trkpt lat="55.123714" lon="-1.946919">
+			</trkpt>
+			<trkpt lat="55.126187" lon="-1.945275">
+			</trkpt>
+			<trkpt lat="55.130052" lon="-1.946039">
+			</trkpt>
+			<trkpt lat="55.131650" lon="-1.958190">
+			</trkpt>
+			<trkpt lat="55.133898" lon="-1.963066">
+			</trkpt>
+			<trkpt lat="55.136655" lon="-1.967446">
+			</trkpt>
+			<trkpt lat="55.137500" lon="-1.969348">
+			</trkpt>
+			<trkpt lat="55.141837" lon="-1.987461">
+			</trkpt>
+			<trkpt lat="55.143492" lon="-1.991293">
+			</trkpt>
+			<trkpt lat="55.145957" lon="-1.992841">
+			</trkpt>
+			<trkpt lat="55.146966" lon="-1.994276">
+			</trkpt>
+			<trkpt lat="55.149111" lon="-1.999512">
+			</trkpt>
+			<trkpt lat="55.151426" lon="-2.007843">
+			</trkpt>
+			<trkpt lat="55.152424" lon="-2.010141">
+			</trkpt>
+			<trkpt lat="55.149385" lon="-2.016195">
+			</trkpt>
+			<trkpt lat="55.147363" lon="-2.014438">
+			</trkpt>
+			<trkpt lat="55.144782" lon="-2.019033">
+			</trkpt>
+			<trkpt lat="55.140649" lon="-2.028490">
+			</trkpt>
+			<trkpt lat="55.136999" lon="-2.033774">
+			</trkpt>
+			<trkpt lat="55.136189" lon="-2.034590">
+			</trkpt>
+			<trkpt lat="55.135022" lon="-2.035043">
+			</trkpt>
+			<trkpt lat="55.134239" lon="-2.036532">
+			</trkpt>
+			<trkpt lat="55.132659" lon="-2.037942">
+			</trkpt>
+			<trkpt lat="55.130985" lon="-2.037580">
+			</trkpt>
+			<trkpt lat="55.129628" lon="-2.042550">
+			</trkpt>
+			<trkpt lat="55.126318" lon="-2.048789">
+			</trkpt>
+			<trkpt lat="55.126407" lon="-2.050576">
+			</trkpt>
+			<trkpt lat="55.122633" lon="-2.054505">
+			</trkpt>
+			<trkpt lat="55.121281" lon="-2.060714">
+			</trkpt>
+			<trkpt lat="55.121128" lon="-2.063284">
+			</trkpt>
+			<trkpt lat="55.120066" lon="-2.064663">
+			</trkpt>
+			<trkpt lat="55.119757" lon="-2.067704">
+			</trkpt>
+			<trkpt lat="55.117284" lon="-2.073267">
+			</trkpt>
+			<trkpt lat="55.116930" lon="-2.078377">
+			</trkpt>
+			<trkpt lat="55.113752" lon="-2.087759">
+			</trkpt>
+			<trkpt lat="55.112776" lon="-2.094296">
+			</trkpt>
+			<trkpt lat="55.112301" lon="-2.095422">
+			</trkpt>
+			<trkpt lat="55.111544" lon="-2.096015">
+			</trkpt>
+			<trkpt lat="55.111346" lon="-2.096720">
+			</trkpt>
+			<trkpt lat="55.111239" lon="-2.097898">
+			</trkpt>
+			<trkpt lat="55.111743" lon="-2.105408">
+			</trkpt>
+			<trkpt lat="55.111587" lon="-2.109058">
+			</trkpt>
+			<trkpt lat="55.112110" lon="-2.117542">
+			</trkpt>
+			<trkpt lat="55.111866" lon="-2.118905">
+			</trkpt>
+			<trkpt lat="55.107304" lon="-2.125034">
+			</trkpt>
+			<trkpt lat="55.106617" lon="-2.127051">
+			</trkpt>
+			<trkpt lat="55.105802" lon="-2.126313">
+			</trkpt>
+			<trkpt lat="55.103058" lon="-2.138702">
+			</trkpt>
+			<trkpt lat="55.101516" lon="-2.143165">
+			</trkpt>
+			<trkpt lat="55.102428" lon="-2.147039">
+			</trkpt>
+			<trkpt lat="55.100008" lon="-2.148283">
+			</trkpt>
+			<trkpt lat="55.098831" lon="-2.149378">
+			</trkpt>
+			<trkpt lat="55.094199" lon="-2.159951">
+			</trkpt>
+			<trkpt lat="55.092922" lon="-2.160055">
+			</trkpt>
+			<trkpt lat="55.092098" lon="-2.160919">
+			</trkpt>
+			<trkpt lat="55.090435" lon="-2.163821">
+			</trkpt>
+			<trkpt lat="55.087828" lon="-2.170438">
+			</trkpt>
+			<trkpt lat="55.086662" lon="-2.170950">
+			</trkpt>
+			<trkpt lat="55.086383" lon="-2.176259">
+			</trkpt>
+			<trkpt lat="55.084127" lon="-2.177785">
+			</trkpt>
+			<trkpt lat="55.083733" lon="-2.176811">
+			</trkpt>
+			<trkpt lat="55.083472" lon="-2.176779">
+			</trkpt>
+			<trkpt lat="55.080745" lon="-2.179102">
+			</trkpt>
+			<trkpt lat="55.077250" lon="-2.179212">
+			</trkpt>
+			<trkpt lat="55.076456" lon="-2.181964">
+			</trkpt>
+			<trkpt lat="55.076104" lon="-2.182369">
+			</trkpt>
+			<trkpt lat="55.077277" lon="-2.185461">
+			</trkpt>
+			<trkpt lat="55.078349" lon="-2.189302">
+			</trkpt>
+			<trkpt lat="55.078384" lon="-2.190337">
+			</trkpt>
+			<trkpt lat="55.080305" lon="-2.191145">
+			</trkpt>
+			<trkpt lat="55.081667" lon="-2.192827">
+			</trkpt>
+			<trkpt lat="55.081179" lon="-2.194892">
+			</trkpt>
+			<trkpt lat="55.081654" lon="-2.195552">
+			</trkpt>
+			<trkpt lat="55.085143" lon="-2.205674">
+			</trkpt>
+			<trkpt lat="55.085699" lon="-2.210923">
+			</trkpt>
+			<trkpt lat="55.085532" lon="-2.213273">
+			</trkpt>
+			<trkpt lat="55.086603" lon="-2.214282">
+			</trkpt>
+			<trkpt lat="55.086922" lon="-2.215757">
+			</trkpt>
+			<trkpt lat="55.087488" lon="-2.215979">
+			</trkpt>
+			<trkpt lat="55.087421" lon="-2.217717">
+			</trkpt>
+			<trkpt lat="55.087724" lon="-2.220397">
+			</trkpt>
+			<trkpt lat="55.086887" lon="-2.220740">
+			</trkpt>
+			<trkpt lat="55.085342" lon="-2.220118">
+			</trkpt>
+			<trkpt lat="55.084089" lon="-2.217731">
+			</trkpt>
+			<trkpt lat="55.083252" lon="-2.217036">
+			</trkpt>
+			<trkpt lat="55.081874" lon="-2.214585">
+			</trkpt>
+			<trkpt lat="55.080353" lon="-2.210881">
+			</trkpt>
+			<trkpt lat="55.078561" lon="-2.207458">
+			</trkpt>
+			<trkpt lat="55.074854" lon="-2.205481">
+			</trkpt>
+			<trkpt lat="55.070791" lon="-2.200246">
+			</trkpt>
+			<trkpt lat="55.069206" lon="-2.197276">
+			</trkpt>
+			<trkpt lat="55.067696" lon="-2.192682">
+			</trkpt>
+			<trkpt lat="55.066931" lon="-2.192271">
+			</trkpt>
+			<trkpt lat="55.062060" lon="-2.192513">
+			</trkpt>
+			<trkpt lat="55.061025" lon="-2.193527">
+			</trkpt>
+			<trkpt lat="55.069600" lon="-2.219812">
+			</trkpt>
+			<trkpt lat="55.069799" lon="-2.233406">
+			</trkpt>
+			<trkpt lat="55.070673" lon="-2.240709">
+			</trkpt>
+			<trkpt lat="55.070104" lon="-2.247141">
+			</trkpt>
+			<trkpt lat="55.070389" lon="-2.252498">
+			</trkpt>
+			<trkpt lat="55.069796" lon="-2.260593">
+			</trkpt>
+			<trkpt lat="55.070139" lon="-2.272542">
+			</trkpt>
+			<trkpt lat="55.069817" lon="-2.287321">
+			</trkpt>
+			<trkpt lat="55.070767" lon="-2.317193">
+			</trkpt>
+			<trkpt lat="55.070322" lon="-2.319320">
+			</trkpt>
+			<trkpt lat="55.070147" lon="-2.324595">
+			</trkpt>
+			<trkpt lat="55.069855" lon="-2.325955">
+			</trkpt>
+			<trkpt lat="55.070842" lon="-2.333197">
+			</trkpt>
+			<trkpt lat="55.070775" lon="-2.335013">
+			</trkpt>
+			<trkpt lat="55.071531" lon="-2.337572">
+			</trkpt>
+			<trkpt lat="55.072036" lon="-2.340630">
+			</trkpt>
+			<trkpt lat="55.072339" lon="-2.344675">
+			</trkpt>
+			<trkpt lat="55.073846" lon="-2.348320">
+			</trkpt>
+			<trkpt lat="55.075225" lon="-2.359748">
+			</trkpt>
+			<trkpt lat="55.075514" lon="-2.360215">
+			</trkpt>
+			<trkpt lat="55.076324" lon="-2.360226">
+			</trkpt>
+			<trkpt lat="55.076708" lon="-2.359448">
+			</trkpt>
+			<trkpt lat="55.077580" lon="-2.358786">
+			</trkpt>
+			<trkpt lat="55.078947" lon="-2.355443">
+			</trkpt>
+			<trkpt lat="55.079007" lon="-2.353955">
+			</trkpt>
+			<trkpt lat="55.078618" lon="-2.351071">
+			</trkpt>
+			<trkpt lat="55.078709" lon="-2.348220">
+			</trkpt>
+			<trkpt lat="55.079371" lon="-2.345595">
+			</trkpt>
+			<trkpt lat="55.081329" lon="-2.342542">
+			</trkpt>
+			<trkpt lat="55.082123" lon="-2.341842">
+			</trkpt>
+			<trkpt lat="55.083046" lon="-2.339940">
+			</trkpt>
+			<trkpt lat="55.083851" lon="-2.337253">
+			</trkpt>
+			<trkpt lat="55.085042" lon="-2.325875">
+			</trkpt>
+			<trkpt lat="55.086541" lon="-2.320057">
+			</trkpt>
+			<trkpt lat="55.087941" lon="-2.317155">
+			</trkpt>
+			<trkpt lat="55.090229" lon="-2.314400">
+			</trkpt>
+			<trkpt lat="55.090816" lon="-2.312839">
+			</trkpt>
+			<trkpt lat="55.091970" lon="-2.312394">
+			</trkpt>
+			<trkpt lat="55.092050" lon="-2.308634">
+			</trkpt>
+			<trkpt lat="55.091321" lon="-2.301842">
+			</trkpt>
+			<trkpt lat="55.091980" lon="-2.297116">
+			</trkpt>
+			<trkpt lat="55.092085" lon="-2.291210">
+			</trkpt>
+			<trkpt lat="55.093171" lon="-2.287755">
+			</trkpt>
+			<trkpt lat="55.094636" lon="-2.287390">
+			</trkpt>
+			<trkpt lat="55.096041" lon="-2.282745">
+			</trkpt>
+			<trkpt lat="55.096755" lon="-2.277268">
+			</trkpt>
+			<trkpt lat="55.097736" lon="-2.276600">
+			</trkpt>
+			<trkpt lat="55.098190" lon="-2.273813">
+			</trkpt>
+			<trkpt lat="55.096996" lon="-2.273287">
+			</trkpt>
+			<trkpt lat="55.095505" lon="-2.269956">
+			</trkpt>
+			<trkpt lat="55.093668" lon="-2.267201">
+			</trkpt>
+			<trkpt lat="55.091071" lon="-2.265120">
+			</trkpt>
+			<trkpt lat="55.088754" lon="-2.245532">
+			</trkpt>
+			<trkpt lat="55.090046" lon="-2.237003">
+			</trkpt>
+			<trkpt lat="55.091093" lon="-2.235503">
+			</trkpt>
+			<trkpt lat="55.089505" lon="-2.228835">
+			</trkpt>
+			<trkpt lat="55.088520" lon="-2.226872">
+			</trkpt>
+			<trkpt lat="55.088209" lon="-2.224584">
+			</trkpt>
+			<trkpt lat="55.087742" lon="-2.223549">
+			</trkpt>
+			<trkpt lat="55.087724" lon="-2.220397">
+			</trkpt>
+			<trkpt lat="55.086887" lon="-2.220740">
+			</trkpt>
+			<trkpt lat="55.085342" lon="-2.220118">
+			</trkpt>
+			<trkpt lat="55.084089" lon="-2.217731">
+			</trkpt>
+			<trkpt lat="55.083252" lon="-2.217036">
+			</trkpt>
+			<trkpt lat="55.081874" lon="-2.214585">
+			</trkpt>
+			<trkpt lat="55.080353" lon="-2.210881">
+			</trkpt>
+			<trkpt lat="55.078561" lon="-2.207458">
+			</trkpt>
+			<trkpt lat="55.074854" lon="-2.205481">
+			</trkpt>
+			<trkpt lat="55.070791" lon="-2.200246">
+			</trkpt>
+			<trkpt lat="55.069206" lon="-2.197276">
+			</trkpt>
+			<trkpt lat="55.067696" lon="-2.192682">
+			</trkpt>
+			<trkpt lat="55.066931" lon="-2.192271">
+			</trkpt>
+			<trkpt lat="55.062060" lon="-2.192513">
+			</trkpt>
+			<trkpt lat="55.060676" lon="-2.193838">
+			</trkpt>
+			<trkpt lat="55.056768" lon="-2.192363">
+			</trkpt>
+			<trkpt lat="55.055175" lon="-2.188988">
+			</trkpt>
+			<trkpt lat="55.054800" lon="-2.187046">
+			</trkpt>
+			<trkpt lat="55.055551" lon="-2.183498">
+			</trkpt>
+			<trkpt lat="55.055148" lon="-2.176937">
+			</trkpt>
+			<trkpt lat="55.055366" lon="-2.175636">
+			</trkpt>
+			<trkpt lat="55.055862" lon="-2.175014">
+			</trkpt>
+			<trkpt lat="55.056430" lon="-2.173107">
+			</trkpt>
+			<trkpt lat="55.056452" lon="-2.170570">
+			</trkpt>
+			<trkpt lat="55.055961" lon="-2.167233">
+			</trkpt>
+			<trkpt lat="55.055451" lon="-2.166340">
+			</trkpt>
+			<trkpt lat="55.054282" lon="-2.165551">
+			</trkpt>
+			<trkpt lat="55.052812" lon="-2.163448">
+			</trkpt>
+			<trkpt lat="55.051997" lon="-2.160924">
+			</trkpt>
+			<trkpt lat="55.050994" lon="-2.159151">
+			</trkpt>
+			<trkpt lat="55.048277" lon="-2.156804">
+			</trkpt>
+			<trkpt lat="55.047391" lon="-2.155072">
+			</trkpt>
+			<trkpt lat="55.046091" lon="-2.153875">
+			</trkpt>
+			<trkpt lat="55.043728" lon="-2.150375">
+			</trkpt>
+			<trkpt lat="55.041890" lon="-2.144954">
+			</trkpt>
+			<trkpt lat="55.040997" lon="-2.141320">
+			</trkpt>
+			<trkpt lat="55.040485" lon="-2.140397">
+			</trkpt>
+			<trkpt lat="55.028828" lon="-2.126777">
+			</trkpt>
+			<trkpt lat="55.024475" lon="-2.122617">
+			</trkpt>
+			<trkpt lat="55.022490" lon="-2.119921">
+			</trkpt>
+			<trkpt lat="55.021393" lon="-2.113208">
+			</trkpt>
+			<trkpt lat="55.020934" lon="-2.111298">
+			</trkpt>
+			<trkpt lat="55.019464" lon="-2.107573">
+			</trkpt>
+			<trkpt lat="55.018981" lon="-2.104365">
+			</trkpt>
+			<trkpt lat="55.018971" lon="-2.096857">
+			</trkpt>
+			<trkpt lat="55.019360" lon="-2.093542">
+			</trkpt>
+			<trkpt lat="55.019040" lon="-2.072492">
+			</trkpt>
+			<trkpt lat="55.013327" lon="-2.026492">
+			</trkpt>
+			<trkpt lat="55.012995" lon="-2.021863">
+			</trkpt>
+			<trkpt lat="55.013400" lon="-2.020929">
+			</trkpt>
+			<trkpt lat="55.011946" lon="-2.015747">
+			</trkpt>
+			<trkpt lat="55.010814" lon="-2.006727">
+			</trkpt>
+			<trkpt lat="55.011235" lon="-1.995671">
+			</trkpt>
+			<trkpt lat="55.011847" lon="-1.993074">
+			</trkpt>
+			<trkpt lat="55.011954" lon="-1.991589">
+			</trkpt>
+			<trkpt lat="55.011721" lon="-1.990105">
+			</trkpt>
+			<trkpt lat="55.012960" lon="-1.981410">
+			</trkpt>
+			<trkpt lat="55.013011" lon="-1.975366">
+			</trkpt>
+			<trkpt lat="55.011468" lon="-1.948775">
+			</trkpt>
+			<trkpt lat="55.008523" lon="-1.907721">
+			</trkpt>
+			<trkpt lat="55.008759" lon="-1.899886">
+			</trkpt>
+			<trkpt lat="55.011042" lon="-1.899570">
+			</trkpt>
+			<trkpt lat="55.012606" lon="-1.900299">
+			</trkpt>
+			<trkpt lat="55.013512" lon="-1.899720">
+			</trkpt>
+			<trkpt lat="55.015739" lon="-1.894661">
+			</trkpt>
+			<trkpt lat="55.017029" lon="-1.889391">
+			</trkpt>
+			<trkpt lat="55.021127" lon="-1.892475">
+			</trkpt>
+			<trkpt lat="55.021991" lon="-1.892864">
+			</trkpt>
+			<trkpt lat="55.024534" lon="-1.892848">
+			</trkpt>
+			<trkpt lat="55.025234" lon="-1.890547">
+			</trkpt>
+			<trkpt lat="55.028251" lon="-1.889694">
+			</trkpt>
+			<trkpt lat="55.028501" lon="-1.886167">
+			</trkpt>
+			<trkpt lat="55.031314" lon="-1.885928">
+			</trkpt>
+			<trkpt lat="55.031558" lon="-1.881983">
+			</trkpt>
+			<trkpt lat="55.033777" lon="-1.882710">
+			</trkpt>
+			<trkpt lat="55.034485" lon="-1.879716">
+			</trkpt>
+			<trkpt lat="55.036013" lon="-1.881200">
+			</trkpt>
+			<trkpt lat="55.036990" lon="-1.881044">
+			</trkpt>
+			<trkpt lat="55.037762" lon="-1.880432">
+			</trkpt>
+			<trkpt lat="55.039039" lon="-1.878418">
+			</trkpt>
+			<trkpt lat="55.039372" lon="-1.877348">
+			</trkpt>
+			<trkpt lat="55.039744" lon="-1.871755">
+			</trkpt>
+			<trkpt lat="55.038755" lon="-1.862698">
+			</trkpt>
+			<trkpt lat="55.038060" lon="-1.858897">
+			</trkpt>
+			<trkpt lat="55.038902" lon="-1.857564">
+			</trkpt>
+			<trkpt lat="55.038690" lon="-1.855356">
+			</trkpt>
+			<trkpt lat="55.039197" lon="-1.852529">
+			</trkpt>
+			<trkpt lat="55.039012" lon="-1.850856">
+			</trkpt>
+			<trkpt lat="55.039766" lon="-1.847154">
+			</trkpt>
+			<trkpt lat="55.040981" lon="-1.843072">
+			</trkpt>
+			<trkpt lat="55.040868" lon="-1.840044">
+			</trkpt>
+			<trkpt lat="55.041563" lon="-1.831262">
+			</trkpt>
+			<trkpt lat="55.042346" lon="-1.829130">
+			</trkpt>
+			<trkpt lat="55.042644" lon="-1.820541">
+			</trkpt>
+			<trkpt lat="55.042537" lon="-1.813908">
+			</trkpt>
+			<trkpt lat="55.046815" lon="-1.814796">
+			</trkpt>
+			<trkpt lat="55.047279" lon="-1.809759">
+			</trkpt>
+			<trkpt lat="55.047735" lon="-1.807417">
+			</trkpt>
+			<trkpt lat="55.047196" lon="-1.800081">
+			</trkpt>
+			<trkpt lat="55.048792" lon="-1.785868">
+			</trkpt>
+			<trkpt lat="55.050776" lon="-1.780252">
+			</trkpt>
+			<trkpt lat="55.052439" lon="-1.768954">
+			</trkpt>
+			<trkpt lat="55.053724" lon="-1.766739">
+			</trkpt>
+			<trkpt lat="55.054518" lon="-1.764309">
+			</trkpt>
+			<trkpt lat="55.055089" lon="-1.763665">
+			</trkpt>
+			<trkpt lat="55.054336" lon="-1.761562">
+			</trkpt>
+			<trkpt lat="55.053477" lon="-1.760162">
+			</trkpt>
+			<trkpt lat="55.050130" lon="-1.755972">
+			</trkpt>
+			<trkpt lat="55.049489" lon="-1.744444">
+			</trkpt>
+			<trkpt lat="55.049964" lon="-1.742162">
+			</trkpt>
+			<trkpt lat="55.050814" lon="-1.742435">
+			</trkpt>
+			<trkpt lat="55.050733" lon="-1.744798">
+			</trkpt>
+			<trkpt lat="55.050967" lon="-1.745375">
+			</trkpt>
+			<trkpt lat="55.050771" lon="-1.745815">
+			</trkpt>
+			<trkpt lat="55.050299" lon="-1.745584">
+			</trkpt>
+			<trkpt lat="55.050125" lon="-1.746086">
+			</trkpt>
+			<trkpt lat="55.050332" lon="-1.746422">
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>
+

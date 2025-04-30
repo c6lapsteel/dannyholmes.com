@@ -12,7 +12,7 @@ googleMaps_URL: "https://www.google.com/maps/d/embed?mid=1PWk2v_LBvL6l1Rs7smYliH
 route_directions: ["south"]
 route_towns: ["Stokesley","Helmsley","Whitby","Nunthorpe"]
 route_roads: 
-route_cafes: ["Strikes Garden Centre, Stokesley", "Oliver's Mount Restaurant"]
+route_cafes: ["Strikes Garden Centre, Stokesley", "Oliver's On The Mount"]
 resources:
     - 
 aliases:

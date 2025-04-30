@@ -1,8 +1,8 @@
 ---
-title: "Haweswater via Langdale and Teesdale"
+title: "Haweswater via Langdon Beck and Teesdale"
 routeID: "0012"
 leader: Bob Atwell
-description: "Follow our suggested motorycycle ride to Haweswater via Langdale and Teesdale."
+description: "Follow our suggested motorycycle ride to Haweswater via Langdon Beck and Teesdale."
 eventStartDate: 2010-07-18 00:00:00 +0000 UTC
 publishDate: 2010-07-18T22:03:16+01:00
 expiryDate:
@@ -10,9 +10,9 @@ summary:
 mileage: 177
 googleMaps_URL: "https://www.google.com/maps/d/embed?mid=1sMHFrfBaoYeUdGftnE-V6I7UzcHL3Hle"
 route_directions: [ "west"]
-route_towns: ["Ponteland","Throckley","Allendale","Allenheads","Cowshill","St. John’s Chapel","Langdale Beck","Middleton-in-Teesdale","Brough","Orton","Shap","Bampton Grange","Haweswater","Butterwick","Helton","Askam","Penrith","Langwathby","Melmersby","Hartside","Alston","Whitfield","Haydon Bridge"]
+route_towns: ["Ponteland","Throckley","Allendale","Allenheads","Cowshill","St. John’s Chapel","Langdon Beck","Middleton-in-Teesdale","Brough","Orton","Shap","Bampton Grange","Haweswater","Butterwick","Helton","Askam","Penrith","Langwathby","Melmersby","Hartside","Alston","Whitfield","Haydon Bridge"]
 route_roads: ["B632","A69","B6531","B6295","A689","B6277","B6276","A685","B6260","B6261","A6","B5320"]
-route_cafes: ["Langdale Beck Hotel, Langdale","Haweswater Hotel, Haweswater","Brockbushes Farm Shop, Corbridge"]
+route_cafes: ["Langdon Beck Hotel, Langdale","Haweswater Hotel, Haweswater","Brockbushes Farm Shop, Corbridge"]
 resources:
 - src: 'documents/NAM_MotorcycleRoute_Langdale_Teesdale_Shap_Haweswater.pdf'
   name: Route Description (PDF)
@@ -36,7 +36,7 @@ Continue on B6295 through Allenheads and left onto A689 at Cowshill.
 
 A689 to St. John’s Chapel
 
-Turn Right to Langdale Beck along a difficult to spot narrow road, just before the
+Turn Right to Langdon Beck along a difficult to spot narrow road, just before the
 church and the bridge.
 
 After 5 miles on a bumpy road with strong cross winds, turn left onto B6277.

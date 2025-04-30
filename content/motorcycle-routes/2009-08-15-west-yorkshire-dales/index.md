@@ -12,7 +12,7 @@ googleMaps_URL: "https://www.google.com/maps/d/embed?mid=1JMPWP0f8uty-iVQH8z0JMe
 route_directions: ["south"]
 route_towns: ["Ripon","Fountains Abbey","Grassington","Kettlewell","Kinsey Crag","Arncliffe","Malham","Kirkby Malham","Settle","Ribblesdale","Hawes","Wensleydale","Leyburn","Richmond","Scotch Corner"]
 route_roads: ["A1","A61","B6265","B6160","B6479","B6255","A684","A6108"]
-route_cafes: ["Beck House Tea Rooms, Malham"]
+route_cafes: ["Beck Hall Tea Rooms, Malham"]
 resources:
 - src: 'documents/NAM_MotorcycleRoute_Northumberland_Grassington_Malham_Ribblehead.pdf'
   name: Route Description (PDF)

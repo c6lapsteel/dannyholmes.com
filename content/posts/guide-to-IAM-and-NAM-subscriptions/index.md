@@ -22,7 +22,7 @@ The IAM renewal process can cause confusion and difficulties for members of Nort
 
 -	All members of NAM need also to be paid-up members of IAM
 -	NAM subscriptions are currently £20 and should be paid in January to NAM
--	IAM subscriptions are currently £37 and should be paid to IAM when you receive your renewal reminder with next year’s membership card.
+-	IAM subscriptions are currently £52 (or £47 if you pay by Direct Debit) and should be paid to IAM when you receive your renewal reminder with next year’s membership card.
 -	Do not assume that because you got a new card it means you have paid. You may have done so if you have set up automatic payment, but it is worth double checking.
 </div>
 
@@ -50,7 +50,7 @@ The IAM renewal process can cause confusion and difficulties for members of NAM 
 
 To set the background: shortly before the anniversary of the date you joined IAM, they will send out a shiny new membership card. It states that you have been a valued member for X years and gives an expiry date in a year’s time. The IAM send this out regardless of whether you have paid your membership fee!
 
-Some members [pay annually by Direct Debit](/about/membership-resources/#10---membership-renewal "Go to our membership resources page"), so all is well. But if you pay by another method then it is very easy to forget to make that payment. After all, you have a brand new membership card that confirms you are a member of IAM for another year. You think you have paid and all is well.
+Some members [pay annually by Direct Debit](https://namrider.com/pay-subs-by-paypal/ "Go to NAM membership resources page"), so all is well. But if you pay by another method then it is very easy to forget to make that payment. After all, you have a brand new membership card that confirms you are a member of IAM for another year. You think you have paid and all is well.
 
 Sadly all is not well. The IAM knows you haven’t paid. They have the database that they call DARTS. It puts the label ‘expired’ against your name. Sometime later they erase your details completely, as they are doubtless obliged to do for confidentiality (GDPR) reasons.
 

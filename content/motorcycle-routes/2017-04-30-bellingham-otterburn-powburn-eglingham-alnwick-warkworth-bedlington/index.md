@@ -12,7 +12,7 @@ googleMaps_URL: "https://www.google.com/maps/d/embed?mid=1HJvhz0x-UTnQcfItUlT4fv
 route_directions: ["northumberland"]
 route_towns: ["Morpeth","Mitford","Dyke Neuk","Hartburn","Scot's Gap","Cambo","Knowesgate","Bellingham","Otterburn","Elsdon","Thropton","Cartington","Callay","Glanton","Powburn","Eglingham","Alnwick","Shilbottle","Warkworth","Amble","Widdrington","Guidepost","Choppington","Bedlington"]
 route_roads: ["A1","B1337","A197","B6524","B6343","B6342","A68","B6320","A696","B6341","A697","B6346","A1068","A192"]
-route_cafes: ["Carriages Tea Room, Bellingham"]
+route_cafes: ["Tea On The Train, Bellingham"]
 resources:
 - src: 'documents/NAM_Motorcycle_Route_Bellingham_Otterburn_Powburn_Eglingham_Alnwick_Warkworth_Bedlington.pdf'
   name: Route Description (PDF)
@@ -27,7 +27,7 @@ Turn right towards Mitford, at end of High House Road, turn left on B6343 and fo
 
 Right turn onto A68 towards Bellingham. Left turn and follow road to Bellingham.
 
-Arrive [Carriages Tea Room](https://www.carriages-tearoom.co.uk/ "Go to Carriages Tea Room website") for bacon sandwich and a cuppa. **(36 miles.)**
+Arrive [Tea On The Train](https://www.teaonthetrain.com "Go to Tea On The Train website") for bacon sandwich and a cuppa. **(36 miles.)**
 
 Left from tea rooms and right at the T-junction on B6320 towards Otterburn. Left onto A68 and right on to A696.
 
