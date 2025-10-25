@@ -27,7 +27,7 @@ resources:
   params:
     icon: word
 aliases:
-    -
+    - 2023-08-06-capheaton-chipchase-wark
 draft: false
 ---
 
@@ -73,11 +73,7 @@ This route follows some of the quieter backroads through Northumberland, riding 
 
 **A696** Turn right back to Ponteland. The ride finishes at the car park off Meadowfield.
 
-## GPX File
-
-Click the button below to download a GPX file for the route. The file contains waypoints, a route and a track. 
-
-{{< downloads >}}
+{{< download-gpx src="/routes/route0074.gpx" label="Route 74 GPX" >}}
 
 ## Coffee Stop Options
 

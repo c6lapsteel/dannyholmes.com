@@ -1,6 +1,7 @@
 ---
 title: "Ettrick Water via Walton and Eskdalemuir"
 routeID: "0077"
+gpx: "routes/route0077.gpx"
 legend_label: "Route 0077 - Ettrick Water"
 x_min: 54.99329703415503
 y_min: -3.1071114144860235
@@ -11,7 +12,7 @@ latitude: 54.9783
 longitude: -1.6178
 zoom: 10
 resources:
-- name: gpx
+- name: gpxx
   src: '/gpx/Ettrick_Water.gpx'
 - name: legend_route
   src: '/legend/Route_1.png'

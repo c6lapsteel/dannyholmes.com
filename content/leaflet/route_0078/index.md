@@ -1,6 +1,7 @@
 ---
 title: "Kielder, Selkirk, Kelso and Coldstream"
 routeID: "0078"
+gpx: "routes/route0078.gpx"
 legend_label: "Route 0078 - Kielder, Selkirk, Kelso, Coldstream"
 x_min: 54.99329703415503
 y_min: -3.1071114144860235
@@ -11,7 +12,7 @@ latitude: 54.9783
 longitude: -1.6178
 zoom: 10
 resources:
-- name: gpx
+- name: gpxx
   src: '/gpx/Kielder_Selkirk_Kelso_Coldstream.gpx'
 - name: legend_route
   src: '/legend/Route_1.png'

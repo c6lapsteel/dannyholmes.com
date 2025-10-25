@@ -20,7 +20,7 @@ resources:
 - name: gpx
   src: 'gpx/Wauchope_Forest_Loop.gpx'
 aliases:
-    -
+    - 2024-06-23-wauchope-forest-loop
 draft: false
 ---
 
@@ -30,18 +30,4 @@ draft: false
 
 ## Route Description
 
-**A19** Exit on A174 towards Whitby.
-
-**A174** After approximately 1.3m, take slip road to B1365 Hemlington.
-
-**Stokesley** Right at (Strikes Garden Centre) roundabout on A172 towards Thirsk, then at next roundabout take second exit on B1257.
-
-**Helmsley** Follow 'All Routes' left to Market Place and immediately right on the A170. After 1.4 miles, fork left to re-join the B1257.
-
-**Look out** Right turn to Oswaldkirk and Ampleforth. Continue through Waas and past Byland Abbey.
-
-**Coxwold** Turn right towards Kilburn and Thirsk.
-
-**T-junction** Right on A19, then first left to Sowerby and Dalton.
-
-**Topcliff** Turn right on A167 towards Northallerton.
+{{< download-gpx src="/routes/route0076.gpx" label="Route 76 GPX" >}}

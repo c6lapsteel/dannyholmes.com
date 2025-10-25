@@ -1,25 +1,26 @@
 ---
-title: "Ettrick Water via Walton and Eskdalemuir"
-routeID: "0077"
+title: "Kielder, Selkirk, Kelso and Coldstream"
+routeID: "0078"
 leader: Danny Holmes
-description: "Follow our suggested motorycycle ride along Ettrick Water via Walton and Eskdalemuir"
-eventStartDate: 2024-08-18 00:00:00 +0000 UTC
-publishDate: 2024-08-18T06:01:31Z
+description: "Follow our suggested motorycycle ride to Kielder, Selkirk, Kelso and Coldstream."
+eventStartDate: 2019-08-04 00:00:00 +0000 UTC
+publishDate: 2019-08-04T06:01:31Z
 expiryDate:
 summary:
-mileage: 166
+mileage: 164
 googleMaps_URL: 
 route_directions: ["north"]
-route_towns: ["Ponteland","Harlow Hill","Greenhead","Gilsland","Walton","Roadhead","Catlowdy","Claygate","Langholm","Bentpath","Eskdalemuir","Garwald","Ettrick","Ettrickbridge","Selkirk","Lilliesleaf","Hassendean","Denholm","Abbotrule","Chesters","Rochester","Otterburn"]
-route_roads: ["B6323","B6324","B6318","A7","B709","B7009","A708","A7","A699","B6453","B6359","B6357","A6088","A68"]
-route_cafes: ["Walton Tearoom, Brampton","Eskdalemuir Community Hub, Eskdalemuir","Otterburn Mill, Otterburn"]
+route_towns: ["Berwick Hill", "Ponteland", "Belsay", "Harle", "Lanehead", "Tarset", "Stannersburn", "Kielder", "Bonchester Bridge", "Appletreehall", "Selkirk", "Boleside", "Darnick", "Melrose", "Maxton", "Kelso", "Birgham", "Coldstream", "Cornhill on Tweed", "Milfield", "Akeld", "Low Humbleton", "Lilburn Glebe", "Wooperton", "Powburn", "Longhorsley"]
+route_roads: ["A696","B6320","B6357","A6088","A698","A7","A701","A708","B7014","A6091","A68","A699","A698","A697"]
+route_cafes: ["Otterburn Mill, Otterburn", "Waterwheel Restaurant, Selkirk"]
+route_district_boroughs: ["Newcastle upon Tyne District (B)","Northumberland","Scottish Borders"]
 latitude: 54.966667
 longitude: -1.600000
 zoom: 12
 resources:
-- src: documents/route0077.GPX
+- src: documents/route0078.GPX
   title: Download GPX File
-  name: Route077_EtterickWater.gpx
+  name: Route078_Kielder_Selkirk_Kelso_Coldstream.gpx
 - src: '**.gpx'
   params:
     icon: bi-cloud-arrow-down-fill
@@ -27,15 +28,17 @@ resources:
   params:
     icon: word
 aliases:
-    -
+    - 2019-08-04-kielder-selkirk-kelso-coldstream
 draft: false
 ---
 
 ## Route Map
 
-{{< qgis2web src="/leaflet/route_0077" >}}
+{{< qgis2web src="/leaflet/route_0078" >}}
 
 ## Route Description
+
+A ride of 160 miles from Seaton Burn with coffee at Otterburn. Then via Keilder to Selkirk Water Wheel for lunch. Return via Kelso, Coldstream, and Wooler to finish at Heighlygate.
 
 **Seaton Burn Services** Exit on Great North Road. After 1.1 miles, turn left on Berwick Hill Road to Ponteland.
 
@@ -73,14 +76,12 @@ draft: false
 
 **Otterburn** Turn right on B6320 to end the ride at Otterburn Mill.
 
-{{< downloads >}}
+{{< download-gpx src="/routes/route0078.gpx" label="Route 78 GPX" >}}
 
 ## Coffee Stop Options
 
-- Greenhead Tea Room, Brampton, closed on Sunday.
-- [Walton Tearoom, Brampton](https://www.facebook.com/people/Walton-Tearoom/ "Go to Walton Village Tearoom Facebook page"), open daily 10am-5pm.
-- [Old School Cafe, Eskdalemuir Community Hub](https://www.eskdalemuir.com/old-school-cafe-bistro "Go to Eskdalemuir Community Hub web page"), open daily 10am-4pm.
 - [Otterburn Mill, Otterburn](https://www.otterburnmill.co.uk/renas-country-kitchen-i68 "Go to Otterburn Mill web page"), open daily 9am-4pm.
+
 
 ## Petrol
 

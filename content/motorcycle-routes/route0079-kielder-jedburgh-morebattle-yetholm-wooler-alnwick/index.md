@@ -2,7 +2,7 @@
 title: "Kielder, Jedburgh, Morebattle, Yetholm, Wooler and Alnwick"
 routeID: "0079"
 leader: Colin Irvine
-description: "Follow our suggested motorycycle ride to Kielder, Jedburgh, Morebattle, Yetholm, Wooler and Alnwick"
+description: "Follow our suggested motorycycle ride to Kielder, Jedburgh, Morebattle, Yetholm, Wooler and Alnwick."
 eventStartDate: 2025-04-20 00:00:00 +0000 UTC
 publishDate: 2025-04-20T06:01:31Z
 expiryDate:
@@ -27,7 +27,7 @@ resources:
   params:
     icon: word
 aliases:
-    -
+    - 2025-04-20-kielder-jedburgh-morebattle-yetholm-wooler-alnwick
 draft: false
 ---
 
@@ -45,7 +45,7 @@ draft: false
 
 **Look out** After 1.5 miles, turn right and continue towards Heartburn.
 
-{{< downloads >}}
+{{< download-gpx src="/routes/route0079.gpx" label="Route 79 GPX" >}}
 
 ## Coffee Stop Options
 

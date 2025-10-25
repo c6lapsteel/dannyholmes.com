@@ -1,6 +1,7 @@
 ---
 title: "Leaflet Test"
 routeID: "0074"
+gpx: "routes/route0074.gpx"
 legend_label: "Route 0074 - Capheaton, Chipshase, Wark Forest"
 x_min: 54.99329703415503
 y_min: -3.1071114144860235
@@ -11,7 +12,7 @@ latitude: 54.9783
 longitude: -1.6178
 zoom: 10
 resources:
-- name: gpx
+- name: gpxx
   src: '/gpx/Capheaton_Chipchase_WarkForest.gpx'
 - name: legend_route
   src: '/legend/Route_1.png'

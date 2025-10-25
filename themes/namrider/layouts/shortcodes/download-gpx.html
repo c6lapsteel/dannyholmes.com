@@ -1,0 +1,15 @@
+{{ $src := .Get "src" }}
+{{ $label := .Get "label" | default (path.Base $src) }}
+
+<h3>GPX File</h3>
+<p>Click the button below to download a GPX file for the route. The file contains waypoints, a route and a track.</p>
+
+<ul class="layout-downloads">
+    {{ range .Page.Resources.Match "**" }}
+		{{ if not (in .Name ".DS_Store" ) }}
+			<li class="layout-contact">
+				<a href="{{ $src }}" download="{{ $label }}" class="btn btn-success btn-lg"><i class=""></i><span class="contact-icon {{ .Params.icon }}"></span> Download {{ $label }}</a>
+			</li>
+		{{ end }}
+  	{{ end }}
+</ul>
