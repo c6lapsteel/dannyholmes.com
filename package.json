@@ -5,6 +5,7 @@
     "postcss-cli": "^10.1.0"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "critical": "^7.2.1",
     "glob": "^10.4.5"
   }

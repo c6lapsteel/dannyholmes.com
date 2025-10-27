@@ -50,6 +50,8 @@ rssLimit = 100
     [params.author]
       name = "Danny Holmes"
       email = "hi@dannyholmes.com"
+    [params.sass]
+      includePaths = ["node_modules"]
 
     # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
     background_color_class = "bg-black"
@@ -183,3 +185,44 @@ SectionPagesMenu = "main"
   changefreq = "monthly"
   priority = 0.5
   filename = "sitemap.xml"
+
+[build]
+  [build.buildStats]
+    enable = true
+
+[module]
+  [[module.mounts]]
+    source = "node_modules"
+    target = "assets/node_modules"
+  
+  [[module.mounts]]
+    source = "themes/namrider/assets"
+    target = "assets"
+  
+  [[module.mounts]]
+    source = "themes/namrider/static"
+    target = "static"
+  
+  [[module.mounts]]
+    source = "themes/namrider/layouts"
+    target = "layouts"
+  
+  [[module.mounts]]
+    source = "themes/namrider/data"
+    target = "data"
+  
+  [[module.mounts]]
+    source = "themes/namrider/i18n"
+    target = "i18n"
+  
+  [[module.mounts]]
+    source = "themes/namrider/archetypes"
+    target = "archetypes"
+  
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  
+  [[module.mounts]]
+    source = "static"
+    target = "static"
