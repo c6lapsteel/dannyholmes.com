@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "build": "npm install --prefix themes/namrider && hugo --minify && npx pagefind --source public"
-  },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
